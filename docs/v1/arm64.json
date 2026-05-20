@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-05T06:44:43Z",
+    "generated_at": "2026-05-20T07:10:52Z",
     "count": 51
   },
   "images": [
@@ -677,7 +677,7 @@
         "value": "217c19dc76fcbcdec7ca17dcd094d35f8c22180f208f0a4358d91bf650a4dc0e"
       },
       "eol": {
-        "standard": "2026-05-01",
+        "standard": "2026-05-19",
         "extended": null,
         "is_rolling": false,
         "note": "EOL imminent"
