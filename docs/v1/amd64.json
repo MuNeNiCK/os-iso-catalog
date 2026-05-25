@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-20T07:10:52Z",
-    "count": 82
+    "generated_at": "2026-05-25T07:31:51Z",
+    "count": 83
   },
   "images": [
     {
@@ -219,19 +219,19 @@
     },
     {
       "id": "debian-12-netinst",
-      "name": "Debian 12.13",
+      "name": "Debian 12.14",
       "category": "linux",
       "distro": "debian",
       "codename": "Bookworm",
-      "version": "12.13",
+      "version": "12.14",
       "edition": "netinst",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/12.13.0/amd64/iso-cd/debian-12.13.0-amd64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.14.0/amd64/iso-cd/debian-12.14.0-amd64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "2b880ffabe36dbe04a662a3125e5ecae4db69d0acce257dd74615bbf165ad76e"
+        "value": "adfcbb50782af99d457467f9b38c9e0fb3b1b6e211e0202f099aa58874b3f923"
       },
       "eol": {
         "standard": "2026-06-10",
@@ -267,15 +267,15 @@
     },
     {
       "id": "debian-13-netinst",
-      "name": "Debian 13.4",
+      "name": "Debian 13.5",
       "category": "linux",
       "distro": "debian",
       "codename": "Trixie",
-      "version": "13.4",
+      "version": "13.5",
       "edition": "netinst",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/13.4.0/amd64/iso-cd/debian-13.4.0-amd64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/13.5.0/amd64/iso-cd/debian-13.5.0-amd64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
@@ -1667,6 +1667,28 @@
       "eol": {
         "standard": "2029-07-31",
         "extended": "2032-07-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "openbsd-7.9",
+      "name": "OpenBSD 7.9",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "7.9",
+      "edition": "install",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/7.9/amd64/install79.iso",
+      "homepage": "https://www.openbsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "7a4a92e953618035097c796a90b54424a0f3ae775552e1e7d102cf8a5130449f"
+      },
+      "eol": {
+        "standard": "2027-06-01",
+        "extended": null,
         "is_rolling": false
       },
       "status": "supported"
