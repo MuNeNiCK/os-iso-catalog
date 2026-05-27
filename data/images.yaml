@@ -2872,8 +2872,8 @@ images:
     algorithm: sha256
     value: 463fa92155b886e31627f6713e1c2824343762245a914715ffd6f2efc300b7a1
   eol:
-    standard: '2024-05-01'
-    extended: '2029-03-01'
+    standard: '2024-05-31'
+    extended: '2029-05-31'
     is_rolling: false
   status: eol-extended
 - id: alma-8.10-minimal
@@ -2891,8 +2891,8 @@ images:
     algorithm: sha256
     value: e524329700abe47ce1f509bed7e2d3c68b336a54c712daa1b492b2429a64d419
   eol:
-    standard: '2024-05-01'
-    extended: '2029-03-01'
+    standard: '2024-05-31'
+    extended: '2029-05-31'
     is_rolling: false
   status: eol-extended
 - id: alma-8.10-dvd-arm64
@@ -2910,8 +2910,8 @@ images:
     algorithm: sha256
     value: 49feeaa7876ede4f544ae7ddcf5a8d63649bc087aa0f1c75eac38ee456b99736
   eol:
-    standard: '2024-05-01'
-    extended: '2029-03-01'
+    standard: '2024-05-31'
+    extended: '2029-05-31'
     is_rolling: false
   status: eol-extended
 - id: alma-8.10-minimal-arm64
@@ -2929,8 +2929,8 @@ images:
     algorithm: sha256
     value: e2fcef261a236fb19e69fceffce7a31b1afafbe8afe9f24553677684571cea81
   eol:
-    standard: '2024-05-01'
-    extended: '2029-03-01'
+    standard: '2024-05-31'
+    extended: '2029-05-31'
     is_rolling: false
   status: eol-extended
 - id: freebsd-13.5-arm64
