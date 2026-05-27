@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-25T13:45:33Z",
+    "generated_at": "2026-05-27T07:24:24Z",
     "count": 83
   },
   "images": [
@@ -1819,8 +1819,8 @@
         "value": "463fa92155b886e31627f6713e1c2824343762245a914715ffd6f2efc300b7a1"
       },
       "eol": {
-        "standard": "2024-05-01",
-        "extended": "2029-03-01",
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
         "is_rolling": false
       },
       "status": "eol-extended"
@@ -1841,8 +1841,8 @@
         "value": "e524329700abe47ce1f509bed7e2d3c68b336a54c712daa1b492b2429a64d419"
       },
       "eol": {
-        "standard": "2024-05-01",
-        "extended": "2029-03-01",
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
         "is_rolling": false
       },
       "status": "eol-extended"

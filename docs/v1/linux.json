@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-25T13:45:33Z",
+    "generated_at": "2026-05-27T07:24:24Z",
     "count": 112
   },
   "images": [
@@ -2469,8 +2469,8 @@
         "value": "463fa92155b886e31627f6713e1c2824343762245a914715ffd6f2efc300b7a1"
       },
       "eol": {
-        "standard": "2024-05-01",
-        "extended": "2029-03-01",
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
         "is_rolling": false
       },
       "status": "eol-extended"
@@ -2491,8 +2491,8 @@
         "value": "e524329700abe47ce1f509bed7e2d3c68b336a54c712daa1b492b2429a64d419"
       },
       "eol": {
-        "standard": "2024-05-01",
-        "extended": "2029-03-01",
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
         "is_rolling": false
       },
       "status": "eol-extended"
@@ -2513,8 +2513,8 @@
         "value": "49feeaa7876ede4f544ae7ddcf5a8d63649bc087aa0f1c75eac38ee456b99736"
       },
       "eol": {
-        "standard": "2024-05-01",
-        "extended": "2029-03-01",
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
         "is_rolling": false
       },
       "status": "eol-extended"
@@ -2535,8 +2535,8 @@
         "value": "e2fcef261a236fb19e69fceffce7a31b1afafbe8afe9f24553677684571cea81"
       },
       "eol": {
-        "standard": "2024-05-01",
-        "extended": "2029-03-01",
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
         "is_rolling": false
       },
       "status": "eol-extended"
