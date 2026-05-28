@@ -471,6 +471,8 @@ tracking:
   amazon-linux:
     product: amazon-linux
     match_depth: 1
+    exclude_cycles:
+    - '2'
     update_templates:
       type: directory_parse
       category: linux
