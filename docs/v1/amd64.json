@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-27T07:24:24Z",
-    "count": 83
+    "generated_at": "2026-05-28T07:18:00Z",
+    "count": 87
   },
   "images": [
     {
@@ -1846,6 +1846,94 @@
         "is_rolling": false
       },
       "status": "eol-extended"
+    },
+    {
+      "id": "alma-10.2-dvd",
+      "name": "AlmaLinux 10.2",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "10.2",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10.2-x86_64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "90244ac532f67c978831a381b420da8bda363729e1f4cf8fb8991daca70ee287"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alma-10.2-minimal",
+      "name": "AlmaLinux 10.2",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "10.2",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10.2-x86_64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1b532f534231da0d1cd0ccae622bea6cd588d8a0d7b259f1f131501a6eed41a4"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alma-9.8-dvd",
+      "name": "AlmaLinux 9.8",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/9/isos/x86_64/AlmaLinux-9.8-x86_64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "7a392bdc879afd159b30da39a356b7b26c1ddf618b01549164da9aadbc40d814"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alma-9.8-minimal",
+      "name": "AlmaLinux 9.8",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "9.8",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/9/isos/x86_64/AlmaLinux-9.8-x86_64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "7762a4b45a66235726db145a573658964bf77bf7b9bc1c018afe86a4cf37cc2e"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported"
     },
     {
       "id": "freebsd-14.3",
