@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-28T07:34:44Z",
-    "count": 69
+    "generated_at": "2026-05-28T07:36:44Z",
+    "count": 77
   },
   "images": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "id": "debian-12-cloud-arm64",
-      "name": "Debian 12 Bookworm",
+      "name": "Debian 12",
       "category": "linux",
       "distro": "debian",
       "codename": "Bookworm",
@@ -83,7 +83,7 @@
     },
     {
       "id": "debian-13-cloud-arm64",
-      "name": "Debian 13 Trixie",
+      "name": "Debian 13",
       "category": "linux",
       "distro": "debian",
       "codename": "Trixie",
@@ -222,7 +222,11 @@
         "is_rolling": false,
         "note": "Approximate EOL"
       },
-      "status": "supported"
+      "status": "supported",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "66031aea9ec61e6d0d5bba12b9454e80ca94e8a79c913d37ded4c60311705b8b"
+      }
     },
     {
       "id": "rocky-10-cloud-arm64",
@@ -1075,6 +1079,54 @@
       "image_type": "iso"
     },
     {
+      "id": "alpine-3.22-cloud-arm64",
+      "name": "Alpine Linux 3.22",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.22",
+      "edition": "Cloud image",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/cloud/nocloud_alpine-3.22.4-aarch64-uefi-cloudinit-r0.qcow2",
+      "homepage": "https://alpinelinux.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "a53620902f99b1fd4591125d348e4385f036d590607f4fa90d6f85fea0248007ec763cc81d025f347ede5bd746b3726cf5eddd461b6c94c35376f71cb7558317"
+      },
+      "eol": {
+        "standard": "2027-05-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alpine-3.21-cloud-arm64",
+      "name": "Alpine Linux 3.21",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.21",
+      "edition": "Cloud image",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/nocloud_alpine-3.21.7-aarch64-uefi-cloudinit-r0.qcow2",
+      "homepage": "https://alpinelinux.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "9837b968763c2f620aa81cab3dc26b7f914ffa935245c9e929e339559f0f2fecdfd281e5cf82457ecfd6a9b6726a8a8ec40fb35d99dd8fd9b27d3b76c304dac7"
+      },
+      "eol": {
+        "standard": "2026-11-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
       "id": "opensuse-leap-15.6-dvd-arm64",
       "name": "openSUSE Leap 15.6",
       "category": "linux",
@@ -1301,6 +1353,31 @@
       "image_type": "iso"
     },
     {
+      "id": "ubuntu-26.04-cloud-arm64",
+      "name": "Ubuntu 26.04 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "version": "26.04",
+      "edition": "Cloud image",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cloud-images.ubuntu.com/resolute/current/resolute-server-cloudimg-arm64.img",
+      "homepage": "https://ubuntu.com/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Resolute Raccoon",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "5e091e27d60116efbb0c743b8dd5cb2d15618e414ef04db0817ed43c8e2d7c7b"
+      },
+      "eol": {
+        "standard": "2031-04-30",
+        "extended": "2036-04-30",
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
       "id": "debian-11-netinst-arm64",
       "name": "Debian 11.11 Bullseye",
       "category": "linux",
@@ -1422,6 +1499,30 @@
       "status": "supported",
       "format": "iso",
       "image_type": "iso"
+    },
+    {
+      "id": "fedora-44-cloud-arm64",
+      "name": "Fedora 44",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "44",
+      "edition": "Cloud image",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/44/Cloud/aarch64/images/Fedora-Cloud-Base-Generic-44-1.7.aarch64.qcow2",
+      "homepage": "https://fedoraproject.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "55c60a3b80d3616a08705afd0459e75fe9f03c54aba7a46e4002a41a72fa0d5b"
+      },
+      "eol": {
+        "standard": "2027-06-02",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
     },
     {
       "id": "rocky-9.7-dvd-arm64",
@@ -1612,6 +1713,102 @@
         "is_rolling": false
       },
       "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-10.2-dvd-arm64",
+      "name": "AlmaLinux 10.2",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "10.2",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/10/isos/aarch64/AlmaLinux-10.2-aarch64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "bc3790b1200254790e03f1d941162a9f9082d46dcdff841b83f348501625b29e"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-10.2-minimal-arm64",
+      "name": "AlmaLinux 10.2",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "10.2",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/10/isos/aarch64/AlmaLinux-10.2-aarch64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "ca5dd9b7e1193de5881df850a93b611c6ba0ba8c5860f54ee822c53585b3014d"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-9.8-dvd-arm64",
+      "name": "AlmaLinux 9.8",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/9/isos/aarch64/AlmaLinux-9.8-aarch64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "916ec3ec8ceff4ea206daf1a030af77f811cdfcbef598c58639b6ddf39aeaf0f"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-9.8-minimal-arm64",
+      "name": "AlmaLinux 9.8",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "9.8",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/9/isos/aarch64/AlmaLinux-9.8-aarch64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "08913740ab695c5f1003165c1d0e41c0615d0ffe4114ab92a8e13ae49fb691ac"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
       "format": "iso",
       "image_type": "iso"
     },
