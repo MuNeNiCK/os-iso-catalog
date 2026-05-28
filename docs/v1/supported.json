@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-28T07:26:51Z",
-    "count": 151
+    "generated_at": "2026-05-28T07:30:39Z",
+    "count": 147
   },
   "images": [
     {
@@ -434,54 +434,6 @@
         "extended": "2030-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
-      },
-      "status": "supported",
-      "format": "iso",
-      "image_type": "iso"
-    },
-    {
-      "id": "fedora-42-workstation",
-      "name": "Fedora 42 Workstation",
-      "category": "linux",
-      "distro": "fedora",
-      "version": "42",
-      "edition": "Workstation Live",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/x86_64/iso/Fedora-Workstation-Live-42-1.1.x86_64.iso",
-      "homepage": "https://fedoraproject.org/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "98958d80e8a80eabe61275337f969c8e2212adc3a223d9bbdab9411bb1c95cba"
-      },
-      "eol": {
-        "standard": "2026-05-27",
-        "extended": null,
-        "is_rolling": false
-      },
-      "status": "supported",
-      "format": "iso",
-      "image_type": "iso"
-    },
-    {
-      "id": "fedora-42-server",
-      "name": "Fedora 42 Server",
-      "category": "linux",
-      "distro": "fedora",
-      "version": "42",
-      "edition": "Server netinst",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/x86_64/iso/Fedora-Server-netinst-x86_64-42-1.1.iso",
-      "homepage": "https://fedoraproject.org/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "231f3e0d1dc8f565c01a9f641b3d16c49cae44530074bc2047fe2373a721c82f"
-      },
-      "eol": {
-        "standard": "2026-05-27",
-        "extended": null,
-        "is_rolling": false
       },
       "status": "supported",
       "format": "iso",
@@ -2570,54 +2522,6 @@
         "extended": "2030-06-30",
         "is_rolling": false,
         "note": "Full support until 2028/08, LTS until 2030/06"
-      },
-      "status": "supported",
-      "format": "iso",
-      "image_type": "iso"
-    },
-    {
-      "id": "fedora-42-workstation-arm64",
-      "name": "Fedora 42 Workstation",
-      "category": "linux",
-      "distro": "fedora",
-      "version": "42",
-      "edition": "Workstation Live",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Workstation/aarch64/iso/Fedora-Workstation-Live-42-1.1.aarch64.iso",
-      "homepage": "https://fedoraproject.org/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "954a0d7d6553fdf2b6bcf7f393a2e41f9265a0a81de8c8e4f712f5924e40577f"
-      },
-      "eol": {
-        "standard": "2026-05-27",
-        "extended": null,
-        "is_rolling": false
-      },
-      "status": "supported",
-      "format": "iso",
-      "image_type": "iso"
-    },
-    {
-      "id": "fedora-42-server-arm64",
-      "name": "Fedora 42 Server",
-      "category": "linux",
-      "distro": "fedora",
-      "version": "42",
-      "edition": "Server netinst",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/42/Server/aarch64/iso/Fedora-Server-netinst-aarch64-42-1.1.iso",
-      "homepage": "https://fedoraproject.org/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "cbeeb6d0147ce198e28895a9bbc91cd49a964f38177a57d512f73492308533ed"
-      },
-      "eol": {
-        "standard": "2026-05-27",
-        "extended": null,
-        "is_rolling": false
       },
       "status": "supported",
       "format": "iso",

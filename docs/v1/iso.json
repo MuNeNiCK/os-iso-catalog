@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-28T07:26:51Z",
+    "generated_at": "2026-05-28T07:30:39Z",
     "count": 133
   },
   "images": [
@@ -333,7 +333,7 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -357,7 +357,7 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -1920,7 +1920,7 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -1944,7 +1944,7 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
