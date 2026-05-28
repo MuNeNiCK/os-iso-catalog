@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "generated_at": "2026-05-28T07:17:24Z",
+    "count": 2
+  },
+  "images": [
+    {
+      "id": "raspios-desktop-arm64",
+      "name": "Raspberry Pi OS Desktop",
+      "category": "linux",
+      "distro": "raspios",
+      "version": "2025-12-04",
+      "edition": "Desktop",
+      "arch": "arm64",
+      "release_type": "stable",
+      "image_type": "disk-image",
+      "format": "raw",
+      "compression": "xz",
+      "url": "https://downloads.raspberrypi.com/raspios_arm64/images/raspios_arm64-2025-12-04/2025-12-04-raspios-trixie-arm64.img.xz",
+      "homepage": "https://www.raspberrypi.com/software/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f7afb40e587746128538d84f217bf478a23af59484d4db77f2d06bf647f7c82e"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Based on Debian Trixie. Follows Debian EOL."
+      },
+      "status": "supported",
+      "notes": "Image format is .img.xz (not ISO). Flash with Raspberry Pi Imager."
+    },
+    {
+      "id": "raspios-lite-arm64",
+      "name": "Raspberry Pi OS Lite",
+      "category": "linux",
+      "distro": "raspios",
+      "version": "2025-12-04",
+      "edition": "Lite",
+      "arch": "arm64",
+      "release_type": "stable",
+      "image_type": "disk-image",
+      "format": "raw",
+      "compression": "xz",
+      "url": "https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2025-12-04/2025-12-04-raspios-trixie-arm64-lite.img.xz",
+      "homepage": "https://www.raspberrypi.com/software/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "681a775e20b53a9e4c7341d748a5a8cdc822039d8c67c1fd6ca35927abbe6290"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": false,
+        "note": "Based on Debian Trixie. Follows Debian EOL."
+      },
+      "status": "supported",
+      "notes": "Image format is .img.xz (not ISO). Flash with Raspberry Pi Imager."
+    }
+  ]
+}

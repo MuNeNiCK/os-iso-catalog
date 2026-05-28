@@ -1,6 +1,6 @@
-# OS ISO Catalog
+# OS Image Catalog
 
-Machine-readable catalog of OS ISO images with download URLs, checksums, and EOL dates.
+Machine-readable catalog of OS installation media, cloud images, and disk images with download URLs, checksums, formats, and EOL dates.
 
 Served as static JSON via GitHub Pages. Updated daily via GitHub Actions.
 
@@ -28,6 +28,9 @@ Base URL: `https://MuNeNICK.github.io/os-iso-catalog`
 | `/v1/linux.json` | Linux distributions |
 | `/v1/windows.json` | Windows images |
 | `/v1/bsd.json` | BSD family |
+| `/v1/iso.json` | ISO installation media |
+| `/v1/cloud-images.json` | Cloud images |
+| `/v1/disk-images.json` | Disk images |
 | `/v1/amd64.json` | amd64/x86_64 images |
 | `/v1/arm64.json` | arm64/aarch64 images |
 
@@ -41,7 +44,7 @@ curl -s https://MuNeNICK.github.io/os-iso-catalog/v1/supported.json \
 
 ## Coverage
 
-- **Linux**: Ubuntu, Kubuntu, Xubuntu, Debian, Fedora, Rocky Linux, AlmaLinux, CentOS Stream, openSUSE (Leap/Tumbleweed), Linux Mint, Arch, Manjaro, Kali, Alpine, Gentoo, Oracle Linux, Raspberry Pi OS, MX Linux, Pop!_OS, CachyOS, EndeavourOS, NixOS, Slackware, Tails, Qubes OS, Zorin OS, Omarchy
+- **Linux**: Ubuntu, Kubuntu, Xubuntu, Debian, Fedora, Rocky Linux, AlmaLinux, CentOS Stream, openSUSE (Leap/Tumbleweed), Linux Mint, Arch, Manjaro, Kali, Alpine, Gentoo, Oracle Linux, Amazon Linux, Raspberry Pi OS, MX Linux, Pop!_OS, CachyOS, EndeavourOS, NixOS, Slackware, Tails, Qubes OS, Zorin OS, Omarchy
 - **Windows**: Windows 11, 10, Server 2025/2022/2019
 - **BSD**: FreeBSD, OpenBSD, NetBSD
 
@@ -61,6 +64,8 @@ All currently supported versions are tracked.
 ## Auto-update
 
 `scripts/auto_update.py` uses URL templates defined in `data/images.yaml` to automatically detect new releases, update download URLs and checksums, and add new entries. Changes are submitted as a Pull Request for human review.
+
+Cloud image entries use the same tracking system where upstream URLs and checksum files are predictable. Ubuntu, Debian, Fedora, Alpine, and Amazon Linux cloud images are template-driven; rolling/latest images are link-checked and checksum automation is added per distro when the upstream format is stable enough.
 
 ### Template types
 
@@ -109,6 +114,8 @@ All currently supported versions are tracked.
   version: "1.0"
   arch: amd64
   release_type: stable     # stable | beta | rolling
+  image_type: iso          # iso | cloud-image | disk-image
+  format: iso              # iso | qcow2 | raw | tar | ...
   url: https://example.com/distro.iso
   checksum:
     algorithm: sha256

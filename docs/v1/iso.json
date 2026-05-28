@@ -2,9 +2,61 @@
   "meta": {
     "api_version": "v1",
     "generated_at": "2026-05-28T07:17:24Z",
-    "count": 151
+    "count": 133
   },
   "images": [
+    {
+      "id": "ubuntu-20.04-desktop",
+      "name": "Ubuntu 20.04.6 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Focal Fossa",
+      "version": "20.04.6",
+      "edition": "Desktop",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://releases.ubuntu.com/20.04/ubuntu-20.04.6-desktop-amd64.iso",
+      "homepage": "https://ubuntu.com/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "510ce77afcb9537f198bc7daa0e5b503b6e67aaed68146943c231baeaab94df1"
+      },
+      "eol": {
+        "standard": "2025-05-31",
+        "extended": "2030-04-02",
+        "is_rolling": false,
+        "note": "ESM via Ubuntu Pro (free for personal use)"
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "ubuntu-20.04-server",
+      "name": "Ubuntu 20.04.6 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Focal Fossa",
+      "version": "20.04.6",
+      "edition": "Server",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://releases.ubuntu.com/20.04/ubuntu-20.04.6-live-server-amd64.iso",
+      "homepage": "https://ubuntu.com/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "b8f31413336b9393ad5d8ef0282717b2ab19f007df2e9ed5196c13d8f9153c8b"
+      },
+      "eol": {
+        "standard": "2025-05-31",
+        "extended": "2030-04-02",
+        "is_rolling": false,
+        "note": "ESM via Ubuntu Pro (free for personal use)"
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
     {
       "id": "ubuntu-22.04-desktop",
       "name": "Ubuntu 22.04.5 LTS",
@@ -56,56 +108,6 @@
       "image_type": "iso"
     },
     {
-      "id": "ubuntu-22.04-cloud-amd64",
-      "name": "Ubuntu 22.04 LTS",
-      "category": "linux",
-      "distro": "ubuntu",
-      "codename": "Jammy Jellyfish",
-      "version": "22.04",
-      "edition": "Cloud image",
-      "arch": "amd64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img",
-      "homepage": "https://ubuntu.com/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "f6729b53d930d7f0c6691eb553cfa6be7109de9412125bf1bf2dc6747de8a44d"
-      },
-      "eol": {
-        "standard": "2027-04-01",
-        "extended": "2032-04-09",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "ubuntu-22.04-cloud-arm64",
-      "name": "Ubuntu 22.04 LTS",
-      "category": "linux",
-      "distro": "ubuntu",
-      "codename": "Jammy Jellyfish",
-      "version": "22.04",
-      "edition": "Cloud image",
-      "arch": "arm64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-arm64.img",
-      "homepage": "https://ubuntu.com/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "0b77a1a7e708723c8e7aef4fe9fca84f0e8845c0d66b1bbd612a5b43bf916bda"
-      },
-      "eol": {
-        "standard": "2027-04-01",
-        "extended": "2032-04-09",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
       "id": "ubuntu-24.04-desktop",
       "name": "Ubuntu 24.04.4 LTS",
       "category": "linux",
@@ -154,56 +156,6 @@
       "status": "supported",
       "format": "iso",
       "image_type": "iso"
-    },
-    {
-      "id": "ubuntu-24.04-cloud-amd64",
-      "name": "Ubuntu 24.04 LTS",
-      "category": "linux",
-      "distro": "ubuntu",
-      "codename": "Noble Numbat",
-      "version": "24.04",
-      "edition": "Cloud image",
-      "arch": "amd64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img",
-      "homepage": "https://ubuntu.com/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "53fdde898feed8b027d94baa9cfe8229867f330a1d9c49dc7d84465ee7f229f7"
-      },
-      "eol": {
-        "standard": "2029-05-31",
-        "extended": "2036-05-31",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "ubuntu-24.04-cloud-arm64",
-      "name": "Ubuntu 24.04 LTS",
-      "category": "linux",
-      "distro": "ubuntu",
-      "codename": "Noble Numbat",
-      "version": "24.04",
-      "edition": "Cloud image",
-      "arch": "arm64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-arm64.img",
-      "homepage": "https://ubuntu.com/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "6a61b967ba4a27dd1966f835a67643073ed55c2860ce3dc1cb0517282e6b8bec"
-      },
-      "eol": {
-        "standard": "2029-05-31",
-        "extended": "2036-05-31",
-        "is_rolling": false
-      },
-      "status": "supported"
     },
     {
       "id": "ubuntu-26.04-desktop",
@@ -258,6 +210,32 @@
       "image_type": "iso"
     },
     {
+      "id": "debian-11-netinst",
+      "name": "Debian 11.11 Bullseye",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bullseye",
+      "version": "11.11",
+      "edition": "netinst",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/11.11.0/amd64/iso-cd/debian-11.11.0-amd64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "cd5b2a6fc22050affa1d141adb3857af07e94ff886dca1ce17214e2761a3b316"
+      },
+      "eol": {
+        "standard": "2024-08-14",
+        "extended": "2026-08-31",
+        "is_rolling": false,
+        "note": "LTS"
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "debian-12-netinst",
       "name": "Debian 12.14",
       "category": "linux",
@@ -282,110 +260,6 @@
       "status": "supported",
       "format": "iso",
       "image_type": "iso"
-    },
-    {
-      "id": "debian-12-cloud-amd64",
-      "name": "Debian 12 Bookworm",
-      "category": "linux",
-      "distro": "debian",
-      "codename": "Bookworm",
-      "version": "12",
-      "edition": "Cloud image",
-      "arch": "amd64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2",
-      "homepage": "https://www.debian.org/",
-      "checksum": {
-        "algorithm": "sha512",
-        "value": "d872af245cb71cf70fa309b4cd9750179b0256ea3ddc0a73aaedc2e9e3a8b43cdb1c71ff89c5192485fd94ede89ebd33a38efbd34ba7e0dfe06456cabad9d8d2"
-      },
-      "eol": {
-        "standard": "2026-06-10",
-        "extended": "2028-06-30",
-        "is_rolling": false,
-        "note": "LTS"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "debian-12-cloud-arm64",
-      "name": "Debian 12 Bookworm",
-      "category": "linux",
-      "distro": "debian",
-      "codename": "Bookworm",
-      "version": "12",
-      "edition": "Cloud image",
-      "arch": "arm64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-arm64.qcow2",
-      "homepage": "https://www.debian.org/",
-      "checksum": {
-        "algorithm": "sha512",
-        "value": "48e15dcba629760e6a9553e0de612b5188465f70db99c4e0f6d25738df28ed766e391194f509714ed24092b01a0e815c2b1a41a02bfb1f32b7f09dbd00780daa"
-      },
-      "eol": {
-        "standard": "2026-06-10",
-        "extended": "2028-06-30",
-        "is_rolling": false,
-        "note": "LTS"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "debian-13-cloud-amd64",
-      "name": "Debian 13 Trixie",
-      "category": "linux",
-      "distro": "debian",
-      "codename": "Trixie",
-      "version": "13",
-      "edition": "Cloud image",
-      "arch": "amd64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud.debian.org/images/cloud/trixie/latest/debian-13-generic-amd64.qcow2",
-      "homepage": "https://www.debian.org/",
-      "checksum": {
-        "algorithm": "sha512",
-        "value": "196092d1bfb73a66f08a7e1a7c5617645d8bc1bd909d705d12c27387c087cca66d15aa09ecc1b00bf9c2e99174b61c173b388db66b58201cc70e597acff883e3"
-      },
-      "eol": {
-        "standard": "2028-08-09",
-        "extended": "2030-06-30",
-        "is_rolling": false,
-        "note": "Full support until 2028/08, LTS until 2030/06"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "debian-13-cloud-arm64",
-      "name": "Debian 13 Trixie",
-      "category": "linux",
-      "distro": "debian",
-      "codename": "Trixie",
-      "version": "13",
-      "edition": "Cloud image",
-      "arch": "arm64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud.debian.org/images/cloud/trixie/latest/debian-13-generic-arm64.qcow2",
-      "homepage": "https://www.debian.org/",
-      "checksum": {
-        "algorithm": "sha512",
-        "value": "541ba39717efe5f28e890c274149f7eb078d247ea3fe8df620262413098cf9ba71c36b8b21c9f6f1e0c7a4b572f633c5147122d6ca7040cbcd24105522301e55"
-      },
-      "eol": {
-        "standard": "2028-08-09",
-        "extended": "2030-06-30",
-        "is_rolling": false,
-        "note": "Full support until 2028/08, LTS until 2030/06"
-      },
-      "status": "supported"
     },
     {
       "id": "debian-13-live-gnome",
@@ -753,6 +627,31 @@
       },
       "status": "supported",
       "notes": "Checksum as of 2026-04-06. Verify latest at mirror.",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "opensuse-leap-15.6-dvd",
+      "name": "openSUSE Leap 15.6",
+      "category": "linux",
+      "distro": "opensuse",
+      "version": "15.6",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.opensuse.org/distribution/leap/15.6/iso/openSUSE-Leap-15.6-DVD-x86_64-Media.iso",
+      "homepage": "https://www.opensuse.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a74d4072e639c75ca127df3d869c1e57bcc44a093a969550f348a3ead561fe4f"
+      },
+      "eol": {
+        "standard": "2026-04-30",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -1153,673 +1052,6 @@
       "image_type": "iso"
     },
     {
-      "id": "raspios-desktop-arm64",
-      "name": "Raspberry Pi OS Desktop",
-      "category": "linux",
-      "distro": "raspios",
-      "version": "2025-12-04",
-      "edition": "Desktop",
-      "arch": "arm64",
-      "release_type": "stable",
-      "image_type": "disk-image",
-      "format": "raw",
-      "compression": "xz",
-      "url": "https://downloads.raspberrypi.com/raspios_arm64/images/raspios_arm64-2025-12-04/2025-12-04-raspios-trixie-arm64.img.xz",
-      "homepage": "https://www.raspberrypi.com/software/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "f7afb40e587746128538d84f217bf478a23af59484d4db77f2d06bf647f7c82e"
-      },
-      "eol": {
-        "standard": null,
-        "extended": null,
-        "is_rolling": false,
-        "note": "Based on Debian Trixie. Follows Debian EOL."
-      },
-      "status": "supported",
-      "notes": "Image format is .img.xz (not ISO). Flash with Raspberry Pi Imager."
-    },
-    {
-      "id": "raspios-lite-arm64",
-      "name": "Raspberry Pi OS Lite",
-      "category": "linux",
-      "distro": "raspios",
-      "version": "2025-12-04",
-      "edition": "Lite",
-      "arch": "arm64",
-      "release_type": "stable",
-      "image_type": "disk-image",
-      "format": "raw",
-      "compression": "xz",
-      "url": "https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2025-12-04/2025-12-04-raspios-trixie-arm64-lite.img.xz",
-      "homepage": "https://www.raspberrypi.com/software/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "681a775e20b53a9e4c7341d748a5a8cdc822039d8c67c1fd6ca35927abbe6290"
-      },
-      "eol": {
-        "standard": null,
-        "extended": null,
-        "is_rolling": false,
-        "note": "Based on Debian Trixie. Follows Debian EOL."
-      },
-      "status": "supported",
-      "notes": "Image format is .img.xz (not ISO). Flash with Raspberry Pi Imager."
-    },
-    {
-      "id": "centos-stream-10-cloud-amd64",
-      "name": "CentOS Stream 10",
-      "category": "linux",
-      "distro": "centos-stream",
-      "version": "10",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "rolling",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud.centos.org/centos/10-stream/x86_64/images/CentOS-Stream-GenericCloud-x86_64-10-latest.x86_64.qcow2",
-      "homepage": "https://www.centos.org/centos-stream/",
-      "eol": {
-        "standard": "2030-01-01",
-        "extended": null,
-        "is_rolling": true,
-        "note": "Rolling cloud image"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "centos-stream-10-cloud-arm64",
-      "name": "CentOS Stream 10",
-      "category": "linux",
-      "distro": "centos-stream",
-      "version": "10",
-      "edition": "Cloud image",
-      "arch": "aarch64",
-      "release_type": "rolling",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud.centos.org/centos/10-stream/aarch64/images/CentOS-Stream-GenericCloud-10-latest.aarch64.qcow2",
-      "homepage": "https://www.centos.org/centos-stream/",
-      "eol": {
-        "standard": "2030-01-01",
-        "extended": null,
-        "is_rolling": true,
-        "note": "Rolling cloud image"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "centos-stream-9-cloud-amd64",
-      "name": "CentOS Stream 9",
-      "category": "linux",
-      "distro": "centos-stream",
-      "version": "9",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "rolling",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud.centos.org/centos/9-stream/x86_64/images/CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.qcow2",
-      "homepage": "https://www.centos.org/centos-stream/",
-      "eol": {
-        "standard": "2027-05-31",
-        "extended": null,
-        "is_rolling": true,
-        "note": "Rolling cloud image"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "centos-stream-9-cloud-arm64",
-      "name": "CentOS Stream 9",
-      "category": "linux",
-      "distro": "centos-stream",
-      "version": "9",
-      "edition": "Cloud image",
-      "arch": "aarch64",
-      "release_type": "rolling",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cloud.centos.org/centos/9-stream/aarch64/images/CentOS-Stream-GenericCloud-9-latest.aarch64.qcow2",
-      "homepage": "https://www.centos.org/centos-stream/",
-      "eol": {
-        "standard": "2027-05-31",
-        "extended": null,
-        "is_rolling": true,
-        "note": "Rolling cloud image"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "fedora-43-cloud-amd64",
-      "name": "Fedora 43",
-      "category": "linux",
-      "distro": "fedora",
-      "version": "43",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/43/Cloud/x86_64/images/Fedora-Cloud-Base-Generic-43-1.6.x86_64.qcow2",
-      "homepage": "https://fedoraproject.org/",
-      "eol": {
-        "standard": "2026-12-09",
-        "extended": null,
-        "is_rolling": false,
-        "note": "Approximate EOL"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "fedora-43-cloud-arm64",
-      "name": "Fedora 43",
-      "category": "linux",
-      "distro": "fedora",
-      "version": "43",
-      "edition": "Cloud image",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/43/Cloud/aarch64/images/Fedora-Cloud-Base-Generic-43-1.6.aarch64.qcow2",
-      "homepage": "https://fedoraproject.org/",
-      "eol": {
-        "standard": "2026-12-09",
-        "extended": null,
-        "is_rolling": false,
-        "note": "Approximate EOL"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "opensuse-tumbleweed-cloud-amd64",
-      "name": "openSUSE Tumbleweed",
-      "category": "linux",
-      "distro": "opensuse-tumbleweed",
-      "version": "rolling",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "rolling",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://download.opensuse.org/tumbleweed/appliances/openSUSE-Tumbleweed-Minimal-VM.x86_64-Cloud.qcow2",
-      "homepage": "https://get.opensuse.org/tumbleweed/",
-      "eol": {
-        "standard": null,
-        "extended": null,
-        "is_rolling": true
-      },
-      "status": "supported"
-    },
-    {
-      "id": "opensuse-leap-16.0-cloud-amd64",
-      "name": "openSUSE Leap 16.0",
-      "category": "linux",
-      "distro": "opensuse",
-      "version": "16.0",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://download.opensuse.org/distribution/leap/16.0/appliances/Leap-16.0-Minimal-VM.x86_64-Cloud.qcow2",
-      "homepage": "https://get.opensuse.org/leap/",
-      "eol": {
-        "standard": "2027-10-31",
-        "extended": null,
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "rocky-10-cloud-amd64",
-      "name": "Rocky Linux 10",
-      "category": "linux",
-      "distro": "rocky",
-      "version": "10",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://download.rockylinux.org/pub/rocky/10/images/x86_64/Rocky-10-GenericCloud-Base.latest.x86_64.qcow2",
-      "homepage": "https://rockylinux.org/",
-      "eol": {
-        "standard": "2030-05-31",
-        "extended": "2035-05-31",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "rocky-10-cloud-arm64",
-      "name": "Rocky Linux 10",
-      "category": "linux",
-      "distro": "rocky",
-      "version": "10",
-      "edition": "Cloud image",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://download.rockylinux.org/pub/rocky/10/images/aarch64/Rocky-10-GenericCloud-Base.latest.aarch64.qcow2",
-      "homepage": "https://rockylinux.org/",
-      "eol": {
-        "standard": "2030-05-31",
-        "extended": "2035-05-31",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "rocky-9-cloud-amd64",
-      "name": "Rocky Linux 9",
-      "category": "linux",
-      "distro": "rocky",
-      "version": "9",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://download.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-Base.latest.x86_64.qcow2",
-      "homepage": "https://rockylinux.org/",
-      "eol": {
-        "standard": "2027-05-31",
-        "extended": "2032-05-31",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "rocky-9-cloud-arm64",
-      "name": "Rocky Linux 9",
-      "category": "linux",
-      "distro": "rocky",
-      "version": "9",
-      "edition": "Cloud image",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://download.rockylinux.org/pub/rocky/9/images/aarch64/Rocky-9-GenericCloud-Base.latest.aarch64.qcow2",
-      "homepage": "https://rockylinux.org/",
-      "eol": {
-        "standard": "2027-05-31",
-        "extended": "2032-05-31",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "alma-10-cloud-amd64",
-      "name": "AlmaLinux 10",
-      "category": "linux",
-      "distro": "almalinux",
-      "version": "10",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://repo.almalinux.org/almalinux/10/cloud/x86_64/images/AlmaLinux-10-GenericCloud-latest.x86_64.qcow2",
-      "homepage": "https://almalinux.org/",
-      "eol": {
-        "standard": "2030-05-31",
-        "extended": "2035-05-31",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "alma-10-cloud-arm64",
-      "name": "AlmaLinux 10",
-      "category": "linux",
-      "distro": "almalinux",
-      "version": "10",
-      "edition": "Cloud image",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://repo.almalinux.org/almalinux/10/cloud/aarch64/images/AlmaLinux-10-GenericCloud-latest.aarch64.qcow2",
-      "homepage": "https://almalinux.org/",
-      "eol": {
-        "standard": "2030-05-31",
-        "extended": "2035-05-31",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "alma-9-cloud-amd64",
-      "name": "AlmaLinux 9",
-      "category": "linux",
-      "distro": "almalinux",
-      "version": "9",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-GenericCloud-latest.x86_64.qcow2",
-      "homepage": "https://almalinux.org/",
-      "eol": {
-        "standard": "2027-05-31",
-        "extended": "2032-05-31",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "alma-9-cloud-arm64",
-      "name": "AlmaLinux 9",
-      "category": "linux",
-      "distro": "almalinux",
-      "version": "9",
-      "edition": "Cloud image",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://repo.almalinux.org/almalinux/9/cloud/aarch64/images/AlmaLinux-9-GenericCloud-latest.aarch64.qcow2",
-      "homepage": "https://almalinux.org/",
-      "eol": {
-        "standard": "2027-05-31",
-        "extended": "2032-05-31",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "archlinux-cloud-amd64",
-      "name": "Arch Linux",
-      "category": "linux",
-      "distro": "archlinux",
-      "version": "rolling",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "rolling",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://geo.mirror.pkgbuild.com/images/latest/Arch-Linux-x86_64-cloudimg.qcow2",
-      "homepage": "https://archlinux.org/",
-      "eol": {
-        "standard": null,
-        "extended": null,
-        "is_rolling": true
-      },
-      "status": "supported"
-    },
-    {
-      "id": "oracle-9-cloud-amd64",
-      "name": "Oracle Linux 9",
-      "category": "linux",
-      "distro": "oracle",
-      "version": "9",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://yum.oracle.com/templates/OracleLinux/OL9/u7/x86_64/OL9U7_x86_64-kvm-b269.qcow2",
-      "homepage": "https://www.oracle.com/linux/",
-      "eol": {
-        "standard": "2032-06-30",
-        "extended": "2035-06-30",
-        "is_rolling": false,
-        "note": "Premier Support 10 years + Extended Support"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "oracle-9-cloud-arm64",
-      "name": "Oracle Linux 9",
-      "category": "linux",
-      "distro": "oracle",
-      "version": "9",
-      "edition": "Cloud image",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://yum.oracle.com/templates/OracleLinux/OL9/u7/aarch64/OL9U7_aarch64-kvm-cloud-b158.qcow2",
-      "homepage": "https://www.oracle.com/linux/",
-      "eol": {
-        "standard": "2032-06-30",
-        "extended": "2035-06-30",
-        "is_rolling": false,
-        "note": "Premier Support 10 years + Extended Support"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "alpine-3.23-cloud-amd64",
-      "name": "Alpine Linux 3.23",
-      "category": "linux",
-      "distro": "alpine",
-      "version": "3.23",
-      "edition": "Cloud image",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/cloud/nocloud_alpine-3.23.4-x86_64-uefi-cloudinit-r0.qcow2",
-      "homepage": "https://alpinelinux.org/",
-      "checksum": {
-        "algorithm": "sha512",
-        "value": "849196e26640b33fb1f106d46cebdf341c715f7f49363564eacece8097464b6af7041618e94c4eb1a006394663252a86c0fb3158fee5d0ffb094899730679a71"
-      },
-      "eol": {
-        "standard": "2027-11-01",
-        "extended": null,
-        "is_rolling": false,
-        "note": "Current latest"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "alpine-3.23-cloud-arm64",
-      "name": "Alpine Linux 3.23",
-      "category": "linux",
-      "distro": "alpine",
-      "version": "3.23",
-      "edition": "Cloud image",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/cloud/nocloud_alpine-3.23.4-aarch64-uefi-cloudinit-r0.qcow2",
-      "homepage": "https://alpinelinux.org/",
-      "checksum": {
-        "algorithm": "sha512",
-        "value": "737b0eb365944ffcf6da477c059c105bbde222942fd5a8380c07db088365b18dbc60a0f2824ea9a3904d57e194e0d05a7074302c3ebc104d0aecb6ddc6ffd91c"
-      },
-      "eol": {
-        "standard": "2027-11-01",
-        "extended": null,
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "amazon-linux-2023-cloud-amd64",
-      "name": "Amazon Linux 2023",
-      "category": "linux",
-      "distro": "amazon-linux",
-      "version": "2023",
-      "edition": "KVM cloud image",
-      "arch": "x86_64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.11.20260526.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
-      "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "450dd0dc72d705f1c1df14a43f4f9c9a8e80b6ceb781b3ad3beb4d3a8b7663d6"
-      },
-      "eol": {
-        "standard": "2027-06-30",
-        "extended": "2029-06-30",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "amazon-linux-2023-cloud-arm64",
-      "name": "Amazon Linux 2023",
-      "category": "linux",
-      "distro": "amazon-linux",
-      "version": "2023",
-      "edition": "KVM cloud image",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.11.20260526.0-kernel-6.1-arm64.xfs.gpt.qcow2",
-      "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "f2def27dfe3126b33c8bd07eec0414cb6a82b94923db0a21978330c3f9d06d90"
-      },
-      "eol": {
-        "standard": "2027-06-30",
-        "extended": "2029-06-30",
-        "is_rolling": false
-      },
-      "status": "supported"
-    },
-    {
-      "id": "freebsd-15.0-cloud-amd64",
-      "name": "FreeBSD 15.0-RELEASE",
-      "category": "bsd",
-      "distro": "freebsd",
-      "version": "15.0",
-      "edition": "Cloud image",
-      "arch": "amd64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "compression": "xz",
-      "url": "https://download.freebsd.org/releases/VM-IMAGES/15.0-RELEASE/amd64/Latest/FreeBSD-15.0-RELEASE-amd64-BASIC-CLOUDINIT-ufs.qcow2.xz",
-      "homepage": "https://www.freebsd.org/",
-      "eol": {
-        "standard": "2029-12-01",
-        "extended": null,
-        "is_rolling": false,
-        "note": "Approximate EOL"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "freebsd-15.0-cloud-arm64",
-      "name": "FreeBSD 15.0-RELEASE",
-      "category": "bsd",
-      "distro": "freebsd",
-      "version": "15.0",
-      "edition": "Cloud image",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "compression": "xz",
-      "url": "https://download.freebsd.org/releases/VM-IMAGES/15.0-RELEASE/aarch64/Latest/FreeBSD-15.0-RELEASE-arm64-aarch64-BASIC-CLOUDINIT-ufs.qcow2.xz",
-      "homepage": "https://www.freebsd.org/",
-      "eol": {
-        "standard": "2029-12-01",
-        "extended": null,
-        "is_rolling": false,
-        "note": "Current stable"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "gentoo-cloud-amd64",
-      "name": "Gentoo",
-      "category": "linux",
-      "distro": "gentoo",
-      "version": "rolling",
-      "edition": "Cloud image",
-      "arch": "amd64",
-      "release_type": "rolling",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://distfiles.gentoo.org/releases/amd64/autobuilds/20260524T170105Z/di-amd64-cloudinit-20260524T170105Z.qcow2",
-      "homepage": "https://www.gentoo.org/",
-      "eol": {
-        "standard": null,
-        "extended": null,
-        "is_rolling": true,
-        "note": "Rolling release - cloud image is a bootstrap snapshot"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "gentoo-cloud-arm64",
-      "name": "Gentoo",
-      "category": "linux",
-      "distro": "gentoo",
-      "version": "rolling",
-      "edition": "Cloud image",
-      "arch": "aarch64",
-      "release_type": "rolling",
-      "image_type": "cloud-image",
-      "format": "qcow2",
-      "url": "https://distfiles.gentoo.org/releases/arm64/autobuilds/20260524T234603Z/di-arm64-cloudinit-20260524T234603Z.qcow2",
-      "homepage": "https://www.gentoo.org/",
-      "eol": {
-        "standard": null,
-        "extended": null,
-        "is_rolling": true,
-        "note": "Rolling release - cloud image is a bootstrap snapshot"
-      },
-      "status": "supported"
-    },
-    {
-      "id": "kali-cloud-amd64",
-      "name": "Kali Linux",
-      "category": "linux",
-      "distro": "kali",
-      "version": "rolling",
-      "edition": "Cloud image",
-      "arch": "amd64",
-      "release_type": "rolling",
-      "image_type": "cloud-image",
-      "format": "tar",
-      "compression": "xz",
-      "url": "https://kali.download/cloud-images/current/kali-linux-2026.1-cloud-genericcloud-amd64.tar.xz",
-      "homepage": "https://www.kali.org/",
-      "eol": {
-        "standard": null,
-        "extended": null,
-        "is_rolling": true
-      },
-      "status": "supported"
-    },
-    {
-      "id": "kali-cloud-arm64",
-      "name": "Kali Linux",
-      "category": "linux",
-      "distro": "kali",
-      "version": "rolling",
-      "edition": "Cloud image",
-      "arch": "arm64",
-      "release_type": "rolling",
-      "image_type": "cloud-image",
-      "format": "tar",
-      "compression": "xz",
-      "url": "https://kali.download/cloud-images/current/kali-linux-2026.1-cloud-genericcloud-arm64.tar.xz",
-      "homepage": "https://www.kali.org/",
-      "eol": {
-        "standard": null,
-        "extended": null,
-        "is_rolling": true
-      },
-      "status": "supported"
-    },
-    {
       "id": "windows-11-25h2",
       "name": "Windows 11 25H2",
       "category": "windows",
@@ -1837,6 +1069,28 @@
         "note": "Home/Pro. Use Media Creation Tool to download."
       },
       "status": "supported",
+      "notes": "Direct ISO link is dynamically generated by Microsoft.",
+      "format": "unknown",
+      "image_type": "iso"
+    },
+    {
+      "id": "windows-10-22h2",
+      "name": "Windows 10 22H2",
+      "category": "windows",
+      "distro": "windows",
+      "version": "22H2",
+      "edition": "Consumer",
+      "arch": "x64",
+      "release_type": "stable",
+      "download_page": "https://www.microsoft.com/en-us/software-download/windows10",
+      "homepage": "https://www.microsoft.com/windows",
+      "eol": {
+        "standard": "2025-10-14",
+        "extended": "2026-10-13",
+        "is_rolling": false,
+        "note": "Standard ended. ESU available until 2026/10."
+      },
+      "status": "eol-extended",
       "notes": "Direct ISO link is dynamically generated by Microsoft.",
       "format": "unknown",
       "image_type": "iso"
@@ -1881,6 +1135,52 @@
       },
       "status": "supported",
       "format": "unknown",
+      "image_type": "iso"
+    },
+    {
+      "id": "windows-server-2019-eval",
+      "name": "Windows Server 2019 Evaluation",
+      "category": "windows",
+      "distro": "windows-server",
+      "version": "2019",
+      "edition": "Evaluation",
+      "arch": "x64",
+      "release_type": "stable",
+      "download_page": "https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019",
+      "homepage": "https://www.microsoft.com/en-us/windows-server",
+      "eol": {
+        "standard": "2024-01-09",
+        "extended": "2029-01-09",
+        "is_rolling": false,
+        "note": "180-day evaluation. Register to download."
+      },
+      "status": "eol-extended",
+      "format": "unknown",
+      "image_type": "iso"
+    },
+    {
+      "id": "freebsd-13.5",
+      "name": "FreeBSD 13.5-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "13.5",
+      "edition": "disc1",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-amd64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "12ada1eb745df5b4f42a1afde4f0d2f333d389c8a7f07244e562b922443c2de7"
+      },
+      "eol": {
+        "standard": "2026-04-30",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "eol",
+      "format": "iso",
       "image_type": "iso"
     },
     {
@@ -1929,6 +1229,31 @@
         "note": "Approximate EOL"
       },
       "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "openbsd-7.7",
+      "name": "OpenBSD 7.7",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "7.7",
+      "edition": "install",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/7.7/amd64/install77.iso",
+      "homepage": "https://www.openbsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "da0106e39463f015524dca806f407c37a9bdd17e6dfffe533b06a2dd2edd8a27"
+      },
+      "eol": {
+        "standard": "2026-05-19",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -3132,6 +2457,56 @@
       "image_type": "iso"
     },
     {
+      "id": "opensuse-leap-15.6-dvd-arm64",
+      "name": "openSUSE Leap 15.6",
+      "category": "linux",
+      "distro": "opensuse",
+      "version": "15.6",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.opensuse.org/distribution/leap/15.6/iso/openSUSE-Leap-15.6-DVD-aarch64-Media.iso",
+      "homepage": "https://www.opensuse.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "6ecade658ef3e4dd7175176781f80fcd070250fe7e922f6240224ff810755ac6"
+      },
+      "eol": {
+        "standard": "2026-04-30",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "openbsd-7.7-arm64",
+      "name": "OpenBSD 7.7",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "7.7",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/7.7/arm64/install77.iso",
+      "homepage": "https://www.openbsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "217c19dc76fcbcdec7ca17dcd094d35f8c22180f208f0a4358d91bf650a4dc0e"
+      },
+      "eol": {
+        "standard": "2026-05-19",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "openbsd-7.8-arm64",
       "name": "OpenBSD 7.8",
       "category": "bsd",
@@ -3254,6 +2629,32 @@
       "image_type": "iso"
     },
     {
+      "id": "ubuntu-20.04-server-arm64",
+      "name": "Ubuntu 20.04.5 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "codename": "Focal Fossa",
+      "version": "20.04.5",
+      "edition": "Server",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.5-live-server-arm64.iso",
+      "homepage": "https://ubuntu.com/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e42d6373dd39173094af5c26cbf2497770426f42049f8b9ea3e60ce35bebdedf"
+      },
+      "eol": {
+        "standard": "2025-05-31",
+        "extended": "2030-04-02",
+        "is_rolling": false,
+        "note": "ESM via Ubuntu Pro (free for personal use)"
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "ubuntu-26.04-desktop-arm64",
       "name": "Ubuntu 26.04 LTS",
       "category": "linux",
@@ -3302,6 +2703,32 @@
         "note": "Stable release: 2026-04-23. Daily build - checksum changes."
       },
       "status": "beta",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "debian-11-netinst-arm64",
+      "name": "Debian 11.11 Bullseye",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bullseye",
+      "version": "11.11",
+      "edition": "netinst",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/11.11.0/arm64/iso-cd/debian-11.11.0-arm64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "c81b6081d5dc5cfac49310b104eb9843252fd3c97cedbcd69ec0388798e7ef7e"
+      },
+      "eol": {
+        "standard": "2024-08-14",
+        "extended": "2026-08-31",
+        "is_rolling": false,
+        "note": "LTS"
+      },
+      "status": "eol-extended",
       "format": "iso",
       "image_type": "iso"
     },
@@ -3523,6 +2950,102 @@
       "image_type": "iso"
     },
     {
+      "id": "rocky-8.10-dvd",
+      "name": "Rocky Linux 8.10",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "8.10",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.10-x86_64-dvd1.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "642ada8a49dbeca8cca6543b31196019ee3d649a0163b5db0e646c7409364eeb"
+      },
+      "eol": {
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-8.10-minimal",
+      "name": "Rocky Linux 8.10",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "8.10",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.10-x86_64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2c735d3b0de921bd671a0e2d08461e3593ac84f64cdaef32e3ed56ba01f74f4b"
+      },
+      "eol": {
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-8.10-dvd-arm64",
+      "name": "Rocky Linux 8.10",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "8.10",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/8/isos/aarch64/Rocky-8.10-aarch64-dvd1.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "fbc3d12b6bd4fadeb7aa11c133afc927a6df5414f3ce47d6093706a4ef86e0a8"
+      },
+      "eol": {
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-8.10-minimal-arm64",
+      "name": "Rocky Linux 8.10",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "8.10",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/8/isos/aarch64/Rocky-8.10-aarch64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "94b7360334ecf90443bcadff94c69b0f6a8f9b1f051c0caf0e6dfe867bd865da"
+      },
+      "eol": {
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "alma-9.7-dvd-arm64",
       "name": "AlmaLinux 9.7",
       "category": "linux",
@@ -3567,6 +3090,127 @@
         "is_rolling": false
       },
       "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-8.10-dvd",
+      "name": "AlmaLinux 8.10",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "8.10",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/8/isos/x86_64/AlmaLinux-8.10-x86_64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "463fa92155b886e31627f6713e1c2824343762245a914715ffd6f2efc300b7a1"
+      },
+      "eol": {
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-8.10-minimal",
+      "name": "AlmaLinux 8.10",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "8.10",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/8/isos/x86_64/AlmaLinux-8.10-x86_64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e524329700abe47ce1f509bed7e2d3c68b336a54c712daa1b492b2429a64d419"
+      },
+      "eol": {
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-8.10-dvd-arm64",
+      "name": "AlmaLinux 8.10",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "8.10",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/8/isos/aarch64/AlmaLinux-8.10-aarch64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "49feeaa7876ede4f544ae7ddcf5a8d63649bc087aa0f1c75eac38ee456b99736"
+      },
+      "eol": {
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-8.10-minimal-arm64",
+      "name": "AlmaLinux 8.10",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "8.10",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/8/isos/aarch64/AlmaLinux-8.10-aarch64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e2fcef261a236fb19e69fceffce7a31b1afafbe8afe9f24553677684571cea81"
+      },
+      "eol": {
+        "standard": "2024-05-31",
+        "extended": "2029-05-31",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "freebsd-13.5-arm64",
+      "name": "FreeBSD 13.5-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "13.5",
+      "edition": "disc1",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/13.5/FreeBSD-13.5-RELEASE-arm64-aarch64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f02e02ff9e73320a8a3736178baf9c830da63415ffe9e68161db3fd83f1dc49d"
+      },
+      "eol": {
+        "standard": "2026-04-30",
+        "extended": null,
+        "is_rolling": false,
+        "note": "EOL imminent"
+      },
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },

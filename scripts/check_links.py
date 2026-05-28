@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check if ISO download URLs are reachable."""
+"""Check if image download URLs are reachable."""
 
 import sys
 import time

@@ -1,8 +1,9 @@
 openapi: 3.0.3
 info:
-  title: OS ISO Catalog API
+  title: OS Image Catalog API
   description: |
-    Machine-readable catalog of OS ISO images with download URLs, checksums, and EOL dates.
+    Machine-readable catalog of OS installation media, cloud images, and disk images
+    with download URLs, checksums, formats, and EOL dates.
 
     All endpoints return static JSON generated daily from `data/images.yaml`.
   version: "1.0.0"
@@ -98,6 +99,48 @@ paths:
               schema:
                 $ref: "#/components/schemas/ImageResponse"
 
+  /v1/iso.json:
+    get:
+      summary: ISO images
+      description: Images where `image_type` is `iso`.
+      operationId: getIso
+      tags: [Filter by Image Type]
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageResponse"
+
+  /v1/cloud-images.json:
+    get:
+      summary: Cloud images
+      description: Images where `image_type` is `cloud-image`.
+      operationId: getCloudImages
+      tags: [Filter by Image Type]
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageResponse"
+
+  /v1/disk-images.json:
+    get:
+      summary: Disk images
+      description: Images where `image_type` is `disk-image`.
+      operationId: getDiskImages
+      tags: [Filter by Image Type]
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImageResponse"
+
   /v1/amd64.json:
     get:
       summary: amd64 images
@@ -155,7 +198,7 @@ components:
 
     Image:
       type: object
-      required: [id, name, category, version, arch, status, eol]
+      required: [id, name, category, version, arch, image_type, format, status, eol]
       properties:
         id:
           type: string
@@ -193,11 +236,27 @@ components:
           type: string
           enum: [stable, beta, rolling]
           example: stable
+        image_type:
+          type: string
+          enum: [iso, cloud-image, disk-image]
+          description: Download artifact role.
+          example: cloud-image
+        format:
+          type: string
+          enum: [iso, qcow2, raw, vhd, vhdx, vmdk, ova, tar, unknown]
+          description: Image container or disk format.
+          example: qcow2
+        compression:
+          type: string
+          nullable: true
+          enum: [xz, gz, bz2, zst, zip]
+          description: Compression applied to the downloadable artifact.
+          example: xz
         url:
           type: string
           format: uri
-          description: Direct ISO download URL
-          example: "https://releases.ubuntu.com/24.04/ubuntu-24.04.2-desktop-amd64.iso"
+          description: Direct image download URL
+          example: "https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img"
         download_page:
           type: string
           format: uri

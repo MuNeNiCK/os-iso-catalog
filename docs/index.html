@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OS ISO Catalog</title>
+  <title>OS Image Catalog</title>
   <style>
     :root {
       --bg: #ffffff; --bg2: #f8f9fa; --bg3: #f0f2f5; --fg: #1a1a1a; --muted: #6c757d;
@@ -183,8 +183,8 @@
 <body>
   <div class="container">
     <header>
-      <h1>OS ISO Catalog</h1>
-      <p>OS ISO images with download URLs, checksums, and EOL status.</p>
+      <h1>OS Image Catalog</h1>
+      <p>OS installation media, cloud images, and disk images with download URLs, checksums, and EOL status.</p>
       <nav>
         <a href="api.html">API Docs</a>
         <a href="v1/all.json">Raw JSON</a>
@@ -310,7 +310,7 @@
         if (currentStatus === 'supported' && img.status !== 'supported' && img.status !== 'beta') return false;
         if (currentStatus === 'eol' && img.status !== 'eol' && img.status !== 'eol-extended') return false;
         if (query) {
-          const haystack = `${img.name} ${img.distro} ${img.version} ${img.arch} ${img.id} ${img.edition || ''} ${img.codename || ''} ${img.release_type || ''} ${img.eol?.note || ''}`.toLowerCase();
+          const haystack = `${img.name} ${img.distro} ${img.version} ${img.arch} ${img.id} ${img.edition || ''} ${img.codename || ''} ${img.release_type || ''} ${img.image_type || ''} ${img.format || ''} ${img.compression || ''} ${img.eol?.note || ''}`.toLowerCase();
           if (!haystack.includes(query)) return false;
         }
         return true;
@@ -371,6 +371,9 @@
       const infoParts = [];
       if (img.edition) infoParts.push(`Edition: ${esc(img.edition)}`);
       if (img.codename) infoParts.push(`Codename: ${esc(img.codename)}`);
+      if (img.image_type) infoParts.push(`Image type: ${esc(img.image_type)}`);
+      if (img.format) infoParts.push(`Format: ${esc(img.format)}`);
+      if (img.compression) infoParts.push(`Compression: ${esc(img.compression)}`);
       infoParts.push(`Release type: ${esc(img.release_type || '-')}`);
       if (img.eol?.extended) infoParts.push(`Extended EOL: ${esc(img.eol.extended)}`);
       if (img.eol?.note) infoParts.push(`Note: ${esc(img.eol.note)}`);
@@ -415,7 +418,7 @@
         const editionTag = img.edition ? `<span class="edition-tag">${esc(img.edition)}</span>` : '';
         const isExpanded = expandedId === img.id;
         const dlUrl = img.url || img.download_page || '';
-        const dlLabel = img.url ? 'ISO' : 'Page';
+        const dlLabel = img.url ? downloadLabel(img) : 'Page';
 
         html += `<tr class="image-row${isExpanded ? ' expanded' : ''}" data-id="${esc(img.id)}">
           <td><strong>${esc(img.name)}</strong>${editionTag}</td>
@@ -451,6 +454,13 @@
           arrow.textContent = '';
         }
       });
+    }
+
+    function downloadLabel(img) {
+      if (img.image_type === 'cloud-image') return 'Cloud';
+      if (img.image_type === 'disk-image') return 'Disk';
+      if (img.format) return img.format.toUpperCase();
+      return 'Image';
     }
 
     function copyChecksum(btn, value) {

@@ -1,10 +1,54 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-27T07:24:24Z",
-    "count": 18
+    "generated_at": "2026-05-28T07:17:24Z",
+    "count": 20
   },
   "images": [
+    {
+      "id": "freebsd-15.0-cloud-amd64",
+      "name": "FreeBSD 15.0-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "15.0",
+      "edition": "Cloud image",
+      "arch": "amd64",
+      "release_type": "stable",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "compression": "xz",
+      "url": "https://download.freebsd.org/releases/VM-IMAGES/15.0-RELEASE/amd64/Latest/FreeBSD-15.0-RELEASE-amd64-BASIC-CLOUDINIT-ufs.qcow2.xz",
+      "homepage": "https://www.freebsd.org/",
+      "eol": {
+        "standard": "2029-12-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Approximate EOL"
+      },
+      "status": "supported"
+    },
+    {
+      "id": "freebsd-15.0-cloud-arm64",
+      "name": "FreeBSD 15.0-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "15.0",
+      "edition": "Cloud image",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "compression": "xz",
+      "url": "https://download.freebsd.org/releases/VM-IMAGES/15.0-RELEASE/aarch64/Latest/FreeBSD-15.0-RELEASE-arm64-aarch64-BASIC-CLOUDINIT-ufs.qcow2.xz",
+      "homepage": "https://www.freebsd.org/",
+      "eol": {
+        "standard": "2029-12-01",
+        "extended": null,
+        "is_rolling": false,
+        "note": "Current stable"
+      },
+      "status": "supported"
+    },
     {
       "id": "freebsd-13.5",
       "name": "FreeBSD 13.5-RELEASE",
@@ -26,7 +70,9 @@
         "is_rolling": false,
         "note": "EOL imminent"
       },
-      "status": "eol"
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "freebsd-14.4",
@@ -48,7 +94,9 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "freebsd-15.0",
@@ -71,7 +119,9 @@
         "is_rolling": false,
         "note": "Approximate EOL"
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "openbsd-7.7",
@@ -94,7 +144,9 @@
         "is_rolling": false,
         "note": "EOL imminent"
       },
-      "status": "eol"
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "openbsd-7.8",
@@ -116,7 +168,9 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "netbsd-9.4",
@@ -139,7 +193,9 @@
         "is_rolling": false,
         "note": "Supported until NetBSD 11.0 release + 1 month"
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "netbsd-10.1",
@@ -162,7 +218,9 @@
         "is_rolling": false,
         "note": "Current stable"
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "freebsd-14.4-arm64",
@@ -184,7 +242,9 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "freebsd-15.0-arm64",
@@ -207,7 +267,9 @@
         "is_rolling": false,
         "note": "Current stable"
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "openbsd-7.7-arm64",
@@ -230,7 +292,9 @@
         "is_rolling": false,
         "note": "EOL imminent"
       },
-      "status": "eol"
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "openbsd-7.8-arm64",
@@ -252,7 +316,9 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "openbsd-7.9",
@@ -274,7 +340,9 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "openbsd-7.9-arm64",
@@ -296,7 +364,9 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "netbsd-9.4-arm64",
@@ -319,7 +389,9 @@
         "is_rolling": false,
         "note": "Supported until NetBSD 11.0 release + 1 month"
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "netbsd-10.1-arm64",
@@ -342,7 +414,9 @@
         "is_rolling": false,
         "note": "Current stable"
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "freebsd-13.5-arm64",
@@ -365,7 +439,9 @@
         "is_rolling": false,
         "note": "EOL imminent"
       },
-      "status": "eol"
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "freebsd-14.3",
@@ -387,7 +463,9 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "freebsd-14.3-arm64",
@@ -409,7 +487,9 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported"
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
     }
   ]
 }

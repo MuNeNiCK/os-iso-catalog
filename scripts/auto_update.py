@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Auto-update ISO catalog entries using URL templates and endoflife.date API.
+"""Auto-update image catalog entries using URL templates and endoflife.date API.
 
 For distros with update_templates in tracking config:
   - Detects new major versions and adds entries
@@ -125,6 +125,8 @@ def make_version_vars(cycle, latest, codename=None):
     cycle_str = str(cycle)
     latest_str = str(latest)
     latest_parts = latest_str.split(".")
+    codename_str = codename or ""
+    codename_slug = codename_str.split()[0].lower() if codename_str else ""
 
     return {
         "cycle": cycle_str,
@@ -132,7 +134,8 @@ def make_version_vars(cycle, latest, codename=None):
         "major": latest_parts[0] if latest_parts else cycle_str,
         "minor": latest_parts[1] if len(latest_parts) > 1 else "",
         "patch": latest_parts[2] if len(latest_parts) > 2 else "",
-        "codename": codename or "",
+        "codename": codename_str,
+        "codename_slug": codename_slug,
         "version_no_dots": cycle_str.replace(".", ""),
     }
 
@@ -164,6 +167,10 @@ def parse_checksum_line(line, target_filename):
     m = re.match(r"([0-9a-fA-F]+)\s+\*?(.+)", line)
     if m and m.group(2).strip() == target_filename:
         return m.group(1).lower()
+
+    # Single-hash files such as Alpine's .sha256/.sha512 sidecars.
+    if re.fullmatch(r"[0-9a-fA-F]{32,}", line):
+        return line.lower()
 
     return None
 
@@ -234,24 +241,31 @@ def find_insert_position(images, distro):
 def build_new_entry(variant, variables, url, checksum_value,
                     templates_config, rel, distro):
     """Build a new image entry dict."""
-    algorithm = templates_config.get("checksum_algorithm", "sha256")
+    algorithm = variant.get(
+        "checksum_algorithm", templates_config.get("checksum_algorithm", "sha256")
+    )
     std_eol, ext_eol = extract_eol_dates(rel)
     is_rolling = rel.get("eol") is False or templates_config.get(
         "rolling_checksum", False)
     release_type = "rolling" if is_rolling else "stable"
+    version = render(variant.get("version_template", "{latest}"), variables)
 
     entry = {
         "id": render(variant["id_template"], variables),
         "name": render(variant["name_template"], variables),
         "category": templates_config.get("category", "linux"),
         "distro": distro,
-        "version": variables["latest"],
+        "version": version,
         "edition": variant.get("edition", ""),
         "arch": variant["arch"],
         "release_type": release_type,
         "url": url,
         "homepage": templates_config.get("homepage", ""),
     }
+
+    for field in ("image_type", "format", "compression"):
+        if variant.get(field):
+            entry[field] = variant[field]
 
     codename = variables.get("codename")
     if codename:
@@ -298,7 +312,7 @@ def build_new_entry(variant, variables, url, checksum_value,
 
 
 def update_image(img, url, checksum_value, new_version, new_name,
-                 algorithm="sha256"):
+                 algorithm="sha256", variant=None):
     """Update mutable fields of an existing image. Returns list of changes."""
     changes = []
     img_id = img["id"]
@@ -325,6 +339,13 @@ def update_image(img, url, checksum_value, new_version, new_name,
             img["checksum"] = {"algorithm": algorithm, "value": checksum_value}
             changes.append(f"{img_id}: checksum updated")
 
+    if variant:
+        for field in ("image_type", "format", "compression"):
+            value = variant.get(field)
+            if value and img.get(field) != value:
+                img[field] = value
+                changes.append(f"{img_id}: {field} updated")
+
     return changes
 
 
@@ -350,7 +371,7 @@ def process_static(distro, rules, templates, images, releases):
     """Process static-template distros."""
     changes = []
     match_depth = rules.get("match_depth", 1)
-    algorithm = templates.get("checksum_algorithm", "sha256")
+    base_algorithm = templates.get("checksum_algorithm", "sha256")
 
     for rel in releases:
         cycle = str(rel.get("cycle", ""))
@@ -362,6 +383,8 @@ def process_static(distro, rules, templates, images, releases):
             image_id = render(variant["id_template"], variables)
             url = render(variant["url_template"], variables)
             name = render(variant["name_template"], variables)
+            version = render(variant.get("version_template", "{latest}"), variables)
+            algorithm = variant.get("checksum_algorithm", base_algorithm)
 
             # Resolve checksum
             checksum_value = None
@@ -376,7 +399,7 @@ def process_static(distro, rules, templates, images, releases):
             if existing:
                 # Update existing entry
                 ch = update_image(existing, url, checksum_value,
-                                  latest, name, algorithm)
+                                  version, name, algorithm, variant)
                 changes.extend(ch)
             else:
                 # Check URL exists before adding
@@ -397,7 +420,7 @@ def process_static(distro, rules, templates, images, releases):
 def process_directory_parse(distro, rules, templates, images, releases):
     """Process directory-parse-template distros."""
     changes = []
-    algorithm = templates.get("checksum_algorithm", "sha256")
+    base_algorithm = templates.get("checksum_algorithm", "sha256")
 
     for rel in releases:
         cycle = str(rel.get("cycle", ""))
@@ -420,6 +443,8 @@ def process_directory_parse(distro, rules, templates, images, releases):
             # Build final URL
             url = dir_url.rstrip("/") + "/" + filename
             name = render(variant["name_template"], variables)
+            version = render(variant.get("version_template", "{latest}"), variables)
+            algorithm = variant.get("checksum_algorithm", base_algorithm)
 
             # Resolve checksum
             checksum_value = None
@@ -441,7 +466,7 @@ def process_directory_parse(distro, rules, templates, images, releases):
             idx, existing = find_image(images, image_id)
             if existing:
                 ch = update_image(existing, url, checksum_value,
-                                  latest, name, algorithm)
+                                  version, name, algorithm, variant)
                 changes.extend(ch)
             else:
                 if url_exists(url):
@@ -468,11 +493,17 @@ def process_rolling_checksum(distro, templates, images):
         # Find all matching images by distro + edition + arch
         edition = variant.get("edition", "")
         arch = variant["arch"]
+        image_type = variant.get("image_type")
+        image_format = variant.get("format")
 
         for img in images:
             if (img.get("distro") != distro
                     or img.get("edition") != edition
                     or img.get("arch") != arch):
+                continue
+            if image_type and img.get("image_type") != image_type:
+                continue
+            if image_format and img.get("format") != image_format:
                 continue
 
             checksums_url = variant.get("checksums_url")
@@ -489,7 +520,7 @@ def process_rolling_checksum(distro, templates, images):
 
             if checksum_value:
                 ch = update_image(img, None, checksum_value,
-                                  None, None, algorithm)
+                                  None, None, algorithm, variant)
                 changes.extend(ch)
 
     return changes
