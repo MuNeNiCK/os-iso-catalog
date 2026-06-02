@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-05-28T07:40:59Z",
+    "generated_at": "2026-06-02T07:36:42Z",
     "count": 114
   },
   "images": [
@@ -353,7 +353,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "d872af245cb71cf70fa309b4cd9750179b0256ea3ddc0a73aaedc2e9e3a8b43cdb1c71ff89c5192485fd94ede89ebd33a38efbd34ba7e0dfe06456cabad9d8d2"
+        "value": "c39495a4d81927810e93f825b0b135a08e798f46dc748e78d6bfa2984f93ffc4bcfdc7a6b7f97666ad66fbae3e0f21debd24466ce1d844d0de7856fdc7537d58"
       },
       "eol": {
         "standard": "2026-06-10",
@@ -379,7 +379,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "196092d1bfb73a66f08a7e1a7c5617645d8bc1bd909d705d12c27387c087cca66d15aa09ecc1b00bf9c2e99174b61c173b388db66b58201cc70e597acff883e3"
+        "value": "97675b27e69153002c4e13644e36200c8f9067f661dca00918c54f1cacbdb88d4bff8c0fbf5cf5d63a0397bdf0cc472d7a6372bae5281bf7ced756249c10f8a2"
       },
       "eol": {
         "standard": "2028-08-09",
