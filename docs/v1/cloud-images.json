@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-02T14:32:44Z",
-    "count": 48
+    "generated_at": "2026-06-09T05:38:42Z",
+    "count": 52
   },
   "images": [
     {
@@ -107,7 +107,7 @@
     },
     {
       "id": "debian-11-cloud-amd64",
-      "name": "Debian 11 Bullseye",
+      "name": "Debian 11",
       "category": "linux",
       "distro": "debian",
       "codename": "Bullseye",
@@ -731,11 +731,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.11.20260526.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260608.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "450dd0dc72d705f1c1df14a43f4f9c9a8e80b6ceb781b3ad3beb4d3a8b7663d6"
+        "value": "c381005a2bd77fc2abd844691c253ad926f08660d6d09ae9742aff614675746c"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -755,11 +755,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.11.20260526.0-kernel-6.1-arm64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20260608.0-kernel-6.1-arm64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "f2def27dfe3126b33c8bd07eec0414cb6a82b94923db0a21978330c3f9d06d90"
+        "value": "781dc4b4ce4fcab4c9d102037b3415a4f07bcdf78cdfc074ed6ddd3e519429ee"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -1041,6 +1041,106 @@
         "is_rolling": false
       },
       "status": "supported"
+    },
+    {
+      "id": "ubuntu-20.04-cloud-amd64",
+      "name": "Ubuntu 20.04 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "version": "20.04",
+      "edition": "Cloud image",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img",
+      "homepage": "https://ubuntu.com/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Focal Fossa",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "18f2977d77dfea1b74aee14533bd21c34f789139e949c57023b7364894b7e5e9"
+      },
+      "eol": {
+        "standard": "2025-05-31",
+        "extended": "2030-04-02",
+        "is_rolling": false
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "ubuntu-20.04-cloud-arm64",
+      "name": "Ubuntu 20.04 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "version": "20.04",
+      "edition": "Cloud image",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-arm64.img",
+      "homepage": "https://ubuntu.com/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Focal Fossa",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d4603cd783e2578f838c63f7c3a8dae6b554bd6358870f2c8eb182aa51ade465"
+      },
+      "eol": {
+        "standard": "2025-05-31",
+        "extended": "2030-04-02",
+        "is_rolling": false
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "ubuntu-18.04-cloud-amd64",
+      "name": "Ubuntu 18.04 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "version": "18.04",
+      "edition": "Cloud image",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img",
+      "homepage": "https://ubuntu.com/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Bionic Beaver",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "8dd2e6b5e5aad20c3f836123b300cba9861249408cbb07c359145a65d6bab6b6"
+      },
+      "eol": {
+        "standard": "2023-05-31",
+        "extended": "2028-04-01",
+        "is_rolling": false
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "ubuntu-18.04-cloud-arm64",
+      "name": "Ubuntu 18.04 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "version": "18.04",
+      "edition": "Cloud image",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-arm64.img",
+      "homepage": "https://ubuntu.com/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Bionic Beaver",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "9930a57427ad8c9e50a84a36132cd5ad81751b64ee678062dcc354a9b84654f7"
+      },
+      "eol": {
+        "standard": "2023-05-31",
+        "extended": "2028-04-01",
+        "is_rolling": false
+      },
+      "status": "eol-extended"
     },
     {
       "id": "fedora-44-cloud-amd64",

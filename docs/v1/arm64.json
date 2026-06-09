@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-02T14:32:44Z",
-    "count": 77
+    "generated_at": "2026-06-09T05:38:42Z",
+    "count": 79
   },
   "images": [
     {
@@ -364,11 +364,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.11.20260526.0-kernel-6.1-arm64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20260608.0-kernel-6.1-arm64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "f2def27dfe3126b33c8bd07eec0414cb6a82b94923db0a21978330c3f9d06d90"
+        "value": "781dc4b4ce4fcab4c9d102037b3415a4f07bcdf78cdfc074ed6ddd3e519429ee"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -1276,15 +1276,15 @@
     },
     {
       "id": "ubuntu-20.04-server-arm64",
-      "name": "Ubuntu 20.04.5 LTS",
+      "name": "Ubuntu 20.04.6 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Focal Fossa",
-      "version": "20.04.5",
+      "version": "20.04.6",
       "edition": "Server",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.5-live-server-arm64.iso",
+      "url": "https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.6-live-server-arm64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
@@ -1378,8 +1378,58 @@
       "status": "supported"
     },
     {
+      "id": "ubuntu-20.04-cloud-arm64",
+      "name": "Ubuntu 20.04 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "version": "20.04",
+      "edition": "Cloud image",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-arm64.img",
+      "homepage": "https://ubuntu.com/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Focal Fossa",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d4603cd783e2578f838c63f7c3a8dae6b554bd6358870f2c8eb182aa51ade465"
+      },
+      "eol": {
+        "standard": "2025-05-31",
+        "extended": "2030-04-02",
+        "is_rolling": false
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "ubuntu-18.04-cloud-arm64",
+      "name": "Ubuntu 18.04 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "version": "18.04",
+      "edition": "Cloud image",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-arm64.img",
+      "homepage": "https://ubuntu.com/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Bionic Beaver",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "9930a57427ad8c9e50a84a36132cd5ad81751b64ee678062dcc354a9b84654f7"
+      },
+      "eol": {
+        "standard": "2023-05-31",
+        "extended": "2028-04-01",
+        "is_rolling": false
+      },
+      "status": "eol-extended"
+    },
+    {
       "id": "debian-11-netinst-arm64",
-      "name": "Debian 11.11 Bullseye",
+      "name": "Debian 11.11",
       "category": "linux",
       "distro": "debian",
       "codename": "Bullseye",
