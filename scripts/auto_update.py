@@ -72,6 +72,14 @@ def is_eol_past(eol_value):
     return False
 
 
+def is_release_past_supported_life(rel):
+    """Return true only when both standard and extended support have ended."""
+    extended = rel.get("extendedSupport")
+    if isinstance(extended, str):
+        return is_eol_past(extended)
+    return is_eol_past(rel.get("eol", False))
+
+
 def extract_eol_dates(rel):
     """Extract standard and extended EOL dates from API release."""
     api_eol = rel.get("eol")
@@ -102,8 +110,7 @@ def filter_releases(releases, rules):
     exclude_cycles = rules.get("exclude_cycles", [])
     filtered = []
     for rel in releases:
-        eol = rel.get("eol", False)
-        if is_eol_past(eol):
+        if is_release_past_supported_life(rel):
             continue
         cycle = str(rel.get("cycle", ""))
         if not cycle:
