@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-02T14:32:44Z",
-    "count": 141
+    "generated_at": "2026-06-09T05:38:42Z",
+    "count": 143
   },
   "images": [
     {
@@ -211,7 +211,7 @@
     },
     {
       "id": "debian-11-netinst",
-      "name": "Debian 11.11 Bullseye",
+      "name": "Debian 11.11",
       "category": "linux",
       "distro": "debian",
       "codename": "Bullseye",
@@ -2630,15 +2630,15 @@
     },
     {
       "id": "ubuntu-20.04-server-arm64",
-      "name": "Ubuntu 20.04.5 LTS",
+      "name": "Ubuntu 20.04.6 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Focal Fossa",
-      "version": "20.04.5",
+      "version": "20.04.6",
       "edition": "Server",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.5-live-server-arm64.iso",
+      "url": "https://cdimage.ubuntu.com/releases/20.04/release/ubuntu-20.04.6-live-server-arm64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
@@ -2707,8 +2707,58 @@
       "image_type": "iso"
     },
     {
+      "id": "ubuntu-18.04-desktop",
+      "name": "Ubuntu 18.04.6 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "version": "18.04.6",
+      "edition": "Desktop",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://releases.ubuntu.com/18.04/ubuntu-18.04.6-desktop-amd64.iso",
+      "homepage": "https://ubuntu.com/",
+      "codename": "Bionic Beaver",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f730be589aa1ba923ebe6eca573fa66d09ba14c4c104da2c329df652d42aff11"
+      },
+      "eol": {
+        "standard": "2023-05-31",
+        "extended": "2028-04-01",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "ubuntu-18.04-server",
+      "name": "Ubuntu 18.04.6 LTS",
+      "category": "linux",
+      "distro": "ubuntu",
+      "version": "18.04.6",
+      "edition": "Server",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://releases.ubuntu.com/18.04/ubuntu-18.04.6-live-server-amd64.iso",
+      "homepage": "https://ubuntu.com/",
+      "codename": "Bionic Beaver",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "6c647b1ab4318e8c560d5748f908e108be654bad1e165f7cf4f3c1fc43995934"
+      },
+      "eol": {
+        "standard": "2023-05-31",
+        "extended": "2028-04-01",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "debian-11-netinst-arm64",
-      "name": "Debian 11.11 Bullseye",
+      "name": "Debian 11.11",
       "category": "linux",
       "distro": "debian",
       "codename": "Bullseye",
