@@ -784,7 +784,7 @@ images:
   checksum:
     algorithm: sha512
     value: 
-      2e47a7ee319e9eef6b5870970452888b7b9783b4b9447c153a6b9088f6d2c56ed0e9418ba5c1cc898cb3123e7523022dcfa07aadb5a6d1f0528a049ceb080222
+      9106d52bd90df0720dc6b1db9aa89164294235ad996a7e06555d2acb77c975535a97946d81a64ef8930eb5e2da0b4ccf5c81f7ab7b6f67bf246315a055eafe7d
   eol:
     standard: '2024-08-14'
     extended: '2026-08-31'
@@ -3773,6 +3773,27 @@ images:
     extended: '2026-08-31'
     is_rolling: false
     note: LTS
+  status: eol-extended
+- id: debian-11-cloud-arm64
+  name: "Debian 11"
+  category: linux
+  distro: debian
+  version: "11"
+  edition: Cloud image
+  arch: arm64
+  release_type: stable
+  url: https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-generic-arm64.qcow2
+  homepage: https://www.debian.org/
+  image_type: cloud-image
+  format: qcow2
+  codename: Bullseye
+  checksum:
+    algorithm: sha512
+    value: ce3e100716fab996648a5eb391d4d495483fa8b09d65e9bfc3e17b45ecb8018f9d84c411ddb204379295f8f93f88fe581eacb0dacc36605829946409a7f7b0a9
+  eol:
+    standard: '2024-08-14'
+    extended: '2026-08-31'
+    is_rolling: false
   status: eol-extended
 - id: fedora-43-workstation-arm64
   name: Fedora 43 Workstation

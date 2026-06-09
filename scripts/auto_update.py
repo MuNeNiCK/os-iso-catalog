@@ -13,6 +13,7 @@ Template types:
 
 import re
 import sys
+import time
 from datetime import date
 from pathlib import Path
 
@@ -25,6 +26,7 @@ REPORT_FILE = ROOT / "auto-update-report.txt"
 
 EOL_API = "https://endoflife.date/api"
 TIMEOUT = 15
+CHECKSUM_RETRIES = 3
 USER_AGENT = "os-iso-catalog/auto-update (github.com/MuNeNICK/os-iso-catalog)"
 
 
@@ -184,19 +186,46 @@ def parse_checksum_line(line, target_filename):
 
 def fetch_checksum(checksums_url, target_filename):
     """Download a checksums file and extract the hash for target_filename."""
-    try:
-        r = requests.get(checksums_url, timeout=TIMEOUT,
-                         headers={"User-Agent": USER_AGENT})
-        if r.status_code != 200:
-            return None
-        for line in r.text.splitlines():
-            h = parse_checksum_line(line, target_filename)
-            if h:
-                return h
-    except Exception as e:
-        print(f"  WARN: checksum fetch failed {checksums_url}: {e}",
-              file=sys.stderr)
-    return None
+    last_error = None
+    for attempt in range(1, CHECKSUM_RETRIES + 1):
+        try:
+            r = requests.get(checksums_url, timeout=TIMEOUT,
+                             headers={"User-Agent": USER_AGENT})
+            if r.status_code != 200:
+                if 400 <= r.status_code < 500 and r.status_code not in (408, 429):
+                    print(
+                        f"  WARN: checksum file not reachable {checksums_url}: "
+                        f"HTTP {r.status_code}",
+                        file=sys.stderr,
+                    )
+                    return None
+                last_error = f"HTTP {r.status_code}"
+            else:
+                for line in r.text.splitlines():
+                    h = parse_checksum_line(line, target_filename)
+                    if h:
+                        return h
+                print(
+                    f"  WARN: checksum entry not found {checksums_url}: "
+                    f"{target_filename}",
+                    file=sys.stderr,
+                )
+                return None
+        except requests.RequestException as e:
+            last_error = str(e)
+
+        if attempt < CHECKSUM_RETRIES:
+            print(
+                f"  WARN: checksum fetch failed {checksums_url} "
+                f"(attempt {attempt}/{CHECKSUM_RETRIES}): {last_error}",
+                file=sys.stderr,
+            )
+            time.sleep(attempt * 5)
+
+    raise RuntimeError(
+        f"checksum fetch failed {checksums_url} for {target_filename}: "
+        f"{last_error}"
+    )
 
 
 # ---------------------------------------------------------------------------
