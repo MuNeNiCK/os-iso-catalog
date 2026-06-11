@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-09T06:40:55Z",
+    "generated_at": "2026-06-11T07:38:11Z",
     "count": 198
   },
   "images": [
@@ -383,7 +383,7 @@
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "supported",
+      "status": "eol-extended",
       "format": "iso",
       "image_type": "iso"
     },
@@ -411,7 +411,7 @@
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "supported"
+      "status": "eol-extended"
     },
     {
       "id": "debian-12-cloud-arm64",
@@ -437,7 +437,7 @@
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "supported"
+      "status": "eol-extended"
     },
     {
       "id": "debian-13-cloud-amd64",
@@ -3183,7 +3183,7 @@
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "supported",
+      "status": "eol-extended",
       "format": "iso",
       "image_type": "iso"
     },
