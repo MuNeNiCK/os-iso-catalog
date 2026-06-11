@@ -811,7 +811,7 @@ images:
     extended: '2028-06-30'
     is_rolling: false
     note: LTS
-  status: supported
+  status: eol-extended
 - id: debian-12-cloud-amd64
   name: "Debian 12"
   category: linux
@@ -835,7 +835,7 @@ images:
     extended: '2028-06-30'
     is_rolling: false
     note: LTS
-  status: supported
+  status: eol-extended
 - id: debian-12-cloud-arm64
   name: "Debian 12"
   category: linux
@@ -859,7 +859,7 @@ images:
     extended: '2028-06-30'
     is_rolling: false
     note: LTS
-  status: supported
+  status: eol-extended
 - id: debian-13-cloud-amd64
   name: "Debian 13"
   category: linux
@@ -3125,7 +3125,7 @@ images:
     extended: '2028-06-30'
     is_rolling: false
     note: LTS
-  status: supported
+  status: eol-extended
 - id: centos-stream-9-dvd-arm64
   name: CentOS Stream 9
   category: linux
@@ -3782,14 +3782,16 @@ images:
   edition: Cloud image
   arch: arm64
   release_type: stable
-  url: https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-generic-arm64.qcow2
+  url: 
+    https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-generic-arm64.qcow2
   homepage: https://www.debian.org/
   image_type: cloud-image
   format: qcow2
   codename: Bullseye
   checksum:
     algorithm: sha512
-    value: ce3e100716fab996648a5eb391d4d495483fa8b09d65e9bfc3e17b45ecb8018f9d84c411ddb204379295f8f93f88fe581eacb0dacc36605829946409a7f7b0a9
+    value: 
+      ce3e100716fab996648a5eb391d4d495483fa8b09d65e9bfc3e17b45ecb8018f9d84c411ddb204379295f8f93f88fe581eacb0dacc36605829946409a7f7b0a9
   eol:
     standard: '2024-08-14'
     extended: '2026-08-31'
