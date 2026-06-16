@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-11T07:38:11Z",
+    "generated_at": "2026-06-16T07:55:12Z",
     "count": 53
   },
   "images": [
@@ -731,11 +731,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260608.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260611.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "c381005a2bd77fc2abd844691c253ad926f08660d6d09ae9742aff614675746c"
+        "value": "bd1fc69234e96dec0550003f5f444c5b7c4f4666f1fdf941dfef8d6ec4217557"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -755,11 +755,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20260608.0-kernel-6.1-arm64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20260611.0-kernel-6.1-arm64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "781dc4b4ce4fcab4c9d102037b3415a4f07bcdf78cdfc074ed6ddd3e519429ee"
+        "value": "a81a1285d4ac2e8c98c558dbc50287e20b2c782fff852c4f1ac3ac2b1c4d4f8c"
       },
       "eol": {
         "standard": "2027-06-30",
