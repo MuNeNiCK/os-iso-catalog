@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-11T07:38:11Z",
-    "count": 143
+    "generated_at": "2026-06-16T07:55:12Z",
+    "count": 147
   },
   "images": [
     {
@@ -2457,6 +2457,54 @@
       "image_type": "iso"
     },
     {
+      "id": "alpine-3.24",
+      "name": "Alpine Linux 3.24.1",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.24.1",
+      "edition": "Standard",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/x86_64/alpine-standard-3.24.1-x86_64.iso",
+      "homepage": "https://alpinelinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f4dd613206676c62949144c8ad75fc64582099f444dd1485bae104a60f51dd26"
+      },
+      "eol": {
+        "standard": "2028-06-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alpine-3.24-arm64",
+      "name": "Alpine Linux 3.24.1",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.24.1",
+      "edition": "Standard",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/aarch64/alpine-standard-3.24.1-aarch64.iso",
+      "homepage": "https://alpinelinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "95eba9066d7920fe703dd62b8b8e7f38c45eba0bad225dbe2ccfb5b76cf5356d"
+      },
+      "eol": {
+        "standard": "2028-06-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "opensuse-leap-15.6-dvd-arm64",
       "name": "openSUSE Leap 15.6",
       "category": "linux",
@@ -3497,6 +3545,54 @@
       },
       "eol": {
         "standard": "2026-06-30",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "freebsd-15.1",
+      "name": "FreeBSD 15.1-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "15.1",
+      "edition": "disc1",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/15.1/FreeBSD-15.1-RELEASE-amd64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "fa27646f05a1440fd26ffbb85e06a50bc86e128242a4e9cb7bb3ea76e1aa5fd9"
+      },
+      "eol": {
+        "standard": "2027-03-31",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "freebsd-15.1-arm64",
+      "name": "FreeBSD 15.1-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "15.1",
+      "edition": "disc1",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/15.1/FreeBSD-15.1-RELEASE-arm64-aarch64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e17805c6e5a1323d4a31919053b7b2b25876344f2fada3762a4d8009770f1d7f"
+      },
+      "eol": {
+        "standard": "2027-03-31",
         "extended": null,
         "is_rolling": false
       },

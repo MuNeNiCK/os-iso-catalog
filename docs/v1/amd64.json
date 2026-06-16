@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-11T07:38:11Z",
-    "count": 118
+    "generated_at": "2026-06-16T07:55:12Z",
+    "count": 120
   },
   "images": [
     {
@@ -1483,11 +1483,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260608.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260611.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "c381005a2bd77fc2abd844691c253ad926f08660d6d09ae9742aff614675746c"
+        "value": "bd1fc69234e96dec0550003f5f444c5b7c4f4666f1fdf941dfef8d6ec4217557"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -2377,6 +2377,30 @@
       "status": "supported"
     },
     {
+      "id": "alpine-3.24",
+      "name": "Alpine Linux 3.24.1",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.24.1",
+      "edition": "Standard",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/x86_64/alpine-standard-3.24.1-x86_64.iso",
+      "homepage": "https://alpinelinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f4dd613206676c62949144c8ad75fc64582099f444dd1485bae104a60f51dd26"
+      },
+      "eol": {
+        "standard": "2028-06-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "openbsd-7.9",
       "name": "OpenBSD 7.9",
       "category": "bsd",
@@ -2830,6 +2854,30 @@
       },
       "eol": {
         "standard": "2026-06-30",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "freebsd-15.1",
+      "name": "FreeBSD 15.1-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "15.1",
+      "edition": "disc1",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/15.1/FreeBSD-15.1-RELEASE-amd64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "fa27646f05a1440fd26ffbb85e06a50bc86e128242a4e9cb7bb3ea76e1aa5fd9"
+      },
+      "eol": {
+        "standard": "2027-03-31",
         "extended": null,
         "is_rolling": false
       },
