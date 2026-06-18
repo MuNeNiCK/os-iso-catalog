@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-16T09:27:38Z",
+    "generated_at": "2026-06-18T07:38:37Z",
     "count": 147
   },
   "images": [
@@ -252,12 +252,12 @@
         "value": "adfcbb50782af99d457467f9b38c9e0fb3b1b6e211e0202f099aa58874b3f923"
       },
       "eol": {
-        "standard": "2026-06-10",
+        "standard": "2026-07-11",
         "extended": "2028-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended",
+      "status": "supported",
       "format": "iso",
       "image_type": "iso"
     },
@@ -2233,12 +2233,12 @@
         "value": "2b043fea4737742cff0bc6106b9f367fc4e17543f0a9e42e10d26813c6f01eef"
       },
       "eol": {
-        "standard": "2026-06-10",
+        "standard": "2026-07-11",
         "extended": "2028-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended",
+      "status": "supported",
       "format": "iso",
       "image_type": "iso"
     },

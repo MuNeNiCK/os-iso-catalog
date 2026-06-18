@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-16T09:27:38Z",
+    "generated_at": "2026-06-18T07:38:37Z",
     "count": 82
   },
   "images": [
@@ -74,12 +74,12 @@
         "value": "e3f3660d8adaa17d63c193902e9d5313f6476f9ef4309efea970e6517c08e77166cfbfafd942c8a64c68da184f8877c3bff255a579a91a52cbb06f6abdf6da04"
       },
       "eol": {
-        "standard": "2026-06-10",
+        "standard": "2026-07-11",
         "extended": "2028-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended"
+      "status": "supported"
     },
     {
       "id": "debian-13-cloud-arm64",
@@ -875,12 +875,12 @@
         "value": "2b043fea4737742cff0bc6106b9f367fc4e17543f0a9e42e10d26813c6f01eef"
       },
       "eol": {
-        "standard": "2026-06-10",
+        "standard": "2026-07-11",
         "extended": "2028-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "eol-extended",
+      "status": "supported",
       "format": "iso",
       "image_type": "iso"
     },
