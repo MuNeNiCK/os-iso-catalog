@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-18T07:38:37Z",
+    "generated_at": "2026-06-27T07:04:14Z",
     "count": 53
   },
   "images": [
@@ -21,7 +21,7 @@
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "f6729b53d930d7f0c6691eb553cfa6be7109de9412125bf1bf2dc6747de8a44d"
+        "value": "ec332b438a87c3cc1e38318ced110568392484cc2f33e29c8f4eaf9ecc9de297"
       },
       "eol": {
         "standard": "2027-04-01",
@@ -46,7 +46,7 @@
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "0b77a1a7e708723c8e7aef4fe9fca84f0e8845c0d66b1bbd612a5b43bf916bda"
+        "value": "4347ef11e5577add57337c701950d55005eff73eb134c365c2277ee998950695"
       },
       "eol": {
         "standard": "2027-04-01",
@@ -71,7 +71,7 @@
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "53fdde898feed8b027d94baa9cfe8229867f330a1d9c49dc7d84465ee7f229f7"
+        "value": "5fa5b05e5ec239858c4531485d6023b0896448c2df7c63b34f8dae6ea6051a44"
       },
       "eol": {
         "standard": "2029-05-31",
@@ -96,7 +96,7 @@
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "6a61b967ba4a27dd1966f835a67643073ed55c2860ce3dc1cb0517282e6b8bec"
+        "value": "cafa1a965b591b7c4184b484ffd8e625981a79d48f9b4ae8a4adf7b4c5ade927"
       },
       "eol": {
         "standard": "2029-05-31",
@@ -121,7 +121,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "9106d52bd90df0720dc6b1db9aa89164294235ad996a7e06555d2acb77c975535a97946d81a64ef8930eb5e2da0b4ccf5c81f7ab7b6f67bf246315a055eafe7d"
+        "value": "c5cec14e342238f4d87417da99f1471e3da12ed85f224688eaeef17aed5f569756cde86bd58f5e6c0301afce3846ece9f713ef1f58ab67eaf5e9e10a87131bea"
       },
       "eol": {
         "standard": "2024-08-14",
@@ -147,7 +147,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "c39495a4d81927810e93f825b0b135a08e798f46dc748e78d6bfa2984f93ffc4bcfdc7a6b7f97666ad66fbae3e0f21debd24466ce1d844d0de7856fdc7537d58"
+        "value": "6ea48973e8f36f5a29d5e4975224f8319a7f2b31cb90a7d60481f6f02a4eaa68fdb5ebca9869d80c22d5a229736e7f538eed75d240e416e37dd7d28941ba40a1"
       },
       "eol": {
         "standard": "2026-07-11",
@@ -173,7 +173,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "e3f3660d8adaa17d63c193902e9d5313f6476f9ef4309efea970e6517c08e77166cfbfafd942c8a64c68da184f8877c3bff255a579a91a52cbb06f6abdf6da04"
+        "value": "c5bdd8abac17300879e8d7337867df92177baae1a69d092c9bdffa5bc831d9152e65067f5bb936924905db1abecce1f92f035b568911901850f9e5fae089df91"
       },
       "eol": {
         "standard": "2026-07-11",
@@ -199,7 +199,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "97675b27e69153002c4e13644e36200c8f9067f661dca00918c54f1cacbdb88d4bff8c0fbf5cf5d63a0397bdf0cc472d7a6372bae5281bf7ced756249c10f8a2"
+        "value": "fdd700481ede658f0bc76a0a0016459d3403e1c6eff658fd2403bc24b46f071357f3709aded219fa573ce0cd12b3fda9d963e4343d28081c0e5265afd9f70207"
       },
       "eol": {
         "standard": "2028-08-09",
@@ -225,7 +225,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "1de531ce85dacf4d327a1273a5dd79817a29179eb5cb25bf2bbe8f30daa7ae69c2cc25dfde9e6233fa5383dd1f00c2f32cd59d917c97af41adde598a4e48af2f"
+        "value": "4be7964fa0b61fbfded4f3c99e24b6e812a7cdbdd3080cbfadd09f5400efe1ff7ec329f700b45c26ddbe3849ce62c2ba83447c923e2bd00a3d0cf1d7dd5cede8"
       },
       "eol": {
         "standard": "2028-08-09",
@@ -682,7 +682,7 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/cloud/nocloud_alpine-3.23.4-x86_64-uefi-cloudinit-r0.qcow2",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/cloud/nocloud_alpine-3.23.5-x86_64-uefi-cloudinit-r0.qcow2",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha512",
@@ -707,7 +707,7 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/cloud/nocloud_alpine-3.23.4-aarch64-uefi-cloudinit-r0.qcow2",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/cloud/nocloud_alpine-3.23.5-aarch64-uefi-cloudinit-r0.qcow2",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha512",
@@ -731,11 +731,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260611.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260622.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "bd1fc69234e96dec0550003f5f444c5b7c4f4666f1fdf941dfef8d6ec4217557"
+        "value": "a7223708ad5b557e8a925762fc236e414f088ee246bf76ca19e5b7704291b75b"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -755,11 +755,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20260611.0-kernel-6.1-arm64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20260622.0-kernel-6.1-arm64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "a81a1285d4ac2e8c98c558dbc50287e20b2c782fff852c4f1ac3ac2b1c4d4f8c"
+        "value": "232cb9683bfc60c33f34c15d1cd8c2d8c9b5276085edb78bfedfa533068465ff"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -905,7 +905,7 @@
       "edition": "Cloud image",
       "arch": "x86_64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/cloud/nocloud_alpine-3.22.4-x86_64-uefi-cloudinit-r0.qcow2",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/cloud/nocloud_alpine-3.22.5-x86_64-uefi-cloudinit-r0.qcow2",
       "homepage": "https://alpinelinux.org/",
       "image_type": "cloud-image",
       "format": "qcow2",
@@ -929,7 +929,7 @@
       "edition": "Cloud image",
       "arch": "aarch64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/cloud/nocloud_alpine-3.22.4-aarch64-uefi-cloudinit-r0.qcow2",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/cloud/nocloud_alpine-3.22.5-aarch64-uefi-cloudinit-r0.qcow2",
       "homepage": "https://alpinelinux.org/",
       "image_type": "cloud-image",
       "format": "qcow2",
@@ -1008,7 +1008,7 @@
       "codename": "Resolute Raccoon",
       "checksum": {
         "algorithm": "sha256",
-        "value": "dced94c031cc1f23dee14419a3723a5b110df9938de0ac31913a2bfd07c755b4"
+        "value": "4146595c3f784c2eb11bee837fd6a097289ed20727dd0ec75ebe457dd059a7ba"
       },
       "eol": {
         "standard": "2031-04-30",
@@ -1033,7 +1033,7 @@
       "codename": "Resolute Raccoon",
       "checksum": {
         "algorithm": "sha256",
-        "value": "5e091e27d60116efbb0c743b8dd5cb2d15618e414ef04db0817ed43c8e2d7c7b"
+        "value": "ce56d07a01c386ba737668dd84b0d89a3f0581112ce06a3da8853b79a4b08e0b"
       },
       "eol": {
         "standard": "2031-04-30",
@@ -1158,7 +1158,7 @@
       "codename": "Bullseye",
       "checksum": {
         "algorithm": "sha512",
-        "value": "ce3e100716fab996648a5eb391d4d495483fa8b09d65e9bfc3e17b45ecb8018f9d84c411ddb204379295f8f93f88fe581eacb0dacc36605829946409a7f7b0a9"
+        "value": "16e12488a8f7c4f54388fc2a2f3b21254cafb6a25f4a6e8a3cd234e21f3603d8760ec00c176423041cdba8d56577da57b8b142bcbdd066ce283c25fd7a97bf0a"
       },
       "eol": {
         "standard": "2024-08-14",
