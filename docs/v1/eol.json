@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-18T07:38:37Z",
+    "generated_at": "2026-06-27T07:04:14Z",
     "count": 35
   },
   "images": [
@@ -99,7 +99,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "9106d52bd90df0720dc6b1db9aa89164294235ad996a7e06555d2acb77c975535a97946d81a64ef8930eb5e2da0b4ccf5c81f7ab7b6f67bf246315a055eafe7d"
+        "value": "c5cec14e342238f4d87417da99f1471e3da12ed85f224688eaeef17aed5f569756cde86bd58f5e6c0301afce3846ece9f713ef1f58ab67eaf5e9e10a87131bea"
       },
       "eol": {
         "standard": "2024-08-14",
@@ -631,7 +631,7 @@
       "codename": "Bullseye",
       "checksum": {
         "algorithm": "sha512",
-        "value": "ce3e100716fab996648a5eb391d4d495483fa8b09d65e9bfc3e17b45ecb8018f9d84c411ddb204379295f8f93f88fe581eacb0dacc36605829946409a7f7b0a9"
+        "value": "16e12488a8f7c4f54388fc2a2f3b21254cafb6a25f4a6e8a3cd234e21f3603d8760ec00c176423041cdba8d56577da57b8b142bcbdd066ce283c25fd7a97bf0a"
       },
       "eol": {
         "standard": "2024-08-14",

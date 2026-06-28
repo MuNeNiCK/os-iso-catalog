@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-18T07:38:37Z",
+    "generated_at": "2026-06-27T07:04:14Z",
     "count": 147
   },
   "images": [
@@ -954,18 +954,18 @@
     },
     {
       "id": "alpine-3.22",
-      "name": "Alpine Linux 3.22.4",
+      "name": "Alpine Linux 3.22.5",
       "category": "linux",
       "distro": "alpine",
-      "version": "3.22.4",
+      "version": "3.22.5",
       "edition": "Standard",
       "arch": "x86_64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/x86_64/alpine-standard-3.22.4-x86_64.iso",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/x86_64/alpine-standard-3.22.5-x86_64.iso",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "78d1991733b539c83d4d0cc113377693e866533bc8db0e3f243506ef22b1f2fb"
+        "value": "8844f664dffbf50964ba33fe67658dd5d61c8f02d88e4febd17cf2c4334983c4"
       },
       "eol": {
         "standard": "2027-05-01",
@@ -978,18 +978,18 @@
     },
     {
       "id": "alpine-3.23",
-      "name": "Alpine Linux 3.23.4",
+      "name": "Alpine Linux 3.23.5",
       "category": "linux",
       "distro": "alpine",
-      "version": "3.23.4",
+      "version": "3.23.5",
       "edition": "Standard",
       "arch": "x86_64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/x86_64/alpine-standard-3.23.4-x86_64.iso",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/x86_64/alpine-standard-3.23.5-x86_64.iso",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "cfef39c7954f7c4447bcb321b9f4a1cef834536a321309d2c31275d9f2475a4e"
+        "value": "273e403b40ff20b0e08b3fc13d3710abf4283bb6fe7e89b09420e280ebfd785c"
       },
       "eol": {
         "standard": "2027-11-01",
@@ -2046,18 +2046,18 @@
     },
     {
       "id": "alpine-3.23-arm64",
-      "name": "Alpine Linux 3.23.4",
+      "name": "Alpine Linux 3.23.5",
       "category": "linux",
       "distro": "alpine",
-      "version": "3.23.4",
+      "version": "3.23.5",
       "edition": "Standard",
       "arch": "aarch64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/aarch64/alpine-standard-3.23.4-aarch64.iso",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/aarch64/alpine-standard-3.23.5-aarch64.iso",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "b9711e85572850182d7fb91409b24be80cd18adc9517fa4c7b06409a88659ecd"
+        "value": "270ef0a2c67aa5e1cc0e62c2ae336d86bd59b7b0c10f85a520b55809ec493892"
       },
       "eol": {
         "standard": "2027-11-01",
@@ -2434,18 +2434,18 @@
     },
     {
       "id": "alpine-3.22-arm64",
-      "name": "Alpine Linux 3.22.4",
+      "name": "Alpine Linux 3.22.5",
       "category": "linux",
       "distro": "alpine",
-      "version": "3.22.4",
+      "version": "3.22.5",
       "edition": "Standard",
       "arch": "aarch64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/aarch64/alpine-standard-3.22.4-aarch64.iso",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/aarch64/alpine-standard-3.22.5-aarch64.iso",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "24e5d6c73c2086859bcdaf54be5cb1b3ff3d42207b15d37853e1bf2f262835a0"
+        "value": "cbefb4cba2c38fff041f01cd03402c8a1f9d26b5d967b3d9d7605e4fe40007ac"
       },
       "eol": {
         "standard": "2027-05-01",
