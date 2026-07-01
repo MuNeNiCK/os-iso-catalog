@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-28T00:41:42Z",
+    "generated_at": "2026-07-01T07:27:50Z",
     "count": 202
   },
   "images": [
@@ -4788,7 +4788,7 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -4812,7 +4812,7 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },

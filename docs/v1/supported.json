@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-06-28T00:41:42Z",
-    "count": 167
+    "generated_at": "2026-07-01T07:27:50Z",
+    "count": 165
   },
   "images": [
     {
@@ -3910,54 +3910,6 @@
       "eol": {
         "standard": "2027-05-31",
         "extended": "2032-05-31",
-        "is_rolling": false
-      },
-      "status": "supported",
-      "format": "iso",
-      "image_type": "iso"
-    },
-    {
-      "id": "freebsd-14.3",
-      "name": "FreeBSD 14.3-RELEASE",
-      "category": "bsd",
-      "distro": "freebsd",
-      "version": "14.3",
-      "edition": "disc1",
-      "arch": "amd64",
-      "release_type": "stable",
-      "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.3/FreeBSD-14.3-RELEASE-amd64-disc1.iso",
-      "homepage": "https://www.freebsd.org/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "f564822bc72d420d1e1a6faacb72f6056d828fcf539dfafd52e08503ef5fab68"
-      },
-      "eol": {
-        "standard": "2026-06-30",
-        "extended": null,
-        "is_rolling": false
-      },
-      "status": "supported",
-      "format": "iso",
-      "image_type": "iso"
-    },
-    {
-      "id": "freebsd-14.3-arm64",
-      "name": "FreeBSD 14.3-RELEASE",
-      "category": "bsd",
-      "distro": "freebsd",
-      "version": "14.3",
-      "edition": "disc1",
-      "arch": "aarch64",
-      "release_type": "stable",
-      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.3/FreeBSD-14.3-RELEASE-arm64-aarch64-disc1.iso",
-      "homepage": "https://www.freebsd.org/",
-      "checksum": {
-        "algorithm": "sha256",
-        "value": "5dc944961a58d7951f53b8e2d4a4590b60185ba9db83b1e145218550aa2617d1"
-      },
-      "eol": {
-        "standard": "2026-06-30",
-        "extended": null,
         "is_rolling": false
       },
       "status": "supported",
