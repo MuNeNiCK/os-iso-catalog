@@ -4429,7 +4429,7 @@ images:
     standard: '2026-06-30'
     extended:
     is_rolling: false
-  status: supported
+  status: eol
 - id: freebsd-14.3-arm64
   name: "FreeBSD 14.3-RELEASE"
   category: bsd
@@ -4448,7 +4448,7 @@ images:
     standard: '2026-06-30'
     extended:
     is_rolling: false
-  status: supported
+  status: eol
 - id: freebsd-15.1
   name: "FreeBSD 15.1-RELEASE"
   category: bsd
