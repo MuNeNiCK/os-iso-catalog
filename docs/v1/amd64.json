@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-07-01T07:27:50Z",
+    "generated_at": "2026-07-02T07:06:39Z",
     "count": 120
   },
   "images": [
@@ -123,7 +123,7 @@
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "ec332b438a87c3cc1e38318ced110568392484cc2f33e29c8f4eaf9ecc9de297"
+        "value": "070de108b25df4c9eacc4a297c6afc583bdd58cabf159e61d4152bc6541a6b54"
       },
       "eol": {
         "standard": "2027-04-01",
@@ -1483,11 +1483,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260622.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260629.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "a7223708ad5b557e8a925762fc236e414f088ee246bf76ca19e5b7704291b75b"
+        "value": "9c33c753d024209e0395fb664496e7641ebde08fed34e92cb19e0ae833a398b8"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -2440,7 +2440,7 @@
       "codename": "Resolute Raccoon",
       "checksum": {
         "algorithm": "sha256",
-        "value": "4146595c3f784c2eb11bee837fd6a097289ed20727dd0ec75ebe457dd059a7ba"
+        "value": "3ee4f67f322abb2d1d1f0fffc957f7411404ad6635dd35b026c8ff05ac6e534c"
       },
       "eol": {
         "standard": "2031-04-30",
