@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-07-01T07:27:50Z",
+    "generated_at": "2026-07-12T08:04:43Z",
     "count": 53
   },
   "images": [
@@ -155,7 +155,7 @@
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "supported"
+      "status": "eol-extended"
     },
     {
       "id": "debian-12-cloud-arm64",
@@ -181,7 +181,7 @@
         "is_rolling": false,
         "note": "LTS"
       },
-      "status": "supported"
+      "status": "eol-extended"
     },
     {
       "id": "debian-13-cloud-amd64",

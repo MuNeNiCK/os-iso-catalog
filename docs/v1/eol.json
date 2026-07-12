@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-07-01T07:27:50Z",
-    "count": 37
+    "generated_at": "2026-07-12T08:04:43Z",
+    "count": 41
   },
   "images": [
     {
@@ -104,6 +104,84 @@
       "eol": {
         "standard": "2024-08-14",
         "extended": "2026-08-31",
+        "is_rolling": false,
+        "note": "LTS"
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "debian-12-netinst",
+      "name": "Debian 12.14",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bookworm",
+      "version": "12.14",
+      "edition": "netinst",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.14.0/amd64/iso-cd/debian-12.14.0-amd64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "adfcbb50782af99d457467f9b38c9e0fb3b1b6e211e0202f099aa58874b3f923"
+      },
+      "eol": {
+        "standard": "2026-07-11",
+        "extended": "2028-06-30",
+        "is_rolling": false,
+        "note": "LTS"
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "debian-12-cloud-amd64",
+      "name": "Debian 12",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bookworm",
+      "version": "12",
+      "edition": "Cloud image",
+      "arch": "amd64",
+      "release_type": "stable",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "url": "https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2",
+      "homepage": "https://www.debian.org/",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "6ea48973e8f36f5a29d5e4975224f8319a7f2b31cb90a7d60481f6f02a4eaa68fdb5ebca9869d80c22d5a229736e7f538eed75d240e416e37dd7d28941ba40a1"
+      },
+      "eol": {
+        "standard": "2026-07-11",
+        "extended": "2028-06-30",
+        "is_rolling": false,
+        "note": "LTS"
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "debian-12-cloud-arm64",
+      "name": "Debian 12",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bookworm",
+      "version": "12",
+      "edition": "Cloud image",
+      "arch": "arm64",
+      "release_type": "stable",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "url": "https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-arm64.qcow2",
+      "homepage": "https://www.debian.org/",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "c5bdd8abac17300879e8d7337867df92177baae1a69d092c9bdffa5bc831d9152e65067f5bb936924905db1abecce1f92f035b568911901850f9e5fae089df91"
+      },
+      "eol": {
+        "standard": "2026-07-11",
+        "extended": "2028-06-30",
         "is_rolling": false,
         "note": "LTS"
       },
@@ -360,6 +438,32 @@
         "is_rolling": false
       },
       "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "debian-12-netinst-arm64",
+      "name": "Debian 12.14",
+      "category": "linux",
+      "distro": "debian",
+      "codename": "Bookworm",
+      "version": "12.14",
+      "edition": "netinst",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.14.0/arm64/iso-cd/debian-12.14.0-arm64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2b043fea4737742cff0bc6106b9f367fc4e17543f0a9e42e10d26813c6f01eef"
+      },
+      "eol": {
+        "standard": "2026-07-11",
+        "extended": "2028-06-30",
+        "is_rolling": false,
+        "note": "LTS"
+      },
+      "status": "eol-extended",
       "format": "iso",
       "image_type": "iso"
     },
