@@ -811,7 +811,7 @@ images:
     extended: '2028-06-30'
     is_rolling: false
     note: LTS
-  status: supported
+  status: eol-extended
 - id: debian-12-cloud-amd64
   name: "Debian 12"
   category: linux
@@ -835,7 +835,7 @@ images:
     extended: '2028-06-30'
     is_rolling: false
     note: LTS
-  status: supported
+  status: eol-extended
 - id: debian-12-cloud-arm64
   name: "Debian 12"
   category: linux
@@ -859,7 +859,7 @@ images:
     extended: '2028-06-30'
     is_rolling: false
     note: LTS
-  status: supported
+  status: eol-extended
 - id: debian-13-cloud-amd64
   name: "Debian 13"
   category: linux
@@ -3125,7 +3125,7 @@ images:
     extended: '2028-06-30'
     is_rolling: false
     note: LTS
-  status: supported
+  status: eol-extended
 - id: centos-stream-9-dvd-arm64
   name: CentOS Stream 9
   category: linux
