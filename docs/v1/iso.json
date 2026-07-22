@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-07-12T08:04:43Z",
+    "generated_at": "2026-07-22T08:12:34Z",
     "count": 147
   },
   "images": [
@@ -620,7 +620,7 @@
         "value": "57973b9dd781a23cdc7612eec3e65b830251024e6287cbea5c5594ae97c13675"
       },
       "eol": {
-        "standard": "2030-01-01",
+        "standard": "2030-05-31",
         "extended": null,
         "is_rolling": true,
         "note": "Rolling build - checksum changes with each rebuild"
@@ -2284,7 +2284,7 @@
         "value": "96db01ec7a57a417565e30ed150565574a2751873dfca0ac239b3732821e3d6b"
       },
       "eol": {
-        "standard": "2030-01-01",
+        "standard": "2030-05-31",
         "extended": null,
         "is_rolling": true,
         "note": "Rolling build - checksum changes with each rebuild"

@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-07-12T08:04:43Z",
+    "generated_at": "2026-07-22T08:12:34Z",
     "count": 120
   },
   "images": [
@@ -748,7 +748,7 @@
         "value": "57973b9dd781a23cdc7612eec3e65b830251024e6287cbea5c5594ae97c13675"
       },
       "eol": {
-        "standard": "2030-01-01",
+        "standard": "2030-05-31",
         "extended": null,
         "is_rolling": true,
         "note": "Rolling build - checksum changes with each rebuild"
@@ -1193,7 +1193,7 @@
       "url": "https://cloud.centos.org/centos/10-stream/x86_64/images/CentOS-Stream-GenericCloud-x86_64-10-latest.x86_64.qcow2",
       "homepage": "https://www.centos.org/centos-stream/",
       "eol": {
-        "standard": "2030-01-01",
+        "standard": "2030-05-31",
         "extended": null,
         "is_rolling": true,
         "note": "Rolling cloud image"
