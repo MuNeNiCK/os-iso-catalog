@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-07-22T08:12:34Z",
+    "generated_at": "2026-07-24T08:13:16Z",
     "count": 53
   },
   "images": [
@@ -21,7 +21,7 @@
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "ec332b438a87c3cc1e38318ced110568392484cc2f33e29c8f4eaf9ecc9de297"
+        "value": "757908b2fd6d5b1431bb45070fc1f56cbf017d4025568d292ece37d9cc75e812"
       },
       "eol": {
         "standard": "2027-04-01",
@@ -46,7 +46,7 @@
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "4347ef11e5577add57337c701950d55005eff73eb134c365c2277ee998950695"
+        "value": "8f61e558498ba262da5b5d13f75b2921136b737a1492415150f33b3d0e46a281"
       },
       "eol": {
         "standard": "2027-04-01",
@@ -71,7 +71,7 @@
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "5fa5b05e5ec239858c4531485d6023b0896448c2df7c63b34f8dae6ea6051a44"
+        "value": "ffe6203da54deeb6db5d2a98a83f9ec8e55f149d3f7ba622e1abe5fa966ee3d6"
       },
       "eol": {
         "standard": "2029-05-31",
@@ -96,7 +96,7 @@
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "cafa1a965b591b7c4184b484ffd8e625981a79d48f9b4ae8a4adf7b4c5ade927"
+        "value": "7df0201546f75b8bcc1044594c806c35749421ad3c9bc1be2a3ab806cfae39cc"
       },
       "eol": {
         "standard": "2029-05-31",
@@ -121,7 +121,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "c5cec14e342238f4d87417da99f1471e3da12ed85f224688eaeef17aed5f569756cde86bd58f5e6c0301afce3846ece9f713ef1f58ab67eaf5e9e10a87131bea"
+        "value": "d3e7e476966f15f46551974586f59139e9559a5c298597181e3fcf7c68d1997ccd0897be54a44e35528e56ccb1fad534d94c6920d9131ab453d91d31af4efc9f"
       },
       "eol": {
         "standard": "2024-08-14",
@@ -147,7 +147,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "6ea48973e8f36f5a29d5e4975224f8319a7f2b31cb90a7d60481f6f02a4eaa68fdb5ebca9869d80c22d5a229736e7f538eed75d240e416e37dd7d28941ba40a1"
+        "value": "5f4f2e1a242447a5e5c48cdc7c6bdfe7b44ffd1a58836ddea8cf6140a65dd702d9d67462cd6941dfd5f0efd0be1db840c2a6ffa82c24b913878be4c8ee7a6eee"
       },
       "eol": {
         "standard": "2026-07-11",
@@ -173,7 +173,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "c5bdd8abac17300879e8d7337867df92177baae1a69d092c9bdffa5bc831d9152e65067f5bb936924905db1abecce1f92f035b568911901850f9e5fae089df91"
+        "value": "57238f4da9267a9d1cdfe7374adcdb6484ad6b2f8275d377ce373fbb241f20c36f238cbd3f628075b2139ae80d4861a45413acba87581e5e90168ebecfbc0f2e"
       },
       "eol": {
         "standard": "2026-07-11",
@@ -199,7 +199,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "fdd700481ede658f0bc76a0a0016459d3403e1c6eff658fd2403bc24b46f071357f3709aded219fa573ce0cd12b3fda9d963e4343d28081c0e5265afd9f70207"
+        "value": "1ff07be8406c4abcb75662a351b6124408c4a2795801037f8e4fe9ee27084ee2112bef92222f4bbeb9f7df8df1062971a9692f4c82f3da3c01fda6b1493906b9"
       },
       "eol": {
         "standard": "2028-08-09",
@@ -225,7 +225,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "4be7964fa0b61fbfded4f3c99e24b6e812a7cdbdd3080cbfadd09f5400efe1ff7ec329f700b45c26ddbe3849ce62c2ba83447c923e2bd00a3d0cf1d7dd5cede8"
+        "value": "09cc9354aae87f967aa3d1571e3fef1e112a141b4cb68f0c4c7b2926e8bcb35a4ddd63bc473c18eaeec50feec920a31d683c50c372def9b63767fdc6b351b367"
       },
       "eol": {
         "standard": "2028-08-09",
@@ -731,11 +731,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260622.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260720.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "a7223708ad5b557e8a925762fc236e414f088ee246bf76ca19e5b7704291b75b"
+        "value": "81247a7983116d9e636f1cbe849c713e9f450864aa4d97f26abe94f1b68beffd"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -755,11 +755,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20260622.0-kernel-6.1-arm64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20260720.0-kernel-6.1-arm64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "232cb9683bfc60c33f34c15d1cd8c2d8c9b5276085edb78bfedfa533068465ff"
+        "value": "283ddc14cfce34dbb634859e908613ffe129693bf3554f0d8fddd5bffe294184"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -1008,7 +1008,7 @@
       "codename": "Resolute Raccoon",
       "checksum": {
         "algorithm": "sha256",
-        "value": "4146595c3f784c2eb11bee837fd6a097289ed20727dd0ec75ebe457dd059a7ba"
+        "value": "117816726abbdefc5ef3e38902e81a76f1c76c3610e709999d0885f9d5d9b477"
       },
       "eol": {
         "standard": "2031-04-30",
@@ -1033,7 +1033,7 @@
       "codename": "Resolute Raccoon",
       "checksum": {
         "algorithm": "sha256",
-        "value": "ce56d07a01c386ba737668dd84b0d89a3f0581112ce06a3da8853b79a4b08e0b"
+        "value": "7bcf159e29ad0000bfed9c57875908c39268f5ed1257f4958fa6a9f5f60edd54"
       },
       "eol": {
         "standard": "2031-04-30",
@@ -1158,7 +1158,7 @@
       "codename": "Bullseye",
       "checksum": {
         "algorithm": "sha512",
-        "value": "16e12488a8f7c4f54388fc2a2f3b21254cafb6a25f4a6e8a3cd234e21f3603d8760ec00c176423041cdba8d56577da57b8b142bcbdd066ce283c25fd7a97bf0a"
+        "value": "ca95b7d0a193732bfa3b6d9ac598bd92dc92133da137ab29be88e4e43850a9feb49109f54c2332ae997c288a1941a839c15ab3c88e1963e03cc57a8ef552b978"
       },
       "eol": {
         "standard": "2024-08-14",

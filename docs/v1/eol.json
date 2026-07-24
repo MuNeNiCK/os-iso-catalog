@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-07-22T08:12:34Z",
+    "generated_at": "2026-07-24T08:13:16Z",
     "count": 41
   },
   "images": [
@@ -99,7 +99,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "c5cec14e342238f4d87417da99f1471e3da12ed85f224688eaeef17aed5f569756cde86bd58f5e6c0301afce3846ece9f713ef1f58ab67eaf5e9e10a87131bea"
+        "value": "d3e7e476966f15f46551974586f59139e9559a5c298597181e3fcf7c68d1997ccd0897be54a44e35528e56ccb1fad534d94c6920d9131ab453d91d31af4efc9f"
       },
       "eol": {
         "standard": "2024-08-14",
@@ -111,19 +111,19 @@
     },
     {
       "id": "debian-12-netinst",
-      "name": "Debian 12.14",
+      "name": "Debian 12.15",
       "category": "linux",
       "distro": "debian",
       "codename": "Bookworm",
-      "version": "12.14",
+      "version": "12.15",
       "edition": "netinst",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/12.14.0/amd64/iso-cd/debian-12.14.0-amd64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.15.0/amd64/iso-cd/debian-12.15.0-amd64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "adfcbb50782af99d457467f9b38c9e0fb3b1b6e211e0202f099aa58874b3f923"
+        "value": "cd4462c06aa8892e692c0c4b9c17802f38c8ab8690e85cbfb5ccaa5956e9af17"
       },
       "eol": {
         "standard": "2026-07-11",
@@ -151,7 +151,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "6ea48973e8f36f5a29d5e4975224f8319a7f2b31cb90a7d60481f6f02a4eaa68fdb5ebca9869d80c22d5a229736e7f538eed75d240e416e37dd7d28941ba40a1"
+        "value": "5f4f2e1a242447a5e5c48cdc7c6bdfe7b44ffd1a58836ddea8cf6140a65dd702d9d67462cd6941dfd5f0efd0be1db840c2a6ffa82c24b913878be4c8ee7a6eee"
       },
       "eol": {
         "standard": "2026-07-11",
@@ -177,7 +177,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "c5bdd8abac17300879e8d7337867df92177baae1a69d092c9bdffa5bc831d9152e65067f5bb936924905db1abecce1f92f035b568911901850f9e5fae089df91"
+        "value": "57238f4da9267a9d1cdfe7374adcdb6484ad6b2f8275d377ce373fbb241f20c36f238cbd3f628075b2139ae80d4861a45413acba87581e5e90168ebecfbc0f2e"
       },
       "eol": {
         "standard": "2026-07-11",
@@ -443,19 +443,19 @@
     },
     {
       "id": "debian-12-netinst-arm64",
-      "name": "Debian 12.14",
+      "name": "Debian 12.15",
       "category": "linux",
       "distro": "debian",
       "codename": "Bookworm",
-      "version": "12.14",
+      "version": "12.15",
       "edition": "netinst",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/12.14.0/arm64/iso-cd/debian-12.14.0-arm64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.15.0/arm64/iso-cd/debian-12.15.0-arm64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "2b043fea4737742cff0bc6106b9f367fc4e17543f0a9e42e10d26813c6f01eef"
+        "value": "2ff1c33f31bbfae04251267d9fd1cb098c055f7cf39d9943b0cf8d5e73a17eba"
       },
       "eol": {
         "standard": "2026-07-11",
@@ -735,7 +735,7 @@
       "codename": "Bullseye",
       "checksum": {
         "algorithm": "sha512",
-        "value": "16e12488a8f7c4f54388fc2a2f3b21254cafb6a25f4a6e8a3cd234e21f3603d8760ec00c176423041cdba8d56577da57b8b142bcbdd066ce283c25fd7a97bf0a"
+        "value": "ca95b7d0a193732bfa3b6d9ac598bd92dc92133da137ab29be88e4e43850a9feb49109f54c2332ae997c288a1941a839c15ab3c88e1963e03cc57a8ef552b978"
       },
       "eol": {
         "standard": "2024-08-14",
@@ -757,7 +757,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "642ada8a49dbeca8cca6543b31196019ee3d649a0163b5db0e646c7409364eeb"
+        "value": "260e253a09146c85b253d0cccf1e3fb05dc514b5cd5791f87132055a3094cb24"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -781,7 +781,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "2c735d3b0de921bd671a0e2d08461e3593ac84f64cdaef32e3ed56ba01f74f4b"
+        "value": "231d21db029e900b305d8e23ff7a61d06bb4e873cb170bd4a85f4e6dd896748f"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -805,7 +805,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "fbc3d12b6bd4fadeb7aa11c133afc927a6df5414f3ce47d6093706a4ef86e0a8"
+        "value": "4e3c2339f61510a293b631495571e72d1df852b1f2b765100defad193433467f"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -829,7 +829,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "94b7360334ecf90443bcadff94c69b0f6a8f9b1f051c0caf0e6dfe867bd865da"
+        "value": "911a048c8b7b70eb671c3e6e161b02b47d182cd0b68c1ab97d16dc95a0d466d9"
       },
       "eol": {
         "standard": "2024-05-31",
