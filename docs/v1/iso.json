@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-07-22T08:12:34Z",
-    "count": 147
+    "generated_at": "2026-07-24T08:13:16Z",
+    "count": 157
   },
   "images": [
     {
@@ -237,19 +237,19 @@
     },
     {
       "id": "debian-12-netinst",
-      "name": "Debian 12.14",
+      "name": "Debian 12.15",
       "category": "linux",
       "distro": "debian",
       "codename": "Bookworm",
-      "version": "12.14",
+      "version": "12.15",
       "edition": "netinst",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/12.14.0/amd64/iso-cd/debian-12.14.0-amd64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.15.0/amd64/iso-cd/debian-12.15.0-amd64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "adfcbb50782af99d457467f9b38c9e0fb3b1b6e211e0202f099aa58874b3f923"
+        "value": "cd4462c06aa8892e692c0c4b9c17802f38c8ab8690e85cbfb5ccaa5956e9af17"
       },
       "eol": {
         "standard": "2026-07-11",
@@ -289,15 +289,15 @@
     },
     {
       "id": "debian-13-netinst",
-      "name": "Debian 13.5",
+      "name": "Debian 13.6",
       "category": "linux",
       "distro": "debian",
       "codename": "Trixie",
-      "version": "13.5",
+      "version": "13.6",
       "edition": "netinst",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/13.5.0/amd64/iso-cd/debian-13.5.0-amd64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/13.6.0/amd64/iso-cd/debian-13.6.0-amd64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
@@ -1876,15 +1876,15 @@
     },
     {
       "id": "debian-13-netinst-arm64",
-      "name": "Debian 13.5",
+      "name": "Debian 13.6",
       "category": "linux",
       "distro": "debian",
       "codename": "Trixie",
-      "version": "13.5",
+      "version": "13.6",
       "edition": "netinst",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/13.5.0/arm64/iso-cd/debian-13.5.0-arm64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/13.6.0/arm64/iso-cd/debian-13.6.0-arm64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
@@ -2218,19 +2218,19 @@
     },
     {
       "id": "debian-12-netinst-arm64",
-      "name": "Debian 12.14",
+      "name": "Debian 12.15",
       "category": "linux",
       "distro": "debian",
       "codename": "Bookworm",
-      "version": "12.14",
+      "version": "12.15",
       "edition": "netinst",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/12.14.0/arm64/iso-cd/debian-12.14.0-arm64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.15.0/arm64/iso-cd/debian-12.15.0-arm64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "2b043fea4737742cff0bc6106b9f367fc4e17543f0a9e42e10d26813c6f01eef"
+        "value": "2ff1c33f31bbfae04251267d9fd1cb098c055f7cf39d9943b0cf8d5e73a17eba"
       },
       "eol": {
         "standard": "2026-07-11",
@@ -2378,6 +2378,46 @@
       "eol": {
         "standard": "2029-07-31",
         "extended": "2032-07-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "oracle-9.8-dvd",
+      "name": "Oracle Linux 9.8",
+      "category": "linux",
+      "distro": "oracle",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://yum.oracle.com/ISOS/OracleLinux/OL9/u8/x86_64/OracleLinux-R9-U8-x86_64-dvd.iso",
+      "homepage": "https://www.oracle.com/linux/",
+      "eol": {
+        "standard": "2032-06-30",
+        "extended": "2035-06-30",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "oracle-9.8-dvd-arm64",
+      "name": "Oracle Linux 9.8",
+      "category": "linux",
+      "distro": "oracle",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://yum.oracle.com/ISOS/OracleLinux/OL9/u8/aarch64/OracleLinux-R9-U8-aarch64-dvd.iso",
+      "homepage": "https://www.oracle.com/linux/",
+      "eol": {
+        "standard": "2032-06-30",
+        "extended": "2035-06-30",
         "is_rolling": false
       },
       "status": "supported",
@@ -3060,7 +3100,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "642ada8a49dbeca8cca6543b31196019ee3d649a0163b5db0e646c7409364eeb"
+        "value": "260e253a09146c85b253d0cccf1e3fb05dc514b5cd5791f87132055a3094cb24"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -3084,7 +3124,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "2c735d3b0de921bd671a0e2d08461e3593ac84f64cdaef32e3ed56ba01f74f4b"
+        "value": "231d21db029e900b305d8e23ff7a61d06bb4e873cb170bd4a85f4e6dd896748f"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -3108,7 +3148,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "fbc3d12b6bd4fadeb7aa11c133afc927a6df5414f3ce47d6093706a4ef86e0a8"
+        "value": "4e3c2339f61510a293b631495571e72d1df852b1f2b765100defad193433467f"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -3132,7 +3172,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "94b7360334ecf90443bcadff94c69b0f6a8f9b1f051c0caf0e6dfe867bd865da"
+        "value": "911a048c8b7b70eb671c3e6e161b02b47d182cd0b68c1ab97d16dc95a0d466d9"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -3140,6 +3180,198 @@
         "is_rolling": false
       },
       "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.2-dvd",
+      "name": "Rocky Linux 10.2",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.2",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.2-x86_64-dvd1.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "16ca9c96cdb221ba6e1f68579f21bd69fd8da81c6a921d9068949796f91c8feb"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.2-minimal",
+      "name": "Rocky Linux 10.2",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.2",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.2-x86_64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "aac6ac3ce781b91a91ce78463405f66c611a5dca4b3840c79e5e01d97302f6c8"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.2-dvd-arm64",
+      "name": "Rocky Linux 10.2",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.2",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/aarch64/Rocky-10.2-aarch64-dvd1.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3b8253987604df1bc5e1c33c838ff3ee9ce4a8f02ed9e27e300ecff58c0c9588"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.2-minimal-arm64",
+      "name": "Rocky Linux 10.2",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.2",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/aarch64/Rocky-10.2-aarch64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1d1c21199df32f6d17eedb4f713ee0d089b49294401a364b640fcf4ffab45f35"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.8-dvd",
+      "name": "Rocky Linux 9.8",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.8-x86_64-dvd.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d2bcbb64c2d67511adf80d40cd9543391a33aea5860a355b1d26d7f55236d01f"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.8-minimal",
+      "name": "Rocky Linux 9.8",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.8",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.8-x86_64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d338032cd1cdd41c67139f2f71b4c832c8e4a21943106519db9c7137df7a63d4"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.8-dvd-arm64",
+      "name": "Rocky Linux 9.8",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/aarch64/Rocky-9.8-aarch64-dvd.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "9b53d1da14b70686b09a280974768a1adff1a4e4f10d35374b3d741ebbd6d541"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.8-minimal-arm64",
+      "name": "Rocky Linux 9.8",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.8",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/aarch64/Rocky-9.8-aarch64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2924b291feaebe083bc0d0553e472be0a38ed5c91b4841129ec80b0cecc10efd"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
       "format": "iso",
       "image_type": "iso"
     },
