@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-09-08T10:22:16Z",
-    "count": 120
+    "generated_at": "2026-09-13T10:53:48Z",
+    "count": 130
   },
   "images": [
     {
@@ -123,7 +123,7 @@
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "ec332b438a87c3cc1e38318ced110568392484cc2f33e29c8f4eaf9ecc9de297"
+        "value": "46c966c646ab2e73af6ce8a2bdd20fefbc20f851794bbd46de31d2d1103b72c0"
       },
       "eol": {
         "standard": "2027-06-01",
@@ -198,7 +198,7 @@
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "5fa5b05e5ec239858c4531485d6023b0896448c2df7c63b34f8dae6ea6051a44"
+        "value": "612b2c0cc1bc413a6cb8c38fd611794caf0f2b436c50013d8b3794db12ad7354"
       },
       "eol": {
         "standard": "2029-05-31",
@@ -209,19 +209,19 @@
     },
     {
       "id": "ubuntu-26.04-desktop",
-      "name": "Ubuntu 26.04 LTS",
+      "name": "Ubuntu 26.04.1 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Resolute Raccoon",
-      "version": "26.04",
+      "version": "26.04.1",
       "edition": "Desktop",
       "arch": "amd64",
       "release_type": "beta",
-      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04-desktop-amd64.iso",
+      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04.1-desktop-amd64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "487f87faaf547ea30e0aba4d5b53346292571256b25333a978db1692bcee9dd2"
+        "value": "601e30fbf5d97759367c632e2c33630665039b7e2158fd068403da3ccf1bda1f"
       },
       "eol": {
         "standard": "2031-05-29",
@@ -235,19 +235,19 @@
     },
     {
       "id": "ubuntu-26.04-server",
-      "name": "Ubuntu 26.04 LTS",
+      "name": "Ubuntu 26.04.1 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Resolute Raccoon",
-      "version": "26.04",
+      "version": "26.04.1",
       "edition": "Server",
       "arch": "amd64",
       "release_type": "beta",
-      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04-live-server-amd64.iso",
+      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04.1-live-server-amd64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "dec49008a71f6098d0bcfc822021f4d042d5f2db279e4d75bdd981304f1ca5d9"
+        "value": "cc8a95cde20f6ced61a322420de00f10cc3c90ced545daa46cb9c1a117f1d927"
       },
       "eol": {
         "standard": "2031-05-29",
@@ -301,7 +301,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "c5cec14e342238f4d87417da99f1471e3da12ed85f224688eaeef17aed5f569756cde86bd58f5e6c0301afce3846ece9f713ef1f58ab67eaf5e9e10a87131bea"
+        "value": "9f2b86f7f3f58c3ad418dcbe4aadd4a1f37159100f31a94203d22416f8a57f715e974248914b45fd6c636e1e7afe0f8c853aac3ec1dd85e27f401ed5b99b9c19"
       },
       "eol": {
         "standard": "2026-08-31",
@@ -313,19 +313,19 @@
     },
     {
       "id": "debian-12-netinst",
-      "name": "Debian 12.14",
+      "name": "Debian 12.15",
       "category": "linux",
       "distro": "debian",
       "codename": "Bookworm",
-      "version": "12.14",
+      "version": "12.15",
       "edition": "netinst",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/12.14.0/amd64/iso-cd/debian-12.14.0-amd64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.15.0/amd64/iso-cd/debian-12.15.0-amd64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "adfcbb50782af99d457467f9b38c9e0fb3b1b6e211e0202f099aa58874b3f923"
+        "value": "cd4462c06aa8892e692c0c4b9c17802f38c8ab8690e85cbfb5ccaa5956e9af17"
       },
       "eol": {
         "standard": "2028-06-30",
@@ -353,7 +353,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "6ea48973e8f36f5a29d5e4975224f8319a7f2b31cb90a7d60481f6f02a4eaa68fdb5ebca9869d80c22d5a229736e7f538eed75d240e416e37dd7d28941ba40a1"
+        "value": "84946d6e2f55b1e8dcc114efc059f13882bd2ccdf36852126a13a0aa4a4ce0efee945406b78280e5942096639edc2a3ced20b70c12d9c7c7366ce364ba47a0ff"
       },
       "eol": {
         "standard": "2028-06-30",
@@ -379,7 +379,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "fdd700481ede658f0bc76a0a0016459d3403e1c6eff658fd2403bc24b46f071357f3709aded219fa573ce0cd12b3fda9d963e4343d28081c0e5265afd9f70207"
+        "value": "5a069019420fb9441ad4f8004c661fadb747edd5662ca54a17c8f923dee7d717e21dbdaa4ba72d6fce7f920e0217f0a9af382298a7d46ed4bc9dc33ac19181b6"
       },
       "eol": {
         "standard": "2030-06-30",
@@ -417,19 +417,19 @@
     },
     {
       "id": "debian-13-netinst",
-      "name": "Debian 13.5",
+      "name": "Debian 13.6",
       "category": "linux",
       "distro": "debian",
       "codename": "Trixie",
-      "version": "13.5",
+      "version": "13.6",
       "edition": "netinst",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/13.5.0/amd64/iso-cd/debian-13.5.0-amd64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/13.6.0/amd64/iso-cd/debian-13.6.0-amd64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "0b813535dd76f2ea96eff908c65e8521512c92a0631fd41c95756ffd7d4896dc"
+        "value": "65273beed27b2df543b68b65630ba525cfbad8df2b12035732b2dff87d6664e7"
       },
       "eol": {
         "standard": "2030-06-30",
@@ -1483,11 +1483,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260622.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20260909.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "a7223708ad5b557e8a925762fc236e414f088ee246bf76ca19e5b7704291b75b"
+        "value": "60e0defb06db53075fe688153564317cde0e3bbe48ee831b3c2606cb79ca97a2"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -2329,6 +2329,26 @@
       "image_type": "iso"
     },
     {
+      "id": "oracle-9.8-dvd",
+      "name": "Oracle Linux 9.8",
+      "category": "linux",
+      "distro": "oracle",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://yum.oracle.com/ISOS/OracleLinux/OL9/u8/x86_64/OracleLinux-R9-U8-x86_64-dvd.iso",
+      "homepage": "https://www.oracle.com/linux/",
+      "eol": {
+        "standard": "2032-06-30",
+        "extended": "2035-06-30",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "alpine-3.22-cloud-amd64",
       "name": "Alpine Linux 3.22",
       "category": "linux",
@@ -2425,6 +2445,26 @@
       "image_type": "iso"
     },
     {
+      "id": "netbsd-11.0",
+      "name": "NetBSD 11.0",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "11.0",
+      "edition": "install",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.0/images/NetBSD-11.0-amd64.iso",
+      "homepage": "https://www.netbsd.org/",
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "ubuntu-26.04-cloud-amd64",
       "name": "Ubuntu 26.04 LTS",
       "category": "linux",
@@ -2440,7 +2480,7 @@
       "codename": "Resolute Raccoon",
       "checksum": {
         "algorithm": "sha256",
-        "value": "4146595c3f784c2eb11bee837fd6a097289ed20727dd0ec75ebe457dd059a7ba"
+        "value": "8196be9d7958059cb56c6c75c80fdf6cee8a8885bc149ea791d7db1c7ef93035"
       },
       "eol": {
         "standard": "2031-05-29",
@@ -2548,6 +2588,81 @@
         "is_rolling": false
       },
       "status": "eol-extended"
+    },
+    {
+      "id": "debian-10-netinst",
+      "name": "Debian 10.13",
+      "category": "linux",
+      "distro": "debian",
+      "version": "10.13",
+      "edition": "netinst",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/10.13.0/amd64/iso-cd/debian-10.13.0-amd64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "codename": "Buster",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "75aa64071060402a594dcf1e14afd669ca0f8bf757b56d4c9c1a31b8f7c8f931"
+      },
+      "eol": {
+        "standard": "2024-06-30",
+        "extended": "2029-06-30",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "debian-10-cloud-amd64",
+      "name": "Debian 10",
+      "category": "linux",
+      "distro": "debian",
+      "version": "10",
+      "edition": "Cloud image",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cloud.debian.org/images/cloud/buster/latest/debian-10-generic-amd64.qcow2",
+      "homepage": "https://www.debian.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Buster",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "ac867aab704995ccd68527be34af4c5c55ad72bff0920fb566fe2bfcf70de2062f88478ef6c0dd6daf7ab38032fa2d3278e87d6b7a0c4349a4e2178aa937e382"
+      },
+      "eol": {
+        "standard": "2024-06-30",
+        "extended": "2029-06-30",
+        "is_rolling": false
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "debian-9-netinst",
+      "name": "Debian 9.13",
+      "category": "linux",
+      "distro": "debian",
+      "version": "9.13",
+      "edition": "netinst",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/9.13.0/amd64/iso-cd/debian-9.13.0-amd64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "codename": "Stretch",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "71c7e9eb292acc880f84605b1ca2b997f25737fe0a43fc9586f61d35cd2eb43b"
+      },
+      "eol": {
+        "standard": "2022-07-01",
+        "extended": "2027-06-30",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "fedora-43-server",
@@ -2658,7 +2773,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "642ada8a49dbeca8cca6543b31196019ee3d649a0163b5db0e646c7409364eeb"
+        "value": "260e253a09146c85b253d0cccf1e3fb05dc514b5cd5791f87132055a3094cb24"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -2682,7 +2797,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "2c735d3b0de921bd671a0e2d08461e3593ac84f64cdaef32e3ed56ba01f74f4b"
+        "value": "231d21db029e900b305d8e23ff7a61d06bb4e873cb170bd4a85f4e6dd896748f"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -2690,6 +2805,102 @@
         "is_rolling": false
       },
       "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.2-dvd",
+      "name": "Rocky Linux 10.2",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.2",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.2-x86_64-dvd1.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "16ca9c96cdb221ba6e1f68579f21bd69fd8da81c6a921d9068949796f91c8feb"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.2-minimal",
+      "name": "Rocky Linux 10.2",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.2",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.2-x86_64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "aac6ac3ce781b91a91ce78463405f66c611a5dca4b3840c79e5e01d97302f6c8"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.8-dvd",
+      "name": "Rocky Linux 9.8",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.8-x86_64-dvd.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d2bcbb64c2d67511adf80d40cd9543391a33aea5860a355b1d26d7f55236d01f"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.8-minimal",
+      "name": "Rocky Linux 9.8",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.8",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.8-x86_64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d338032cd1cdd41c67139f2f71b4c832c8e4a21943106519db9c7137df7a63d4"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
       "format": "iso",
       "image_type": "iso"
     },
@@ -2878,6 +3089,30 @@
       },
       "eol": {
         "standard": "2027-03-31",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "freebsd-14.5",
+      "name": "FreeBSD 14.5-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "14.5",
+      "edition": "disc1",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.5/FreeBSD-14.5-RELEASE-amd64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a7f360c8dbd4727a8d3213ac85f6eb9b51ee4ed2577a2c31aaebbcae3d921d56"
+      },
+      "eol": {
+        "standard": "2027-06-30",
         "extended": null,
         "is_rolling": false
       },

@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-09-08T10:22:16Z",
-    "count": 42
+    "generated_at": "2026-09-13T10:53:48Z",
+    "count": 48
   },
   "images": [
     {
@@ -99,7 +99,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "c5cec14e342238f4d87417da99f1471e3da12ed85f224688eaeef17aed5f569756cde86bd58f5e6c0301afce3846ece9f713ef1f58ab67eaf5e9e10a87131bea"
+        "value": "9f2b86f7f3f58c3ad418dcbe4aadd4a1f37159100f31a94203d22416f8a57f715e974248914b45fd6c636e1e7afe0f8c853aac3ec1dd85e27f401ed5b99b9c19"
       },
       "eol": {
         "standard": "2026-08-31",
@@ -756,7 +756,7 @@
       "codename": "Bullseye",
       "checksum": {
         "algorithm": "sha512",
-        "value": "16e12488a8f7c4f54388fc2a2f3b21254cafb6a25f4a6e8a3cd234e21f3603d8760ec00c176423041cdba8d56577da57b8b142bcbdd066ce283c25fd7a97bf0a"
+        "value": "a5d49d108e639fad18c82fb71021bbd5e83c7cefefea716f86f5805e4799388ac606a15bb1dfe5606106d160dbeb39c82bf0bda063bcb4b5d2528c49903102ad"
       },
       "eol": {
         "standard": "2026-08-31",
@@ -764,6 +764,156 @@
         "is_rolling": false
       },
       "status": "eol-extended"
+    },
+    {
+      "id": "debian-10-netinst",
+      "name": "Debian 10.13",
+      "category": "linux",
+      "distro": "debian",
+      "version": "10.13",
+      "edition": "netinst",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/10.13.0/amd64/iso-cd/debian-10.13.0-amd64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "codename": "Buster",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "75aa64071060402a594dcf1e14afd669ca0f8bf757b56d4c9c1a31b8f7c8f931"
+      },
+      "eol": {
+        "standard": "2024-06-30",
+        "extended": "2029-06-30",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "debian-10-netinst-arm64",
+      "name": "Debian 10.13",
+      "category": "linux",
+      "distro": "debian",
+      "version": "10.13",
+      "edition": "netinst",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/10.13.0/arm64/iso-cd/debian-10.13.0-arm64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "codename": "Buster",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a20a5437e243186ac8d678202cf55a253e8d37df2b187da885796d5071ba829f"
+      },
+      "eol": {
+        "standard": "2024-06-30",
+        "extended": "2029-06-30",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "debian-10-cloud-amd64",
+      "name": "Debian 10",
+      "category": "linux",
+      "distro": "debian",
+      "version": "10",
+      "edition": "Cloud image",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cloud.debian.org/images/cloud/buster/latest/debian-10-generic-amd64.qcow2",
+      "homepage": "https://www.debian.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Buster",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "ac867aab704995ccd68527be34af4c5c55ad72bff0920fb566fe2bfcf70de2062f88478ef6c0dd6daf7ab38032fa2d3278e87d6b7a0c4349a4e2178aa937e382"
+      },
+      "eol": {
+        "standard": "2024-06-30",
+        "extended": "2029-06-30",
+        "is_rolling": false
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "debian-10-cloud-arm64",
+      "name": "Debian 10",
+      "category": "linux",
+      "distro": "debian",
+      "version": "10",
+      "edition": "Cloud image",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cloud.debian.org/images/cloud/buster/latest/debian-10-generic-arm64.qcow2",
+      "homepage": "https://www.debian.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Buster",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "6ed3a76e6967d1ade3af7890f6270f1b8bc9b62e155c97d5a68c8d44ef4c3ed8988f6ef5254770aab7fc7f9603fcd17afc4ebff753f6f8340490243d13e9cae6"
+      },
+      "eol": {
+        "standard": "2024-06-30",
+        "extended": "2029-06-30",
+        "is_rolling": false
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "debian-9-netinst",
+      "name": "Debian 9.13",
+      "category": "linux",
+      "distro": "debian",
+      "version": "9.13",
+      "edition": "netinst",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/9.13.0/amd64/iso-cd/debian-9.13.0-amd64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "codename": "Stretch",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "71c7e9eb292acc880f84605b1ca2b997f25737fe0a43fc9586f61d35cd2eb43b"
+      },
+      "eol": {
+        "standard": "2022-07-01",
+        "extended": "2027-06-30",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "debian-9-netinst-arm64",
+      "name": "Debian 9.13",
+      "category": "linux",
+      "distro": "debian",
+      "version": "9.13",
+      "edition": "netinst",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdimage.debian.org/cdimage/archive/9.13.0/arm64/iso-cd/debian-9.13.0-arm64-netinst.iso",
+      "homepage": "https://www.debian.org/",
+      "codename": "Stretch",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "ea321c9de60a6fe9dfaf438b8e16f1945d6d2239e9f0d3cfe6872d4280eba10c"
+      },
+      "eol": {
+        "standard": "2022-07-01",
+        "extended": "2027-06-30",
+        "is_rolling": false
+      },
+      "status": "eol-extended",
+      "format": "iso",
+      "image_type": "iso"
     },
     {
       "id": "rocky-8.10-dvd",
@@ -778,7 +928,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "642ada8a49dbeca8cca6543b31196019ee3d649a0163b5db0e646c7409364eeb"
+        "value": "260e253a09146c85b253d0cccf1e3fb05dc514b5cd5791f87132055a3094cb24"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -802,7 +952,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "2c735d3b0de921bd671a0e2d08461e3593ac84f64cdaef32e3ed56ba01f74f4b"
+        "value": "231d21db029e900b305d8e23ff7a61d06bb4e873cb170bd4a85f4e6dd896748f"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -826,7 +976,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "fbc3d12b6bd4fadeb7aa11c133afc927a6df5414f3ce47d6093706a4ef86e0a8"
+        "value": "4e3c2339f61510a293b631495571e72d1df852b1f2b765100defad193433467f"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -850,7 +1000,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "94b7360334ecf90443bcadff94c69b0f6a8f9b1f051c0caf0e6dfe867bd865da"
+        "value": "911a048c8b7b70eb671c3e6e161b02b47d182cd0b68c1ab97d16dc95a0d466d9"
       },
       "eol": {
         "standard": "2024-05-31",
