@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-09-08T10:22:16Z",
-    "count": 22
+    "generated_at": "2026-09-13T10:53:48Z",
+    "count": 26
   },
   "images": [
     {
@@ -419,6 +419,46 @@
       "image_type": "iso"
     },
     {
+      "id": "netbsd-11.0",
+      "name": "NetBSD 11.0",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "11.0",
+      "edition": "install",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.0/images/NetBSD-11.0-amd64.iso",
+      "homepage": "https://www.netbsd.org/",
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "netbsd-11.0-arm64",
+      "name": "NetBSD 11.0",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "11.0",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "rolling",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.0/images/NetBSD-11.0-evbarm-aarch64.iso",
+      "homepage": "https://www.netbsd.org/",
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "freebsd-13.5-arm64",
       "name": "FreeBSD 13.5-RELEASE",
       "category": "bsd",
@@ -532,6 +572,54 @@
       },
       "eol": {
         "standard": "2027-03-31",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "freebsd-14.5",
+      "name": "FreeBSD 14.5-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "14.5",
+      "edition": "disc1",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.5/FreeBSD-14.5-RELEASE-amd64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a7f360c8dbd4727a8d3213ac85f6eb9b51ee4ed2577a2c31aaebbcae3d921d56"
+      },
+      "eol": {
+        "standard": "2027-06-30",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "freebsd-14.5-arm64",
+      "name": "FreeBSD 14.5-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "14.5",
+      "edition": "disc1",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.5/FreeBSD-14.5-RELEASE-arm64-aarch64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e02942ca7856c7822577d7d5cb1e8fd60b02c2936612d73f2b6f0d8423f3844b"
+      },
+      "eol": {
+        "standard": "2027-06-30",
         "extended": null,
         "is_rolling": false
       },
