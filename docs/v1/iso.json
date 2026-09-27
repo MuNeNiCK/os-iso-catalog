@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-09-08T10:22:16Z",
+    "generated_at": "2026-09-27T11:08:04Z",
     "count": 147
   },
   "images": [
@@ -1042,8 +1042,8 @@
         "value": "82fa2b70a18fb268c5ef013e298f85bba0d0e6c7ae882c49a3f67c02ee6d68de"
       },
       "eol": {
-        "standard": "2035-07-01",
-        "extended": null,
+        "standard": "2035-06-30",
+        "extended": "2038-06-30",
         "is_rolling": false,
         "note": "Premier Support 10 years"
       },
@@ -2335,8 +2335,8 @@
         "value": "021cabde0d7bc9ac8f30f12e7c7b4b5a250a6994d87bb93aa93894cce8b3bc16"
       },
       "eol": {
-        "standard": "2035-07-01",
-        "extended": null,
+        "standard": "2035-06-30",
+        "extended": "2038-06-30",
         "is_rolling": false,
         "note": "Premier Support 10 years"
       },
