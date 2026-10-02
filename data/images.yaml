@@ -2248,7 +2248,7 @@ images:
     extended: '2031-10-01'
     is_rolling: false
     note: 180-day evaluation. Register to download.
-  status: supported
+  status: eol-extended
 - id: windows-server-2019-eval
   name: Windows Server 2019 Evaluation
   category: windows
