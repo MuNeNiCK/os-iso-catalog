@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-09-27T11:08:04Z",
-    "count": 160
+    "generated_at": "2026-10-02T11:40:32Z",
+    "count": 159
   },
   "images": [
     {
@@ -1815,27 +1815,6 @@
       "eol": {
         "standard": "2029-10-01",
         "extended": "2034-10-01",
-        "is_rolling": false,
-        "note": "180-day evaluation. Register to download."
-      },
-      "status": "supported",
-      "format": "unknown",
-      "image_type": "iso"
-    },
-    {
-      "id": "windows-server-2022-eval",
-      "name": "Windows Server 2022 Evaluation",
-      "category": "windows",
-      "distro": "windows-server",
-      "version": "2022",
-      "edition": "Evaluation",
-      "arch": "x64",
-      "release_type": "stable",
-      "download_page": "https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022",
-      "homepage": "https://www.microsoft.com/en-us/windows-server",
-      "eol": {
-        "standard": "2026-10-01",
-        "extended": "2031-10-01",
         "is_rolling": false,
         "note": "180-day evaluation. Register to download."
       },

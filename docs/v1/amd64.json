@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-09-27T11:08:04Z",
+    "generated_at": "2026-10-02T11:40:32Z",
     "count": 120
   },
   "images": [
@@ -1642,7 +1642,7 @@
         "is_rolling": false,
         "note": "180-day evaluation. Register to download."
       },
-      "status": "supported",
+      "status": "eol-extended",
       "format": "unknown",
       "image_type": "iso"
     },
