@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-10-14T10:57:26Z",
+    "generated_at": "2026-10-20T10:44:45Z",
     "count": 159
   },
   "images": [
@@ -1887,7 +1887,7 @@
         "value": "a228d0a1ef558b4d9ec84c698f0d3ffd13cd38c64149487cba0f1ad873be07b2"
       },
       "eol": {
-        "standard": "2026-11-01",
+        "standard": "2026-10-20",
         "extended": null,
         "is_rolling": false
       },
@@ -3082,7 +3082,7 @@
         "value": "29ce7eda86ee14a5a30776f18523b416a5572db03ee32d9a1109c446cb3949b3"
       },
       "eol": {
-        "standard": "2026-11-01",
+        "standard": "2026-10-20",
         "extended": null,
         "is_rolling": false
       },
