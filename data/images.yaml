@@ -2361,7 +2361,7 @@ images:
     standard: '2026-10-20'
     extended:
     is_rolling: false
-  status: supported
+  status: eol
 - id: netbsd-9.4
   name: NetBSD 9.4
   category: bsd
@@ -3479,7 +3479,7 @@ images:
     standard: '2026-10-20'
     extended:
     is_rolling: false
-  status: supported
+  status: eol
 - id: openbsd-7.9
   name: "OpenBSD 7.9"
   category: bsd
