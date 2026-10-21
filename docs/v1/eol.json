@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-10-20T10:44:45Z",
-    "count": 43
+    "generated_at": "2026-10-21T10:56:33Z",
+    "count": 45
   },
   "images": [
     {
@@ -337,6 +337,30 @@
       "image_type": "iso"
     },
     {
+      "id": "openbsd-7.8",
+      "name": "OpenBSD 7.8",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "7.8",
+      "edition": "install",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/7.8/amd64/install78.iso",
+      "homepage": "https://www.openbsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a228d0a1ef558b4d9ec84c698f0d3ffd13cd38c64149487cba0f1ad873be07b2"
+      },
+      "eol": {
+        "standard": "2026-10-20",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "netbsd-9.4",
       "name": "NetBSD 9.4",
       "category": "bsd",
@@ -529,6 +553,30 @@
         "extended": null,
         "is_rolling": false,
         "note": "EOL imminent"
+      },
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "openbsd-7.8-arm64",
+      "name": "OpenBSD 7.8",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "7.8",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/7.8/arm64/install78.iso",
+      "homepage": "https://www.openbsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "29ce7eda86ee14a5a30776f18523b416a5572db03ee32d9a1109c446cb3949b3"
+      },
+      "eol": {
+        "standard": "2026-10-20",
+        "extended": null,
+        "is_rolling": false
       },
       "status": "eol",
       "format": "iso",
