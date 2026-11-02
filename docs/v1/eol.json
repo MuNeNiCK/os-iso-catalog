@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-10-21T10:56:33Z",
-    "count": 45
+    "generated_at": "2026-11-02T14:24:09Z",
+    "count": 49
   },
   "images": [
     {
@@ -177,6 +177,30 @@
         "extended": null,
         "is_rolling": false,
         "note": "EOL imminent"
+      },
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alpine-3.21",
+      "name": "Alpine Linux 3.21.7",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.21.7",
+      "edition": "Standard",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/x86_64/alpine-standard-3.21.7-x86_64.iso",
+      "homepage": "https://alpinelinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f1a3a93628927b382d31e7b173b12801342641f711d8c591b88582be1b29954a"
+      },
+      "eol": {
+        "standard": "2026-11-01",
+        "extended": null,
+        "is_rolling": false
       },
       "status": "eol",
       "format": "iso",
@@ -507,6 +531,78 @@
       "status": "eol",
       "format": "iso",
       "image_type": "iso"
+    },
+    {
+      "id": "alpine-3.21-arm64",
+      "name": "Alpine Linux 3.21.7",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.21.7",
+      "edition": "Standard",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/aarch64/alpine-standard-3.21.7-aarch64.iso",
+      "homepage": "https://alpinelinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e509efa094399aed2b0a3b455779a68208fdb33ff2f302b32bdf46b4fb3406ab"
+      },
+      "eol": {
+        "standard": "2026-11-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "eol",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alpine-3.21-cloud-amd64",
+      "name": "Alpine Linux 3.21",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.21",
+      "edition": "Cloud image",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/nocloud_alpine-3.21.7-x86_64-uefi-cloudinit-r0.qcow2",
+      "homepage": "https://alpinelinux.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "779afcc0bfdd4074ca620bb67c2f70f3d6cad4cdaf4fd91a9fd8a127feb159d9407be18cd8f778ed1adf950799cd93b2692d49ad7ee2221ed6a52d8e895d4c37"
+      },
+      "eol": {
+        "standard": "2026-11-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "eol"
+    },
+    {
+      "id": "alpine-3.21-cloud-arm64",
+      "name": "Alpine Linux 3.21",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.21",
+      "edition": "Cloud image",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.21/releases/cloud/nocloud_alpine-3.21.7-aarch64-uefi-cloudinit-r0.qcow2",
+      "homepage": "https://alpinelinux.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "9837b968763c2f620aa81cab3dc26b7f914ffa935245c9e929e339559f0f2fecdfd281e5cf82457ecfd6a9b6726a8a8ec40fb35d99dd8fd9b27d3b76c304dac7"
+      },
+      "eol": {
+        "standard": "2026-11-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "eol"
     },
     {
       "id": "opensuse-leap-15.6-dvd-arm64",

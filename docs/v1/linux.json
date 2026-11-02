@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-10-21T10:56:33Z",
+    "generated_at": "2026-11-02T14:24:09Z",
     "count": 175
   },
   "images": [
@@ -1178,7 +1178,7 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -3000,7 +3000,7 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported",
+      "status": "eol",
       "format": "iso",
       "image_type": "iso"
     },
@@ -3098,7 +3098,7 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported"
+      "status": "eol"
     },
     {
       "id": "alpine-3.21-cloud-arm64",
@@ -3122,7 +3122,7 @@
         "extended": null,
         "is_rolling": false
       },
-      "status": "supported"
+      "status": "eol"
     },
     {
       "id": "alpine-3.24",
