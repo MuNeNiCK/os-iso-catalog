@@ -1458,7 +1458,7 @@ images:
     standard: '2026-11-01'
     extended:
     is_rolling: false
-  status: supported
+  status: eol
 - id: alpine-3.22
   name: "Alpine Linux 3.22.5"
   category: linux
@@ -3277,7 +3277,7 @@ images:
     standard: '2026-11-01'
     extended:
     is_rolling: false
-  status: supported
+  status: eol
 - id: alpine-3.22-arm64
   name: "Alpine Linux 3.22.5"
   category: linux
@@ -3362,7 +3362,7 @@ images:
     standard: '2026-11-01'
     extended:
     is_rolling: false
-  status: supported
+  status: eol
 - id: alpine-3.21-cloud-arm64
   name: "Alpine Linux 3.21"
   category: linux
@@ -3384,7 +3384,7 @@ images:
     standard: '2026-11-01'
     extended:
     is_rolling: false
-  status: supported
+  status: eol
 - id: alpine-3.24
   name: "Alpine Linux 3.24.1"
   category: linux
