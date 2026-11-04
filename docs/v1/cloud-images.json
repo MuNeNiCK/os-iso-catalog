@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-02T14:24:09Z",
+    "generated_at": "2026-11-04T13:34:29Z",
     "count": 53
   },
   "images": [
@@ -333,7 +333,7 @@
       "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/43/Cloud/x86_64/images/Fedora-Cloud-Base-Generic-43-1.6.x86_64.qcow2",
       "homepage": "https://fedoraproject.org/",
       "eol": {
-        "standard": "2026-12-09",
+        "standard": "2026-12-01",
         "extended": null,
         "is_rolling": false,
         "note": "Approximate EOL"
@@ -358,7 +358,7 @@
       "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/43/Cloud/aarch64/images/Fedora-Cloud-Base-Generic-43-1.6.aarch64.qcow2",
       "homepage": "https://fedoraproject.org/",
       "eol": {
-        "standard": "2026-12-09",
+        "standard": "2026-12-01",
         "extended": null,
         "is_rolling": false,
         "note": "Approximate EOL"
