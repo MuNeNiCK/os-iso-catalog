@@ -75,7 +75,7 @@ Cloud image entries use the same tracking system where upstream URLs and checksu
 
 | Type | Description | Used by |
 |------|-------------|---------|
-| `static` | URL is fully predictable from version; a variant may instead set `dir_url` + `filename_regex` to pick the newest matching file from a directory listing | Ubuntu, Debian, AlmaLinux, Alpine, FreeBSD, OpenBSD, NetBSD, Oracle Linux |
+| `static` | URL is fully predictable from version. `url_template`/`checksums_url` may list candidate locations (first reachable wins, e.g. Debian `release/` vs `archive/`); a variant may instead set `dir_url` + `filename_regex` (one pattern or a list in order of preference) to pick the newest matching file from a directory listing | Ubuntu, Debian, AlmaLinux, Alpine, FreeBSD, OpenBSD, NetBSD, Oracle Linux |
 | `directory_parse` | Filename resolved from directory listing (e.g. build numbers) | Fedora, Rocky Linux |
 | `rolling_checksum` | Refreshes checksums for rolling "latest" URLs | CentOS Stream |
 
@@ -89,7 +89,7 @@ Cloud image entries use the same tracking system where upstream URLs and checksu
 | Rocky Linux | Yes | Directory parse (dvd/dvd1 naming) |
 | AlmaLinux | Yes | Static URL pattern |
 | CentOS Stream | Yes | Rolling checksum refresh |
-| Alpine | Yes | Static URL pattern (cloud images: newest file in the directory, as not every point release has one) |
+| Alpine | Yes | Static URL pattern (cloud images: newest file in the directory, as not every point release has one; recognizes the 3.24.2+ naming) |
 | FreeBSD | Yes | Static URL pattern |
 | OpenBSD | Yes | Static URL pattern |
 | NetBSD | Yes | Static URL pattern |
