@@ -427,11 +427,14 @@ tracking:
         edition: Cloud image
         image_type: cloud-image
         format: qcow2
-        url_template: 
-          https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/nocloud_alpine-{latest}-x86_64-uefi-cloudinit-r0.qcow2
+        # Cloud images are not published for every point release; use the
+        # newest one in the directory.
+        dir_url: https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/
+        filename_regex: 
+          nocloud_alpine-{cycle}\.\d+-x86_64-uefi-cloudinit-r\d+\.qcow2
         checksums_url: 
-          https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/nocloud_alpine-{latest}-x86_64-uefi-cloudinit-r0.qcow2.sha512
-        filename_pattern: nocloud_alpine-{latest}-x86_64-uefi-cloudinit-r0.qcow2
+          https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/{filename}.sha512
+        filename_pattern: "{filename}"
         checksum_algorithm: sha512
       - id_template: alpine-{cycle}-cloud-arm64
         name_template: "Alpine Linux {cycle}"
@@ -440,12 +443,14 @@ tracking:
         edition: Cloud image
         image_type: cloud-image
         format: qcow2
-        url_template: 
-          https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/nocloud_alpine-{latest}-aarch64-uefi-cloudinit-r0.qcow2
+        # Cloud images are not published for every point release; use the
+        # newest one in the directory.
+        dir_url: https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/
+        filename_regex: 
+          nocloud_alpine-{cycle}\.\d+-aarch64-uefi-cloudinit-r\d+\.qcow2
         checksums_url: 
-          https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/nocloud_alpine-{latest}-aarch64-uefi-cloudinit-r0.qcow2.sha512
-        filename_pattern: 
-          nocloud_alpine-{latest}-aarch64-uefi-cloudinit-r0.qcow2
+          https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/{filename}.sha512
+        filename_pattern: "{filename}"
         checksum_algorithm: sha512
   oracle:
     product: oracle-linux
