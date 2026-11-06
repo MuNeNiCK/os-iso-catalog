@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-04T13:34:29Z",
+    "generated_at": "2026-11-06T12:59:17Z",
     "count": 147
   },
   "images": [
@@ -134,19 +134,19 @@
     },
     {
       "id": "ubuntu-24.04-server",
-      "name": "Ubuntu 24.04.4 LTS",
+      "name": "Ubuntu 24.04.5 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Noble Numbat",
-      "version": "24.04.4",
+      "version": "24.04.5",
       "edition": "Server",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://releases.ubuntu.com/24.04/ubuntu-24.04.4-live-server-amd64.iso",
+      "url": "https://releases.ubuntu.com/24.04/ubuntu-24.04.5-live-server-amd64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "e907d92eeec9df64163a7e454cbc8d7755e8ddc7ed42f99dbc80c40f1a138433"
+        "value": "97f3d7ffb032c3eb3b23d2c8be9cc76e60c2c1f2c0146ba5ba9fe01cafae0fd8"
       },
       "eol": {
         "standard": "2029-05-31",
@@ -159,19 +159,19 @@
     },
     {
       "id": "ubuntu-26.04-desktop",
-      "name": "Ubuntu 26.04 LTS",
+      "name": "Ubuntu 26.04.1 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Resolute Raccoon",
-      "version": "26.04",
+      "version": "26.04.1",
       "edition": "Desktop",
       "arch": "amd64",
       "release_type": "beta",
-      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04-desktop-amd64.iso",
+      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04.1-desktop-amd64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "487f87faaf547ea30e0aba4d5b53346292571256b25333a978db1692bcee9dd2"
+        "value": "601e30fbf5d97759367c632e2c33630665039b7e2158fd068403da3ccf1bda1f"
       },
       "eol": {
         "standard": "2031-05-29",
@@ -185,19 +185,19 @@
     },
     {
       "id": "ubuntu-26.04-server",
-      "name": "Ubuntu 26.04 LTS",
+      "name": "Ubuntu 26.04.1 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Resolute Raccoon",
-      "version": "26.04",
+      "version": "26.04.1",
       "edition": "Server",
       "arch": "amd64",
       "release_type": "beta",
-      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04-live-server-amd64.iso",
+      "url": "https://releases.ubuntu.com/26.04/ubuntu-26.04.1-live-server-amd64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "dec49008a71f6098d0bcfc822021f4d042d5f2db279e4d75bdd981304f1ca5d9"
+        "value": "cc8a95cde20f6ced61a322420de00f10cc3c90ced545daa46cb9c1a117f1d927"
       },
       "eol": {
         "standard": "2031-05-29",
@@ -237,19 +237,19 @@
     },
     {
       "id": "debian-12-netinst",
-      "name": "Debian 12.14",
+      "name": "Debian 12.15",
       "category": "linux",
       "distro": "debian",
       "codename": "Bookworm",
-      "version": "12.14",
+      "version": "12.15",
       "edition": "netinst",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/12.14.0/amd64/iso-cd/debian-12.14.0-amd64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.15.0/amd64/iso-cd/debian-12.15.0-amd64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "adfcbb50782af99d457467f9b38c9e0fb3b1b6e211e0202f099aa58874b3f923"
+        "value": "cd4462c06aa8892e692c0c4b9c17802f38c8ab8690e85cbfb5ccaa5956e9af17"
       },
       "eol": {
         "standard": "2028-06-30",
@@ -954,18 +954,18 @@
     },
     {
       "id": "alpine-3.22",
-      "name": "Alpine Linux 3.22.5",
+      "name": "Alpine Linux 3.22.7",
       "category": "linux",
       "distro": "alpine",
-      "version": "3.22.5",
+      "version": "3.22.7",
       "edition": "Standard",
       "arch": "x86_64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/x86_64/alpine-standard-3.22.5-x86_64.iso",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/x86_64/alpine-standard-3.22.7-x86_64.iso",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "8844f664dffbf50964ba33fe67658dd5d61c8f02d88e4febd17cf2c4334983c4"
+        "value": "0c6a54479aaba67911d1bbb41b7ddce2c71d25a4fd3b5ad7e2420f8ea9a00fba"
       },
       "eol": {
         "standard": "2027-05-01",
@@ -978,18 +978,18 @@
     },
     {
       "id": "alpine-3.23",
-      "name": "Alpine Linux 3.23.5",
+      "name": "Alpine Linux 3.23.7",
       "category": "linux",
       "distro": "alpine",
-      "version": "3.23.5",
+      "version": "3.23.7",
       "edition": "Standard",
       "arch": "x86_64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/x86_64/alpine-standard-3.23.5-x86_64.iso",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/x86_64/alpine-standard-3.23.7-x86_64.iso",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "273e403b40ff20b0e08b3fc13d3710abf4283bb6fe7e89b09420e280ebfd785c"
+        "value": "582087037e29417a6b5af39ef5052c89000bb060253f000e25d0b5c8855a8bbb"
       },
       "eol": {
         "standard": "2027-11-01",
@@ -1826,19 +1826,19 @@
     },
     {
       "id": "ubuntu-24.04-desktop-arm64",
-      "name": "Ubuntu 24.04.4 LTS",
+      "name": "Ubuntu 24.04.5 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Noble Numbat",
-      "version": "24.04.4",
+      "version": "24.04.5",
       "edition": "Desktop",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cdimage.ubuntu.com/ubuntu/releases/24.04/release/ubuntu-24.04.4-desktop-arm64.iso",
+      "url": "https://cdimage.ubuntu.com/ubuntu/releases/24.04/release/ubuntu-24.04.5-desktop-arm64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "c2610520bf582976839a1724c669e1cfed0547427be5a0ad12d457b92b46ffbe"
+        "value": "2be09ca883921bff6d8e6b0bfbafd13e32436553b7086f33bce3a4c5bad8bd14"
       },
       "eol": {
         "standard": "2029-05-31",
@@ -1851,19 +1851,19 @@
     },
     {
       "id": "ubuntu-24.04-server-arm64",
-      "name": "Ubuntu 24.04.4 LTS",
+      "name": "Ubuntu 24.04.5 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Noble Numbat",
-      "version": "24.04.4",
+      "version": "24.04.5",
       "edition": "Server",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04.4-live-server-arm64.iso",
+      "url": "https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04.5-live-server-arm64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "9a6ce6d7e66c8abed24d24944570a495caca80b3b0007df02818e13829f27f32"
+        "value": "f12484464c7d4d73e2167e0a7dbda1e669f8fae9bcf778dc0944937034b320cb"
       },
       "eol": {
         "standard": "2029-05-31",
@@ -2046,18 +2046,18 @@
     },
     {
       "id": "alpine-3.23-arm64",
-      "name": "Alpine Linux 3.23.5",
+      "name": "Alpine Linux 3.23.7",
       "category": "linux",
       "distro": "alpine",
-      "version": "3.23.5",
+      "version": "3.23.7",
       "edition": "Standard",
       "arch": "aarch64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/aarch64/alpine-standard-3.23.5-aarch64.iso",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.23/releases/aarch64/alpine-standard-3.23.7-aarch64.iso",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "270ef0a2c67aa5e1cc0e62c2ae336d86bd59b7b0c10f85a520b55809ec493892"
+        "value": "cbd978379276dae2c74cbab77b65d3da70961e98a323ad4f08be942f869e57bb"
       },
       "eol": {
         "standard": "2027-11-01",
@@ -2218,19 +2218,19 @@
     },
     {
       "id": "debian-12-netinst-arm64",
-      "name": "Debian 12.14",
+      "name": "Debian 12.15",
       "category": "linux",
       "distro": "debian",
       "codename": "Bookworm",
-      "version": "12.14",
+      "version": "12.15",
       "edition": "netinst",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/12.14.0/arm64/iso-cd/debian-12.14.0-arm64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/archive/12.15.0/arm64/iso-cd/debian-12.15.0-arm64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "2b043fea4737742cff0bc6106b9f367fc4e17543f0a9e42e10d26813c6f01eef"
+        "value": "2ff1c33f31bbfae04251267d9fd1cb098c055f7cf39d9943b0cf8d5e73a17eba"
       },
       "eol": {
         "standard": "2028-06-30",
@@ -2434,18 +2434,18 @@
     },
     {
       "id": "alpine-3.22-arm64",
-      "name": "Alpine Linux 3.22.5",
+      "name": "Alpine Linux 3.22.7",
       "category": "linux",
       "distro": "alpine",
-      "version": "3.22.5",
+      "version": "3.22.7",
       "edition": "Standard",
       "arch": "aarch64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/aarch64/alpine-standard-3.22.5-aarch64.iso",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.22/releases/aarch64/alpine-standard-3.22.7-aarch64.iso",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "cbefb4cba2c38fff041f01cd03402c8a1f9d26b5d967b3d9d7605e4fe40007ac"
+        "value": "f7d8cdfed49e2a0393cab920ef82c720a334da6e9004f0076fd00c00c0394a65"
       },
       "eol": {
         "standard": "2027-05-01",
@@ -2458,18 +2458,18 @@
     },
     {
       "id": "alpine-3.24",
-      "name": "Alpine Linux 3.24.1",
+      "name": "Alpine Linux 3.24.3",
       "category": "linux",
       "distro": "alpine",
-      "version": "3.24.1",
+      "version": "3.24.3",
       "edition": "Standard",
       "arch": "x86_64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/x86_64/alpine-standard-3.24.1-x86_64.iso",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/x86_64/alpine-standard-3.24.3-x86_64.iso",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "f4dd613206676c62949144c8ad75fc64582099f444dd1485bae104a60f51dd26"
+        "value": "1629ffe7308d4f3d3eeeed3a97d09ad62293f6d37ef3e483a7306077fdac12be"
       },
       "eol": {
         "standard": "2028-06-01",
@@ -2482,18 +2482,18 @@
     },
     {
       "id": "alpine-3.24-arm64",
-      "name": "Alpine Linux 3.24.1",
+      "name": "Alpine Linux 3.24.3",
       "category": "linux",
       "distro": "alpine",
-      "version": "3.24.1",
+      "version": "3.24.3",
       "edition": "Standard",
       "arch": "aarch64",
       "release_type": "stable",
-      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/aarch64/alpine-standard-3.24.1-aarch64.iso",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/aarch64/alpine-standard-3.24.3-aarch64.iso",
       "homepage": "https://alpinelinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "95eba9066d7920fe703dd62b8b8e7f38c45eba0bad225dbe2ccfb5b76cf5356d"
+        "value": "d4438d8973b7a4c50a2ee25d1555c537c1e6e91e25db28b7b683aa79c9ddba8f"
       },
       "eol": {
         "standard": "2028-06-01",
@@ -2704,19 +2704,19 @@
     },
     {
       "id": "ubuntu-26.04-desktop-arm64",
-      "name": "Ubuntu 26.04 LTS",
+      "name": "Ubuntu 26.04.1 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Resolute Raccoon",
-      "version": "26.04",
+      "version": "26.04.1",
       "edition": "Desktop",
       "arch": "arm64",
       "release_type": "beta",
-      "url": "https://cdimage.ubuntu.com/ubuntu/releases/26.04/release/ubuntu-26.04-desktop-arm64.iso",
+      "url": "https://cdimage.ubuntu.com/ubuntu/releases/26.04/release/ubuntu-26.04.1-desktop-arm64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "c2afd538d66fdd77377d03f1ed2ac76a34f1c116baecc9a8170d68f833121f57"
+        "value": "c54d196489d3c867975fb3bbb72ca52ec2e137456e305481f81096304e4d2517"
       },
       "eol": {
         "standard": "2031-05-29",
@@ -2730,19 +2730,19 @@
     },
     {
       "id": "ubuntu-26.04-server-arm64",
-      "name": "Ubuntu 26.04 LTS",
+      "name": "Ubuntu 26.04.1 LTS",
       "category": "linux",
       "distro": "ubuntu",
       "codename": "Resolute Raccoon",
-      "version": "26.04",
+      "version": "26.04.1",
       "edition": "Server",
       "arch": "arm64",
       "release_type": "beta",
-      "url": "https://cdimage.ubuntu.com/releases/26.04/release/ubuntu-26.04-live-server-arm64.iso",
+      "url": "https://cdimage.ubuntu.com/releases/26.04/release/ubuntu-26.04.1-live-server-arm64.iso",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "c9aa567e6560b2eddae3af03fc686002e35b6fee96f97fd5df3271e846439fdd"
+        "value": "af78753c94b924c85c4964c670692a853f7c80299a4064e317edad95462e3168"
       },
       "eol": {
         "standard": "2031-05-29",
@@ -3060,7 +3060,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "642ada8a49dbeca8cca6543b31196019ee3d649a0163b5db0e646c7409364eeb"
+        "value": "260e253a09146c85b253d0cccf1e3fb05dc514b5cd5791f87132055a3094cb24"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -3084,7 +3084,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "2c735d3b0de921bd671a0e2d08461e3593ac84f64cdaef32e3ed56ba01f74f4b"
+        "value": "231d21db029e900b305d8e23ff7a61d06bb4e873cb170bd4a85f4e6dd896748f"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -3108,7 +3108,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "fbc3d12b6bd4fadeb7aa11c133afc927a6df5414f3ce47d6093706a4ef86e0a8"
+        "value": "4e3c2339f61510a293b631495571e72d1df852b1f2b765100defad193433467f"
       },
       "eol": {
         "standard": "2024-05-31",
@@ -3132,7 +3132,7 @@
       "homepage": "https://rockylinux.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "94b7360334ecf90443bcadff94c69b0f6a8f9b1f051c0caf0e6dfe867bd865da"
+        "value": "911a048c8b7b70eb671c3e6e161b02b47d182cd0b68c1ab97d16dc95a0d466d9"
       },
       "eol": {
         "standard": "2024-05-31",
