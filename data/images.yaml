@@ -90,19 +90,25 @@ tracking:
         name_template: "Debian {latest}"
         arch: amd64
         edition: netinst
-        url_template: 
-          https://cdimage.debian.org/cdimage/archive/{latest}.0/amd64/iso-cd/debian-{latest}.0-amd64-netinst.iso
-        checksums_url: 
-          https://cdimage.debian.org/cdimage/archive/{latest}.0/amd64/iso-cd/SHA256SUMS
+        # The current point release is under release/, older ones under archive/
+        url_template:
+        - https://cdimage.debian.org/cdimage/release/{latest}.0/amd64/iso-cd/debian-{latest}.0-amd64-netinst.iso
+        - https://cdimage.debian.org/cdimage/archive/{latest}.0/amd64/iso-cd/debian-{latest}.0-amd64-netinst.iso
+        checksums_url:
+        - https://cdimage.debian.org/cdimage/release/{latest}.0/amd64/iso-cd/SHA256SUMS
+        - https://cdimage.debian.org/cdimage/archive/{latest}.0/amd64/iso-cd/SHA256SUMS
         filename_pattern: debian-{latest}.0-amd64-netinst.iso
       - id_template: debian-{cycle}-netinst-arm64
         name_template: "Debian {latest}"
         arch: arm64
         edition: netinst
-        url_template: 
-          https://cdimage.debian.org/cdimage/archive/{latest}.0/arm64/iso-cd/debian-{latest}.0-arm64-netinst.iso
-        checksums_url: 
-          https://cdimage.debian.org/cdimage/archive/{latest}.0/arm64/iso-cd/SHA256SUMS
+        # The current point release is under release/, older ones under archive/
+        url_template:
+        - https://cdimage.debian.org/cdimage/release/{latest}.0/arm64/iso-cd/debian-{latest}.0-arm64-netinst.iso
+        - https://cdimage.debian.org/cdimage/archive/{latest}.0/arm64/iso-cd/debian-{latest}.0-arm64-netinst.iso
+        checksums_url:
+        - https://cdimage.debian.org/cdimage/release/{latest}.0/arm64/iso-cd/SHA256SUMS
+        - https://cdimage.debian.org/cdimage/archive/{latest}.0/arm64/iso-cd/SHA256SUMS
         filename_pattern: debian-{latest}.0-arm64-netinst.iso
       - id_template: debian-{cycle}-cloud-amd64
         name_template: "Debian {cycle}"
@@ -387,12 +393,18 @@ tracking:
         edition: install
         url_template: 
           https://cdn.netbsd.org/pub/NetBSD/NetBSD-{latest}/images/NetBSD-{latest}-amd64.iso
+        checksums_url: 
+          https://cdn.netbsd.org/pub/NetBSD/NetBSD-{latest}/images/SHA512
+        filename_pattern: NetBSD-{latest}-amd64.iso
       - id_template: netbsd-{latest}-arm64
         name_template: "NetBSD {latest}"
         arch: arm64
         edition: install
         url_template: 
           https://cdn.netbsd.org/pub/NetBSD/NetBSD-{latest}/images/NetBSD-{latest}-evbarm-aarch64.iso
+        checksums_url: 
+          https://cdn.netbsd.org/pub/NetBSD/NetBSD-{latest}/images/SHA512
+        filename_pattern: NetBSD-{latest}-evbarm-aarch64.iso
   alpine:
     product: alpine
     match_depth: 2
@@ -428,10 +440,14 @@ tracking:
         image_type: cloud-image
         format: qcow2
         # Cloud images are not published for every point release; use the
-        # newest one in the directory.
+        # newest one in the directory. Naming in order of preference:
+        # alpine-* (3.24.2+, BIOS and UEFI), nocloud_* (3.23 and earlier),
+        # generic_* (3.24.0-3.24.1).
         dir_url: https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/
-        filename_regex: 
-          nocloud_alpine-{cycle}\.\d+-x86_64-uefi-cloudinit-r\d+\.qcow2
+        filename_regex:
+        - alpine-{cycle}\.\d+-x86_64-cloudinit-r\d+\.qcow2
+        - nocloud_alpine-{cycle}\.\d+-x86_64-uefi-cloudinit-r\d+\.qcow2
+        - generic_alpine-{cycle}\.\d+-x86_64-uefi-cloudinit-r\d+\.qcow2
         checksums_url: 
           https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/{filename}.sha512
         filename_pattern: "{filename}"
@@ -444,10 +460,14 @@ tracking:
         image_type: cloud-image
         format: qcow2
         # Cloud images are not published for every point release; use the
-        # newest one in the directory.
+        # newest one in the directory. Naming in order of preference:
+        # alpine-* (3.24.2+, BIOS and UEFI), nocloud_* (3.23 and earlier),
+        # generic_* (3.24.0-3.24.1).
         dir_url: https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/
-        filename_regex: 
-          nocloud_alpine-{cycle}\.\d+-aarch64-uefi-cloudinit-r\d+\.qcow2
+        filename_regex:
+        - alpine-{cycle}\.\d+-aarch64-cloudinit-r\d+\.qcow2
+        - nocloud_alpine-{cycle}\.\d+-aarch64-uefi-cloudinit-r\d+\.qcow2
+        - generic_alpine-{cycle}\.\d+-aarch64-uefi-cloudinit-r\d+\.qcow2
         checksums_url: 
           https://dl-cdn.alpinelinux.org/alpine/v{cycle}/releases/cloud/{filename}.sha512
         filename_pattern: "{filename}"
@@ -467,12 +487,18 @@ tracking:
         edition: DVD
         url_template: 
           https://yum.oracle.com/ISOS/OracleLinux/OL{major}/u{minor}/x86_64/OracleLinux-R{major}-U{minor}-x86_64-dvd.iso
+        checksums_url: 
+          https://linux.oracle.com/security/gpg/checksum/OracleLinux-R{major}-U{minor}-Server-x86_64.checksum
+        filename_pattern: OracleLinux-R{major}-U{minor}-x86_64-dvd.iso
       - id_template: oracle-{latest}-dvd-arm64
         name_template: "Oracle Linux {latest}"
         arch: aarch64
         edition: DVD
         url_template: 
           https://yum.oracle.com/ISOS/OracleLinux/OL{major}/u{minor}/aarch64/OracleLinux-R{major}-U{minor}-aarch64-dvd.iso
+        checksums_url: 
+          https://linux.oracle.com/security/gpg/checksum/OracleLinux-R{major}-U{minor}-Server-aarch64.checksum
+        filename_pattern: OracleLinux-R{major}-U{minor}-aarch64-dvd.iso
   amazon-linux:
     product: amazon-linux
     match_depth: 1

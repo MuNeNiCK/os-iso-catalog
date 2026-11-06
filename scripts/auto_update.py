@@ -7,14 +7,17 @@ For distros with update_templates in tracking config:
   - Refreshes checksums for rolling releases
 
 Template types:
-  - static: URL fully predictable from version. A variant may set dir_url and
-    filename_regex to pick the newest matching file from a directory listing
-    instead of url_template (for releases that do not publish every point
-    version).
+  - static: URL fully predictable from version. url_template (and the
+    matching checksums_url) may be a list of candidate locations; the first
+    reachable one is used (e.g. current vs. archived point releases). A
+    variant may instead set dir_url and filename_regex to pick the newest
+    matching file from a directory listing (for releases that do not publish
+    every point version); filename_regex may be a list of patterns in order
+    of preference.
   - directory_parse: Needs to fetch directory listing to resolve filenames
 
-An existing entry is only changed when the new URL is reachable and, if the
-variant defines checksums, the checksum for the new file was fetched.
+An entry is only added or changed when its URL is reachable and, if the
+variant defines checksums, the checksum for the file was fetched.
 
 Usage:
   auto_update.py                  Update existing entries and add new ones
@@ -447,6 +450,38 @@ def apply_existing_update(existing, url, checksum_value, version, name,
                         version, name, algorithm, variant)
 
 
+def _as_list(value):
+    if value is None:
+        return []
+    return value if isinstance(value, list) else [value]
+
+
+def _resolve_static_location(variant, variables, image_id):
+    """Return (url, file_vars, checksums_url_template) or None."""
+    if variant.get("dir_url"):
+        # Pick the newest published file instead of guessing it; patterns are
+        # tried in order of preference.
+        dir_url = render(variant["dir_url"], variables)
+        for regex in _as_list(variant.get("filename_regex")):
+            filename, _ = resolve_directory_filename(dir_url, render(regex, variables))
+            if filename:
+                url = dir_url.rstrip("/") + "/" + filename
+                return url, dict(variables, filename=filename), variant.get("checksums_url")
+        print(f"  SKIP {image_id}: no file found at {dir_url}", file=sys.stderr)
+        return None
+    urls = _as_list(variant.get("url_template"))
+    sums = _as_list(variant.get("checksums_url"))
+    if len(urls) == 1:
+        return render(urls[0], variables), variables, sums[0] if sums else None
+    # Several candidate locations: use the first reachable one
+    for i, tmpl in enumerate(urls):
+        url = render(tmpl, variables)
+        if url_exists(url):
+            return url, variables, sums[i] if i < len(sums) else None
+    print(f"  SKIP {image_id}: no candidate URL reachable", file=sys.stderr)
+    return None
+
+
 def process_static(distro, rules, templates, images, releases,
                    existing_only=False):
     """Process static-template distros."""
@@ -468,24 +503,13 @@ def process_static(distro, rules, templates, images, releases,
             if existing_only and not existing:
                 continue
 
-            if variant.get("dir_url"):
-                # Pick the newest published file instead of guessing it
-                dir_url = render(variant["dir_url"], variables)
-                fname_regex = render(variant["filename_regex"], variables)
-                filename, _ = resolve_directory_filename(dir_url, fname_regex)
-                if not filename:
-                    print(f"  SKIP {image_id}: no file found at {dir_url}",
-                          file=sys.stderr)
-                    continue
-                url = dir_url.rstrip("/") + "/" + filename
-                file_vars = dict(variables, filename=filename)
-            else:
-                url = render(variant["url_template"], variables)
-                file_vars = variables
+            location = _resolve_static_location(variant, variables, image_id)
+            if not location:
+                continue
+            url, file_vars, checksums_url = location
 
             # Resolve checksum
             checksum_value = None
-            checksums_url = variant.get("checksums_url")
             filename_pattern = variant.get("filename_pattern")
             checksum_expected = bool(checksums_url and filename_pattern)
             if checksum_expected:
@@ -497,6 +521,9 @@ def process_static(distro, rules, templates, images, releases,
                 changes.extend(apply_existing_update(
                     existing, url, checksum_value, version, name,
                     algorithm, variant, checksum_expected))
+            elif checksum_expected and not checksum_value:
+                print(f"  SKIP {image_id}: no checksum for {url}",
+                      file=sys.stderr)
             else:
                 # Check URL exists before adding
                 if url_exists(url):
@@ -567,6 +594,9 @@ def process_directory_parse(distro, rules, templates, images, releases,
                 changes.extend(apply_existing_update(
                     existing, url, checksum_value, version, name,
                     algorithm, variant, bool(checksums_url)))
+            elif checksums_url and not checksum_value:
+                print(f"  SKIP {image_id}: no checksum for {url}",
+                      file=sys.stderr)
             else:
                 if url_exists(url):
                     entry = build_new_entry(
