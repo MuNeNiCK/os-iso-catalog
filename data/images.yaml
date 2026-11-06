@@ -307,16 +307,54 @@ tracking:
         name_template: "CentOS Stream {major}"
         arch: x86_64
         edition: DVD
+        # The newest dated build; SHA256SUM lists dated names only
+        dir_url: 
+          https://mirror.stream.centos.org/{major}-stream/BaseOS/x86_64/iso/
+        filename_regex: CentOS-Stream-{major}-\d{8}\.\d+-x86_64-dvd1\.iso
         checksums_url: 
           https://mirror.stream.centos.org/{major}-stream/BaseOS/x86_64/iso/SHA256SUM
-        filename_pattern: CentOS-Stream-{major}-latest-x86_64-dvd1.iso
+        filename_pattern: "{filename}"
       - id_template: centos-stream-{major}-dvd-arm64
         name_template: "CentOS Stream {major}"
         arch: aarch64
         edition: DVD
+        # The newest dated build; SHA256SUM lists dated names only
+        dir_url: 
+          https://mirror.stream.centos.org/{major}-stream/BaseOS/aarch64/iso/
+        filename_regex: CentOS-Stream-{major}-\d{8}\.\d+-aarch64-dvd1\.iso
         checksums_url: 
           https://mirror.stream.centos.org/{major}-stream/BaseOS/aarch64/iso/SHA256SUM
-        filename_pattern: CentOS-Stream-{major}-latest-aarch64-dvd1.iso
+        filename_pattern: "{filename}"
+      # Cloud images: the newest dated build. The "-latest" aliases on
+      # cloud.centos.org are not reliably downloadable (HTTP 502).
+      - id_template: centos-stream-{major}-cloud-amd64
+        name_template: "CentOS Stream {major}"
+        arch: x86_64
+        edition: Cloud image
+        image_type: cloud-image
+        format: qcow2
+        dir_url: https://cloud.centos.org/centos/{major}-stream/x86_64/images/
+        filename_regex:
+        - CentOS-Stream-GenericCloud-{major}-\d{8}\.\d+\.x86_64\.qcow2
+        - CentOS-Stream-GenericCloud-x86_64-{major}-\d{8}\.\d+\.x86_64\.qcow2
+        checksums_url: 
+          https://cloud.centos.org/centos/{major}-stream/x86_64/images/{filename}.SHA256SUM
+        filename_pattern: "{filename}"
+      # Cloud images: the newest dated build. The "-latest" aliases on
+      # cloud.centos.org are not reliably downloadable (HTTP 502).
+      - id_template: centos-stream-{major}-cloud-arm64
+        name_template: "CentOS Stream {major}"
+        arch: aarch64
+        edition: Cloud image
+        image_type: cloud-image
+        format: qcow2
+        dir_url: https://cloud.centos.org/centos/{major}-stream/aarch64/images/
+        filename_regex:
+        - CentOS-Stream-GenericCloud-{major}-\d{8}\.\d+\.aarch64\.qcow2
+        - CentOS-Stream-GenericCloud-aarch64-{major}-\d{8}\.\d+\.aarch64\.qcow2
+        checksums_url: 
+          https://cloud.centos.org/centos/{major}-stream/aarch64/images/{filename}.SHA256SUM
+        filename_pattern: "{filename}"
   opensuse:
     product: opensuse
     match_depth: 2
@@ -1200,11 +1238,11 @@ images:
   arch: x86_64
   release_type: rolling
   url: 
-    https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-latest-x86_64-dvd1.iso
+    https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-20261103.0-x86_64-dvd1.iso
   homepage: https://www.centos.org/
   checksum:
     algorithm: sha256
-    value: 38b5e26ca26fd768c65031738f8437d908e6fdf7c4e08fde860b75fe8471a2f6
+    value: 984a099365da7ce3a93be3adc1eadfda5bb7439028e99e8d0616f11bbc178af8
   eol:
     standard: '2027-05-31'
     extended:
@@ -1221,11 +1259,11 @@ images:
   arch: x86_64
   release_type: rolling
   url: 
-    https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/iso/CentOS-Stream-10-latest-x86_64-dvd1.iso
+    https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/iso/CentOS-Stream-10-20261103.0-x86_64-dvd1.iso
   homepage: https://www.centos.org/
   checksum:
     algorithm: sha256
-    value: 57973b9dd781a23cdc7612eec3e65b830251024e6287cbea5c5594ae97c13675
+    value: ffc31d9e9b12117e78b485e9fc1bd3bfd20f285ee299bc4b6e02035aee33e719
   eol:
     standard: '2030-05-31'
     extended:
@@ -1628,7 +1666,7 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cloud.centos.org/centos/10-stream/x86_64/images/CentOS-Stream-GenericCloud-x86_64-10-latest.x86_64.qcow2
+    https://cloud.centos.org/centos/10-stream/x86_64/images/CentOS-Stream-GenericCloud-10-20261103.0.x86_64.qcow2
   homepage: https://www.centos.org/centos-stream/
   eol:
     standard: '2030-05-31'
@@ -1636,6 +1674,9 @@ images:
     is_rolling: true
     note: Rolling cloud image
   status: supported
+  checksum:
+    algorithm: sha256
+    value: 901b4c1d06e5e79968abee8d4274bfc915777bbd08a340de0be6dd8e6d28576d
 - id: centos-stream-10-cloud-arm64
   name: CentOS Stream 10
   category: linux
@@ -1647,7 +1688,7 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cloud.centos.org/centos/10-stream/aarch64/images/CentOS-Stream-GenericCloud-10-latest.aarch64.qcow2
+    https://cloud.centos.org/centos/10-stream/aarch64/images/CentOS-Stream-GenericCloud-10-20261103.0.aarch64.qcow2
   homepage: https://www.centos.org/centos-stream/
   eol:
     standard: '2030-05-31'
@@ -1655,6 +1696,9 @@ images:
     is_rolling: true
     note: Rolling cloud image
   status: supported
+  checksum:
+    algorithm: sha256
+    value: c0492b3e02930a773f1a9d61b444a16a80dd2687db7e7be539f761542c98f7cf
 - id: centos-stream-9-cloud-amd64
   name: CentOS Stream 9
   category: linux
@@ -1666,7 +1710,7 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cloud.centos.org/centos/9-stream/x86_64/images/CentOS-Stream-GenericCloud-x86_64-9-latest.x86_64.qcow2
+    https://cloud.centos.org/centos/9-stream/x86_64/images/CentOS-Stream-GenericCloud-9-20261103.0.x86_64.qcow2
   homepage: https://www.centos.org/centos-stream/
   eol:
     standard: '2027-05-31'
@@ -1674,6 +1718,9 @@ images:
     is_rolling: true
     note: Rolling cloud image
   status: supported
+  checksum:
+    algorithm: sha256
+    value: ab9c97dd5be775a0171af19d31af5d1b8a79be485d2ac75303bdf76fdbafeed6
 - id: centos-stream-9-cloud-arm64
   name: CentOS Stream 9
   category: linux
@@ -1685,7 +1732,7 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cloud.centos.org/centos/9-stream/aarch64/images/CentOS-Stream-GenericCloud-9-latest.aarch64.qcow2
+    https://cloud.centos.org/centos/9-stream/aarch64/images/CentOS-Stream-GenericCloud-9-20261103.0.aarch64.qcow2
   homepage: https://www.centos.org/centos-stream/
   eol:
     standard: '2027-05-31'
@@ -1693,6 +1740,9 @@ images:
     is_rolling: true
     note: Rolling cloud image
   status: supported
+  checksum:
+    algorithm: sha256
+    value: 9ce3fd870935a69d50095c48d20c83d3921ad671a549bf3c68a1618e195857af
 - id: fedora-43-cloud-amd64
   name: Fedora 43
   category: linux
@@ -3166,11 +3216,11 @@ images:
   arch: aarch64
   release_type: rolling
   url: 
-    https://mirror.stream.centos.org/9-stream/BaseOS/aarch64/iso/CentOS-Stream-9-latest-aarch64-dvd1.iso
+    https://mirror.stream.centos.org/9-stream/BaseOS/aarch64/iso/CentOS-Stream-9-20261103.0-aarch64-dvd1.iso
   homepage: https://www.centos.org/
   checksum:
     algorithm: sha256
-    value: 2e1081eb75973bd845255c18dcdbf7ecb6e104a23a40d86039c249bd969358ca
+    value: a53cebf65113c930c81eb691f779aa1cb8fe70e59957eaf61115cc02420823ee
   eol:
     standard: '2027-05-31'
     extended:
@@ -3187,11 +3237,11 @@ images:
   arch: aarch64
   release_type: rolling
   url: 
-    https://mirror.stream.centos.org/10-stream/BaseOS/aarch64/iso/CentOS-Stream-10-latest-aarch64-dvd1.iso
+    https://mirror.stream.centos.org/10-stream/BaseOS/aarch64/iso/CentOS-Stream-10-20261103.0-aarch64-dvd1.iso
   homepage: https://www.centos.org/
   checksum:
     algorithm: sha256
-    value: 96db01ec7a57a417565e30ed150565574a2751873dfca0ac239b3732821e3d6b
+    value: 2784afdaea8d83dfb77e98435e7c298993fe9901d4d3608f6ab893a1cb89f4ae
   eol:
     standard: '2030-05-31'
     extended:
