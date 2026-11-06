@@ -162,10 +162,56 @@ jobs:
               });
             }
 
-  auto-update:
+  # Refresh URLs and checksums of existing entries on main. "current" and
+  # "latest" images are rebuilt upstream, so a stale checksum breaks
+  # downloads; updates are only applied when the new URL and its published
+  # checksum were both verified.
+  refresh:
     runs-on: ubuntu-latest
+    needs: [eol-check, regenerate]
+    if: always() && needs.eol-check.result == 'success' && needs.regenerate.result != 'failure'
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh existing entries
+        id: refresh
+        run: |
+          python scripts/auto_update.py --existing-only && EXIT_CODE=0 || EXIT_CODE=$?
+          if [ $EXIT_CODE -eq 2 ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif [ $EXIT_CODE -ne 0 ]; then
+            exit $EXIT_CODE
+          fi
+
+      - name: Commit refreshed entries
+        if: steps.refresh.outputs.changed == 'true'
+        run: |
+          python scripts/generate.py
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/images.yaml docs/
+          git diff --cached --quiet || git commit -m "chore: refresh image URLs and checksums"
+          git push
+
+  # New entries (new releases) are proposed in a pull request for review.
+  auto-update:
+    runs-on: ubuntu-latest
+    needs: refresh
+    if: always() && needs.refresh.result != 'failure'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:

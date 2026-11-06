@@ -7,8 +7,18 @@ For distros with update_templates in tracking config:
   - Refreshes checksums for rolling releases
 
 Template types:
-  - static: URL fully predictable from version
+  - static: URL fully predictable from version. A variant may set dir_url and
+    filename_regex to pick the newest matching file from a directory listing
+    instead of url_template (for releases that do not publish every point
+    version).
   - directory_parse: Needs to fetch directory listing to resolve filenames
+
+An existing entry is only changed when the new URL is reachable and, if the
+variant defines checksums, the checksum for the new file was fetched.
+
+Usage:
+  auto_update.py                  Update existing entries and add new ones
+  auto_update.py --existing-only  Only update existing entries
 """
 
 import re
@@ -232,8 +242,17 @@ def fetch_checksum(checksums_url, target_filename):
 # Directory listing parser
 # ---------------------------------------------------------------------------
 
+def natural_key(text):
+    """Sort key that orders embedded numbers numerically (3.23.10 > 3.23.9)."""
+    return [int(part) if part.isdigit() else part
+            for part in re.split(r"(\d+)", text)]
+
+
 def resolve_directory_filename(dir_url, filename_regex):
-    """Fetch a directory listing and find file matching regex."""
+    """Fetch a directory listing and return the newest file matching regex.
+
+    Returns (filename, match) or (None, None).
+    """
     try:
         r = requests.get(dir_url, timeout=TIMEOUT,
                          headers={"User-Agent": USER_AGENT})
@@ -242,11 +261,15 @@ def resolve_directory_filename(dir_url, filename_regex):
         # Extract href values from HTML
         hrefs = re.findall(r'href="([^"]+)"', r.text)
         pattern = re.compile(filename_regex)
+        matches = {}
         for href in hrefs:
             fname = href.rstrip("/").split("/")[-1]
-            m = pattern.match(fname)
+            m = pattern.fullmatch(fname)
             if m:
-                return fname, m
+                matches[fname] = m
+        if matches:
+            newest = max(matches, key=natural_key)
+            return newest, matches[newest]
     except Exception as e:
         print(f"  WARN: directory fetch failed {dir_url}: {e}",
               file=sys.stderr)
@@ -403,10 +426,31 @@ def url_exists(url):
 # Processing logic
 # ---------------------------------------------------------------------------
 
-def process_static(distro, rules, templates, images, releases):
+def apply_existing_update(existing, url, checksum_value, version, name,
+                          algorithm, variant, checksum_expected):
+    """Update an existing entry only when the new data is verified.
+
+    The URL must be reachable, and when the variant defines checksums the
+    checksum for that URL must have been fetched. Otherwise the entry is left
+    unchanged so that the URL and checksum never disagree.
+    """
+    image_id = existing["id"]
+    if checksum_expected and not checksum_value:
+        print(f"  SKIP update {image_id}: no checksum for {url}",
+              file=sys.stderr)
+        return []
+    if str(existing.get("url", "")) != str(url) and not url_exists(url):
+        print(f"  SKIP update {image_id}: URL not reachable: {url}",
+              file=sys.stderr)
+        return []
+    return update_image(existing, url, checksum_value,
+                        version, name, algorithm, variant)
+
+
+def process_static(distro, rules, templates, images, releases,
+                   existing_only=False):
     """Process static-template distros."""
     changes = []
-    match_depth = rules.get("match_depth", 1)
     base_algorithm = templates.get("checksum_algorithm", "sha256")
 
     for rel in releases:
@@ -417,26 +461,42 @@ def process_static(distro, rules, templates, images, releases):
 
         for variant in templates.get("variants", []):
             image_id = render(variant["id_template"], variables)
-            url = render(variant["url_template"], variables)
             name = render(variant["name_template"], variables)
             version = render(variant.get("version_template", "{latest}"), variables)
             algorithm = variant.get("checksum_algorithm", base_algorithm)
+            idx, existing = find_image(images, image_id)
+            if existing_only and not existing:
+                continue
+
+            if variant.get("dir_url"):
+                # Pick the newest published file instead of guessing it
+                dir_url = render(variant["dir_url"], variables)
+                fname_regex = render(variant["filename_regex"], variables)
+                filename, _ = resolve_directory_filename(dir_url, fname_regex)
+                if not filename:
+                    print(f"  SKIP {image_id}: no file found at {dir_url}",
+                          file=sys.stderr)
+                    continue
+                url = dir_url.rstrip("/") + "/" + filename
+                file_vars = dict(variables, filename=filename)
+            else:
+                url = render(variant["url_template"], variables)
+                file_vars = variables
 
             # Resolve checksum
             checksum_value = None
             checksums_url = variant.get("checksums_url")
             filename_pattern = variant.get("filename_pattern")
-            if checksums_url and filename_pattern:
-                cs_url = render(checksums_url, variables)
-                cs_file = render(filename_pattern, variables)
+            checksum_expected = bool(checksums_url and filename_pattern)
+            if checksum_expected:
+                cs_url = render(checksums_url, file_vars)
+                cs_file = render(filename_pattern, file_vars)
                 checksum_value = fetch_checksum(cs_url, cs_file)
 
-            idx, existing = find_image(images, image_id)
             if existing:
-                # Update existing entry
-                ch = update_image(existing, url, checksum_value,
-                                  version, name, algorithm, variant)
-                changes.extend(ch)
+                changes.extend(apply_existing_update(
+                    existing, url, checksum_value, version, name,
+                    algorithm, variant, checksum_expected))
             else:
                 # Check URL exists before adding
                 if url_exists(url):
@@ -453,7 +513,8 @@ def process_static(distro, rules, templates, images, releases):
     return changes
 
 
-def process_directory_parse(distro, rules, templates, images, releases):
+def process_directory_parse(distro, rules, templates, images, releases,
+                            existing_only=False):
     """Process directory-parse-template distros."""
     changes = []
     base_algorithm = templates.get("checksum_algorithm", "sha256")
@@ -466,6 +527,9 @@ def process_directory_parse(distro, rules, templates, images, releases):
 
         for variant in templates.get("variants", []):
             image_id = render(variant["id_template"], variables)
+            idx, existing = find_image(images, image_id)
+            if existing_only and not existing:
+                continue
 
             # Resolve filename from directory listing
             dir_url = render(variant["dir_url"], variables)
@@ -499,11 +563,10 @@ def process_directory_parse(distro, rules, templates, images, releases):
                         cs_url = cs_dir + cs_filename
                 checksum_value = fetch_checksum(cs_url, filename)
 
-            idx, existing = find_image(images, image_id)
             if existing:
-                ch = update_image(existing, url, checksum_value,
-                                  version, name, algorithm, variant)
-                changes.extend(ch)
+                changes.extend(apply_existing_update(
+                    existing, url, checksum_value, version, name,
+                    algorithm, variant, bool(checksums_url)))
             else:
                 if url_exists(url):
                     entry = build_new_entry(
@@ -567,6 +630,7 @@ def process_rolling_checksum(distro, templates, images):
 # ---------------------------------------------------------------------------
 
 def main():
+    existing_only = "--existing-only" in sys.argv[1:]
     y, data = load_data()
     images = data.get("images", [])
     tracking = data.get("tracking", {})
@@ -592,10 +656,12 @@ def main():
 
             if ttype == "static":
                 changes = process_static(
-                    distro, rules, templates, images, releases)
+                    distro, rules, templates, images, releases,
+                    existing_only)
             elif ttype == "directory_parse":
                 changes = process_directory_parse(
-                    distro, rules, templates, images, releases)
+                    distro, rules, templates, images, releases,
+                    existing_only)
             else:
                 continue
 

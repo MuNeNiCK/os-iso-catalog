@@ -56,14 +56,18 @@ All currently supported versions are tracked.
 2. `scripts/generate.py` transforms YAML into filtered JSON endpoints under `docs/v1/`
 3. GitHub Pages serves the `docs/` directory
 4. **Daily at 06:00 UTC**, GitHub Actions:
-   - **Auto-update**: Detects new releases and version updates via URL templates, creates a PR for review
+   - **Refresh**: Updates URLs, versions, and checksums of existing entries on `main` (only when the new URL is reachable and its published checksum was fetched), so rebuilt "current"/"latest" images keep matching checksums
+   - **Auto-update**: Detects new releases via URL templates and proposes the new entries in a PR for review
    - **EOL check**: Fetches EOL dates from [endoflife.date](https://endoflife.date/) API and auto-updates `status` field
    - **Link check**: Validates all download URLs are reachable, creates Issues for broken links
    - **New release check**: Detects new OS releases for manual-only distros, creates Issues
 
 ## Auto-update
 
-`scripts/auto_update.py` uses URL templates defined in `data/images.yaml` to automatically detect new releases, update download URLs and checksums, and add new entries. Changes are submitted as a Pull Request for human review.
+`scripts/auto_update.py` uses URL templates defined in `data/images.yaml` to automatically detect new releases, update download URLs and checksums, and add new entries. An existing entry is changed only when the new URL is reachable and, if the template defines checksums, the checksum for the new file was fetched; otherwise the entry is left as it is.
+
+- `auto_update.py --existing-only` updates existing entries; the daily workflow commits these to `main`.
+- `auto_update.py` also adds entries for new releases; the daily workflow submits them as a Pull Request for human review.
 
 Cloud image entries use the same tracking system where upstream URLs and checksum files are predictable. Ubuntu, Debian, Fedora, Alpine, and Amazon Linux cloud images are template-driven; rolling/latest images are link-checked and checksum automation is added per distro when the upstream format is stable enough.
 
@@ -71,7 +75,7 @@ Cloud image entries use the same tracking system where upstream URLs and checksu
 
 | Type | Description | Used by |
 |------|-------------|---------|
-| `static` | URL is fully predictable from version | Ubuntu, Debian, AlmaLinux, Alpine, FreeBSD, OpenBSD, NetBSD, Oracle Linux |
+| `static` | URL is fully predictable from version; a variant may instead set `dir_url` + `filename_regex` to pick the newest matching file from a directory listing | Ubuntu, Debian, AlmaLinux, Alpine, FreeBSD, OpenBSD, NetBSD, Oracle Linux |
 | `directory_parse` | Filename resolved from directory listing (e.g. build numbers) | Fedora, Rocky Linux |
 | `rolling_checksum` | Refreshes checksums for rolling "latest" URLs | CentOS Stream |
 
@@ -85,7 +89,7 @@ Cloud image entries use the same tracking system where upstream URLs and checksu
 | Rocky Linux | Yes | Directory parse (dvd/dvd1 naming) |
 | AlmaLinux | Yes | Static URL pattern |
 | CentOS Stream | Yes | Rolling checksum refresh |
-| Alpine | Yes | Static URL pattern |
+| Alpine | Yes | Static URL pattern (cloud images: newest file in the directory, as not every point release has one) |
 | FreeBSD | Yes | Static URL pattern |
 | OpenBSD | Yes | Static URL pattern |
 | NetBSD | Yes | Static URL pattern |
