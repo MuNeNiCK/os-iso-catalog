@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-06T13:00:02Z",
-    "count": 153
+    "generated_at": "2026-11-06T15:53:18Z",
+    "count": 179
   },
   "images": [
     {
@@ -415,19 +415,19 @@
     },
     {
       "id": "debian-13-netinst",
-      "name": "Debian 13.5",
+      "name": "Debian 13.7",
       "category": "linux",
       "distro": "debian",
       "codename": "Trixie",
-      "version": "13.5",
+      "version": "13.7",
       "edition": "netinst",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/13.5.0/amd64/iso-cd/debian-13.5.0-amd64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/release/13.7.0/amd64/iso-cd/debian-13.7.0-amd64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "0b813535dd76f2ea96eff908c65e8521512c92a0631fd41c95756ffd7d4896dc"
+        "value": "a7ef94ac2fb9a7fec454552abd629b7cc9d5155c886165a45649f5ce6167e355"
       },
       "eol": {
         "standard": "2030-06-30",
@@ -2367,19 +2367,19 @@
     },
     {
       "id": "debian-13-netinst-arm64",
-      "name": "Debian 13.5",
+      "name": "Debian 13.7",
       "category": "linux",
       "distro": "debian",
       "codename": "Trixie",
-      "version": "13.5",
+      "version": "13.7",
       "edition": "netinst",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/13.5.0/arm64/iso-cd/debian-13.5.0-arm64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/release/13.7.0/arm64/iso-cd/debian-13.7.0-arm64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "c31f8534597df52bd310f716d271bda30a1f58e6ff8fd9e8254eba66776c42d9"
+        "value": "6e93fa1759bd9d4b0fc11e938987de6967ee7de5297dac1be27c3a75cc17024b"
       },
       "eol": {
         "standard": "2030-06-30",
@@ -2779,6 +2779,10 @@
         "is_rolling": false
       },
       "status": "supported",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "7676a80eeaafa16903eebb2abba147a3afe230b130cc066d56fdd6854d8da900"
+      },
       "format": "iso",
       "image_type": "iso"
     },
@@ -2796,6 +2800,58 @@
       "eol": {
         "standard": "2029-07-31",
         "extended": "2032-07-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "feff28528569308896f18f7da330a726cc94563fd8c7f26f64fe486961fb490e"
+      },
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "oracle-9.8-dvd",
+      "name": "Oracle Linux 9.8",
+      "category": "linux",
+      "distro": "oracle",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://yum.oracle.com/ISOS/OracleLinux/OL9/u8/x86_64/OracleLinux-R9-U8-x86_64-dvd.iso",
+      "homepage": "https://www.oracle.com/linux/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "91bb95cb8e4d1ad1c496c9a87efcba3bf9d5ec976474910e9950a3fa8576428b"
+      },
+      "eol": {
+        "standard": "2032-06-30",
+        "extended": "2035-06-30",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "oracle-9.8-dvd-arm64",
+      "name": "Oracle Linux 9.8",
+      "category": "linux",
+      "distro": "oracle",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://yum.oracle.com/ISOS/OracleLinux/OL9/u8/aarch64/OracleLinux-R9-U8-aarch64-dvd.iso",
+      "homepage": "https://www.oracle.com/linux/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "5b7ccf99953dc5001e4df3d0b01c0673397590f23e5cab313df03bd0fa223ba6"
+      },
+      "eol": {
+        "standard": "2032-06-30",
+        "extended": "2035-06-30",
         "is_rolling": false
       },
       "status": "supported",
@@ -2947,6 +3003,54 @@
       "image_type": "iso"
     },
     {
+      "id": "alpine-3.24-cloud-amd64",
+      "name": "Alpine Linux 3.24",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.24",
+      "edition": "Cloud image",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/cloud/alpine-3.24.4-x86_64-cloudinit-r0.qcow2",
+      "homepage": "https://alpinelinux.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "deaf133ef03ea58fc38abcfe11ec8847d97a7e4b30b9ec5d9df62b945eead7a59638464bd4a421caca6498fe8e4ee5d0c8e21d828c34ec529aecc88ab6f01364"
+      },
+      "eol": {
+        "standard": "2028-06-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alpine-3.24-cloud-arm64",
+      "name": "Alpine Linux 3.24",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.24",
+      "edition": "Cloud image",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/cloud/alpine-3.24.4-aarch64-cloudinit-r0.qcow2",
+      "homepage": "https://alpinelinux.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "a30a4f096adcdc193f27f15b3b6f3e84ec42aa1bc2b98042baa36f48bd9ae9b3175b4f18b8825992eea18304ed90e92d25f74fa6584d4267a4f5bcf8d6defb0d"
+      },
+      "eol": {
+        "standard": "2028-06-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
       "id": "openbsd-7.9",
       "name": "OpenBSD 7.9",
       "category": "bsd",
@@ -2995,6 +3099,54 @@
       "image_type": "iso"
     },
     {
+      "id": "openbsd-8.0",
+      "name": "OpenBSD 8.0",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "8.0",
+      "edition": "install",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/8.0/amd64/install80.iso",
+      "homepage": "https://www.openbsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "bc85d747c6ee4354d14fbfeee38087500386a2e9d86fa7b5ab13d840d902aa33"
+      },
+      "eol": {
+        "standard": "2027-11-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "openbsd-8.0-arm64",
+      "name": "OpenBSD 8.0",
+      "category": "bsd",
+      "distro": "openbsd",
+      "version": "8.0",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cdn.openbsd.org/pub/OpenBSD/8.0/arm64/install80.iso",
+      "homepage": "https://www.openbsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "6449a657d021e000cebb50987535b3dec6988edc65908107b42a42c2f95c3f6b"
+      },
+      "eol": {
+        "standard": "2027-11-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "netbsd-10.1-arm64",
       "name": "NetBSD 10.1",
       "category": "bsd",
@@ -3014,6 +3166,102 @@
         "extended": null,
         "is_rolling": false,
         "note": "Current stable"
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "netbsd-11.1",
+      "name": "NetBSD 11.1",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "11.1",
+      "edition": "install",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.1/images/NetBSD-11.1-amd64.iso",
+      "homepage": "https://www.netbsd.org/",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "1253d45638afe243b09718a3573597693d5c1bc086ae5618f863148dd2b2b9afdf57557231fd8404e34d17612d1d3a1e4be17d2adb426dfb70e98ebf0bbfcc0c"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "netbsd-11.1-arm64",
+      "name": "NetBSD 11.1",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "11.1",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "rolling",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.1/images/NetBSD-11.1-evbarm-aarch64.iso",
+      "homepage": "https://www.netbsd.org/",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "f049cbf2a8a706ee3d975037bd44d65720de215681020eacaa7696ddd53cc3373952a2a003d3571effc859dcb65918dd7020d16fcff4fa959b34555a0ba5d642"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "netbsd-10.2",
+      "name": "NetBSD 10.2",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "10.2",
+      "edition": "install",
+      "arch": "amd64",
+      "release_type": "rolling",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-10.2/images/NetBSD-10.2-amd64.iso",
+      "homepage": "https://www.netbsd.org/",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "852a43c498e539fa825775bb32d819cc61d5efa1e644f574147b5804d587ca1376512b74446fd4a9f47b304987211b3b0794d184e048c19b347e69b2676abfb7"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "netbsd-10.2-arm64",
+      "name": "NetBSD 10.2",
+      "category": "bsd",
+      "distro": "netbsd",
+      "version": "10.2",
+      "edition": "install",
+      "arch": "arm64",
+      "release_type": "rolling",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-10.2/images/NetBSD-10.2-evbarm-aarch64.iso",
+      "homepage": "https://www.netbsd.org/",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "a00cce0cb1916d5bddd343efd4ab5befe6c82a6199cc329b47eaeec0df6588ac90bae0133a4ee2b113a5ff2cb4f541acf319056232e79c5a6718b0643928adae"
+      },
+      "eol": {
+        "standard": null,
+        "extended": null,
+        "is_rolling": true
       },
       "status": "supported",
       "format": "iso",
@@ -3339,6 +3587,150 @@
       "status": "supported"
     },
     {
+      "id": "fedora-45-workstation",
+      "name": "Fedora 45 Workstation",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "45",
+      "edition": "Workstation Live",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Workstation/x86_64/iso/Fedora-Workstation-Live-45-1.4.x86_64.iso",
+      "homepage": "https://fedoraproject.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "68338c6bfe4f0d64151f2e47efe9f44a8855ad05b460e56b844fb3fa2c9a3beb"
+      },
+      "eol": {
+        "standard": "2027-12-08",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "fedora-45-server",
+      "name": "Fedora 45 Server",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "45",
+      "edition": "Server netinst",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Server/x86_64/iso/Fedora-Server-netinst-x86_64-45-1.4.iso",
+      "homepage": "https://fedoraproject.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a1e916f139a05955b943cf183b020780cca9c399b02b8f5ec4354c9e5c1dff1a"
+      },
+      "eol": {
+        "standard": "2027-12-08",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "fedora-45-workstation-arm64",
+      "name": "Fedora 45 Workstation",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "45",
+      "edition": "Workstation Live",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Workstation/aarch64/iso/Fedora-Workstation-Live-45-1.4.aarch64.iso",
+      "homepage": "https://fedoraproject.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "ad73a977709d417f5b7dda4147fc071396b9d8d2bdcca2df615aa3aab7673710"
+      },
+      "eol": {
+        "standard": "2027-12-08",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "fedora-45-server-arm64",
+      "name": "Fedora 45 Server",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "45",
+      "edition": "Server netinst",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Server/aarch64/iso/Fedora-Server-netinst-aarch64-45-1.4.iso",
+      "homepage": "https://fedoraproject.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "311cb9fb35aa39b7df5768c0ccfef571a515d471e824af0d8cbe96de645ddfe8"
+      },
+      "eol": {
+        "standard": "2027-12-08",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "fedora-45-cloud-amd64",
+      "name": "Fedora 45",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "45",
+      "edition": "Cloud image",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Cloud/x86_64/images/Fedora-Cloud-Base-Generic-45-1.4.x86_64.qcow2",
+      "homepage": "https://fedoraproject.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "50bdc5e70f6a24f540932d15411c1c6ae9fcfa40fb990d876d83c5cc823b2ad0"
+      },
+      "eol": {
+        "standard": "2027-12-08",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "fedora-45-cloud-arm64",
+      "name": "Fedora 45",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "45",
+      "edition": "Cloud image",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Cloud/aarch64/images/Fedora-Cloud-Base-Generic-45-1.4.aarch64.qcow2",
+      "homepage": "https://fedoraproject.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1632acc8bc14d45b6c9596a0acc71b070d3748d1abdcf1a519be5c983bb0286c"
+      },
+      "eol": {
+        "standard": "2027-12-08",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
       "id": "rocky-9.7-dvd-arm64",
       "name": "Rocky Linux 9.7",
       "category": "linux",
@@ -3380,6 +3772,198 @@
       "eol": {
         "standard": "2030-05-31",
         "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.2-dvd",
+      "name": "Rocky Linux 10.2",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.2",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.2-x86_64-dvd1.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "16ca9c96cdb221ba6e1f68579f21bd69fd8da81c6a921d9068949796f91c8feb"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.2-minimal",
+      "name": "Rocky Linux 10.2",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.2",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.2-x86_64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "aac6ac3ce781b91a91ce78463405f66c611a5dca4b3840c79e5e01d97302f6c8"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.2-dvd-arm64",
+      "name": "Rocky Linux 10.2",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.2",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/aarch64/Rocky-10.2-aarch64-dvd1.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3b8253987604df1bc5e1c33c838ff3ee9ce4a8f02ed9e27e300ecff58c0c9588"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.2-minimal-arm64",
+      "name": "Rocky Linux 10.2",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.2",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/aarch64/Rocky-10.2-aarch64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1d1c21199df32f6d17eedb4f713ee0d089b49294401a364b640fcf4ffab45f35"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.8-dvd",
+      "name": "Rocky Linux 9.8",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.8-x86_64-dvd.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d2bcbb64c2d67511adf80d40cd9543391a33aea5860a355b1d26d7f55236d01f"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.8-minimal",
+      "name": "Rocky Linux 9.8",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.8",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.8-x86_64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d338032cd1cdd41c67139f2f71b4c832c8e4a21943106519db9c7137df7a63d4"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.8-dvd-arm64",
+      "name": "Rocky Linux 9.8",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.8",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/aarch64/Rocky-9.8-aarch64-dvd.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "9b53d1da14b70686b09a280974768a1adff1a4e4f10d35374b3d741ebbd6d541"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.8-minimal-arm64",
+      "name": "Rocky Linux 9.8",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.8",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/aarch64/Rocky-9.8-aarch64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "2924b291feaebe083bc0d0553e472be0a38ed5c91b4841129ec80b0cecc10efd"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
         "is_rolling": false
       },
       "status": "supported",
@@ -3667,6 +4251,54 @@
       },
       "eol": {
         "standard": "2027-03-31",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "freebsd-14.5",
+      "name": "FreeBSD 14.5-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "14.5",
+      "edition": "disc1",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.5/FreeBSD-14.5-RELEASE-amd64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a7f360c8dbd4727a8d3213ac85f6eb9b51ee4ed2577a2c31aaebbcae3d921d56"
+      },
+      "eol": {
+        "standard": "2027-06-30",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "freebsd-14.5-arm64",
+      "name": "FreeBSD 14.5-RELEASE",
+      "category": "bsd",
+      "distro": "freebsd",
+      "version": "14.5",
+      "edition": "disc1",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.5/FreeBSD-14.5-RELEASE-arm64-aarch64-disc1.iso",
+      "homepage": "https://www.freebsd.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e02942ca7856c7822577d7d5cb1e8fd60b02c2936612d73f2b6f0d8423f3844b"
+      },
+      "eol": {
+        "standard": "2027-06-30",
         "extended": null,
         "is_rolling": false
       },

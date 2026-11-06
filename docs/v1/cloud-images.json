@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-06T13:00:02Z",
-    "count": 53
+    "generated_at": "2026-11-06T15:53:18Z",
+    "count": 59
   },
   "images": [
     {
@@ -993,6 +993,54 @@
       "status": "eol"
     },
     {
+      "id": "alpine-3.24-cloud-amd64",
+      "name": "Alpine Linux 3.24",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.24",
+      "edition": "Cloud image",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/cloud/alpine-3.24.4-x86_64-cloudinit-r0.qcow2",
+      "homepage": "https://alpinelinux.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "deaf133ef03ea58fc38abcfe11ec8847d97a7e4b30b9ec5d9df62b945eead7a59638464bd4a421caca6498fe8e4ee5d0c8e21d828c34ec529aecc88ab6f01364"
+      },
+      "eol": {
+        "standard": "2028-06-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "alpine-3.24-cloud-arm64",
+      "name": "Alpine Linux 3.24",
+      "category": "linux",
+      "distro": "alpine",
+      "version": "3.24",
+      "edition": "Cloud image",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://dl-cdn.alpinelinux.org/alpine/v3.24/releases/cloud/alpine-3.24.4-aarch64-cloudinit-r0.qcow2",
+      "homepage": "https://alpinelinux.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "a30a4f096adcdc193f27f15b3b6f3e84ec42aa1bc2b98042baa36f48bd9ae9b3175b4f18b8825992eea18304ed90e92d25f74fa6584d4267a4f5bcf8d6defb0d"
+      },
+      "eol": {
+        "standard": "2028-06-01",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
       "id": "ubuntu-26.04-cloud-amd64",
       "name": "Ubuntu 26.04 LTS",
       "category": "linux",
@@ -1168,6 +1216,56 @@
       "status": "eol-extended"
     },
     {
+      "id": "debian-10-cloud-amd64",
+      "name": "Debian 10",
+      "category": "linux",
+      "distro": "debian",
+      "version": "10",
+      "edition": "Cloud image",
+      "arch": "amd64",
+      "release_type": "stable",
+      "url": "https://cloud.debian.org/images/cloud/buster/latest/debian-10-generic-amd64.qcow2",
+      "homepage": "https://www.debian.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Buster",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "ac867aab704995ccd68527be34af4c5c55ad72bff0920fb566fe2bfcf70de2062f88478ef6c0dd6daf7ab38032fa2d3278e87d6b7a0c4349a4e2178aa937e382"
+      },
+      "eol": {
+        "standard": "2024-06-30",
+        "extended": "2029-06-30",
+        "is_rolling": false
+      },
+      "status": "eol-extended"
+    },
+    {
+      "id": "debian-10-cloud-arm64",
+      "name": "Debian 10",
+      "category": "linux",
+      "distro": "debian",
+      "version": "10",
+      "edition": "Cloud image",
+      "arch": "arm64",
+      "release_type": "stable",
+      "url": "https://cloud.debian.org/images/cloud/buster/latest/debian-10-generic-arm64.qcow2",
+      "homepage": "https://www.debian.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "codename": "Buster",
+      "checksum": {
+        "algorithm": "sha512",
+        "value": "6ed3a76e6967d1ade3af7890f6270f1b8bc9b62e155c97d5a68c8d44ef4c3ed8988f6ef5254770aab7fc7f9603fcd17afc4ebff753f6f8340490243d13e9cae6"
+      },
+      "eol": {
+        "standard": "2024-06-30",
+        "extended": "2029-06-30",
+        "is_rolling": false
+      },
+      "status": "eol-extended"
+    },
+    {
       "id": "fedora-44-cloud-amd64",
       "name": "Fedora 44",
       "category": "linux",
@@ -1210,6 +1308,54 @@
       },
       "eol": {
         "standard": "2027-06-02",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "fedora-45-cloud-amd64",
+      "name": "Fedora 45",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "45",
+      "edition": "Cloud image",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Cloud/x86_64/images/Fedora-Cloud-Base-Generic-45-1.4.x86_64.qcow2",
+      "homepage": "https://fedoraproject.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "50bdc5e70f6a24f540932d15411c1c6ae9fcfa40fb990d876d83c5cc823b2ad0"
+      },
+      "eol": {
+        "standard": "2027-12-08",
+        "extended": null,
+        "is_rolling": false
+      },
+      "status": "supported"
+    },
+    {
+      "id": "fedora-45-cloud-arm64",
+      "name": "Fedora 45",
+      "category": "linux",
+      "distro": "fedora",
+      "version": "45",
+      "edition": "Cloud image",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Cloud/aarch64/images/Fedora-Cloud-Base-Generic-45-1.4.aarch64.qcow2",
+      "homepage": "https://fedoraproject.org/",
+      "image_type": "cloud-image",
+      "format": "qcow2",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "1632acc8bc14d45b6c9596a0acc71b070d3748d1abdcf1a519be5c983bb0286c"
+      },
+      "eol": {
+        "standard": "2027-12-08",
         "extended": null,
         "is_rolling": false
       },
