@@ -307,16 +307,54 @@ tracking:
         name_template: "CentOS Stream {major}"
         arch: x86_64
         edition: DVD
+        # The newest dated build; SHA256SUM lists dated names only
+        dir_url: 
+          https://mirror.stream.centos.org/{major}-stream/BaseOS/x86_64/iso/
+        filename_regex: CentOS-Stream-{major}-\d{8}\.\d+-x86_64-dvd1\.iso
         checksums_url: 
           https://mirror.stream.centos.org/{major}-stream/BaseOS/x86_64/iso/SHA256SUM
-        filename_pattern: CentOS-Stream-{major}-latest-x86_64-dvd1.iso
+        filename_pattern: "{filename}"
       - id_template: centos-stream-{major}-dvd-arm64
         name_template: "CentOS Stream {major}"
         arch: aarch64
         edition: DVD
+        # The newest dated build; SHA256SUM lists dated names only
+        dir_url: 
+          https://mirror.stream.centos.org/{major}-stream/BaseOS/aarch64/iso/
+        filename_regex: CentOS-Stream-{major}-\d{8}\.\d+-aarch64-dvd1\.iso
         checksums_url: 
           https://mirror.stream.centos.org/{major}-stream/BaseOS/aarch64/iso/SHA256SUM
-        filename_pattern: CentOS-Stream-{major}-latest-aarch64-dvd1.iso
+        filename_pattern: "{filename}"
+      # Cloud images: the newest dated build. The "-latest" aliases on
+      # cloud.centos.org are not reliably downloadable (HTTP 502).
+      - id_template: centos-stream-{major}-cloud-amd64
+        name_template: "CentOS Stream {major}"
+        arch: x86_64
+        edition: Cloud image
+        image_type: cloud-image
+        format: qcow2
+        dir_url: https://cloud.centos.org/centos/{major}-stream/x86_64/images/
+        filename_regex:
+        - CentOS-Stream-GenericCloud-{major}-\d{8}\.\d+\.x86_64\.qcow2
+        - CentOS-Stream-GenericCloud-x86_64-{major}-\d{8}\.\d+\.x86_64\.qcow2
+        checksums_url: 
+          https://cloud.centos.org/centos/{major}-stream/x86_64/images/{filename}.SHA256SUM
+        filename_pattern: "{filename}"
+      # Cloud images: the newest dated build. The "-latest" aliases on
+      # cloud.centos.org are not reliably downloadable (HTTP 502).
+      - id_template: centos-stream-{major}-cloud-arm64
+        name_template: "CentOS Stream {major}"
+        arch: aarch64
+        edition: Cloud image
+        image_type: cloud-image
+        format: qcow2
+        dir_url: https://cloud.centos.org/centos/{major}-stream/aarch64/images/
+        filename_regex:
+        - CentOS-Stream-GenericCloud-{major}-\d{8}\.\d+\.aarch64\.qcow2
+        - CentOS-Stream-GenericCloud-aarch64-{major}-\d{8}\.\d+\.aarch64\.qcow2
+        checksums_url: 
+          https://cloud.centos.org/centos/{major}-stream/aarch64/images/{filename}.SHA256SUM
+        filename_pattern: "{filename}"
   opensuse:
     product: opensuse
     match_depth: 2

@@ -643,6 +643,21 @@ def process_rolling_checksum(distro, templates, images):
             # Build variables from existing image
             version = str(img.get("version", ""))
             variables = make_version_vars(version, version)
+
+            if variant.get("dir_url"):
+                # Follow the newest dated build instead of a "latest" alias
+                location = _resolve_static_location(variant, variables, img["id"])
+                if not location:
+                    continue
+                url, file_vars, _ = location
+                cs_url = render(checksums_url, file_vars)
+                cs_file = render(filename_pattern, file_vars)
+                checksum_value = fetch_checksum(cs_url, cs_file)
+                changes.extend(apply_existing_update(
+                    img, url, checksum_value, None, None,
+                    algorithm, variant, True))
+                continue
+
             cs_url = render(checksums_url, variables)
             cs_file = render(filename_pattern, variables)
             checksum_value = fetch_checksum(cs_url, cs_file)
