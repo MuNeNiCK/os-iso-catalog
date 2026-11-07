@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-07T01:35:44Z",
+    "generated_at": "2026-11-07T02:20:13Z",
     "count": 59
   },
   "images": [
@@ -17,7 +17,7 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img",
+      "url": "https://cloud-images.ubuntu.com/jammy/20261106/jammy-server-cloudimg-amd64.img",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
@@ -42,7 +42,7 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-arm64.img",
+      "url": "https://cloud-images.ubuntu.com/jammy/20261106/jammy-server-cloudimg-arm64.img",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
@@ -67,7 +67,7 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img",
+      "url": "https://cloud-images.ubuntu.com/noble/20261017/noble-server-cloudimg-amd64.img",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
@@ -92,7 +92,7 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-arm64.img",
+      "url": "https://cloud-images.ubuntu.com/noble/20261017/noble-server-cloudimg-arm64.img",
       "homepage": "https://ubuntu.com/",
       "checksum": {
         "algorithm": "sha256",
@@ -1065,7 +1065,7 @@
       "edition": "Cloud image",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cloud-images.ubuntu.com/resolute/current/resolute-server-cloudimg-amd64.img",
+      "url": "https://cloud-images.ubuntu.com/resolute/20261016/resolute-server-cloudimg-amd64.img",
       "homepage": "https://ubuntu.com/",
       "image_type": "cloud-image",
       "format": "qcow2",
@@ -1090,7 +1090,7 @@
       "edition": "Cloud image",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cloud-images.ubuntu.com/resolute/current/resolute-server-cloudimg-arm64.img",
+      "url": "https://cloud-images.ubuntu.com/resolute/20261016/resolute-server-cloudimg-arm64.img",
       "homepage": "https://ubuntu.com/",
       "image_type": "cloud-image",
       "format": "qcow2",
@@ -1115,7 +1115,7 @@
       "edition": "Cloud image",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img",
+      "url": "https://cloud-images.ubuntu.com/focal/20250624/focal-server-cloudimg-amd64.img",
       "homepage": "https://ubuntu.com/",
       "image_type": "cloud-image",
       "format": "qcow2",
@@ -1140,7 +1140,7 @@
       "edition": "Cloud image",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-arm64.img",
+      "url": "https://cloud-images.ubuntu.com/focal/20250624/focal-server-cloudimg-arm64.img",
       "homepage": "https://ubuntu.com/",
       "image_type": "cloud-image",
       "format": "qcow2",
@@ -1165,7 +1165,7 @@
       "edition": "Cloud image",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img",
+      "url": "https://cloud-images.ubuntu.com/bionic/20230607/bionic-server-cloudimg-amd64.img",
       "homepage": "https://ubuntu.com/",
       "image_type": "cloud-image",
       "format": "qcow2",
@@ -1190,7 +1190,7 @@
       "edition": "Cloud image",
       "arch": "arm64",
       "release_type": "stable",
-      "url": "https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-arm64.img",
+      "url": "https://cloud-images.ubuntu.com/bionic/20230607/bionic-server-cloudimg-arm64.img",
       "homepage": "https://ubuntu.com/",
       "image_type": "cloud-image",
       "format": "qcow2",
