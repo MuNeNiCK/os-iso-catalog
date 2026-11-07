@@ -465,8 +465,14 @@ def _resolve_static_location(variant, variables, image_id):
         for regex in _as_list(variant.get("filename_regex")):
             filename, _ = resolve_directory_filename(dir_url, render(regex, variables))
             if filename:
-                url = dir_url.rstrip("/") + "/" + filename
-                return url, dict(variables, filename=filename), variant.get("checksums_url")
+                file_vars = dict(variables, filename=filename)
+                if variant.get("url_template"):
+                    # The match is a directory (e.g. a dated build); the
+                    # template names the file inside it
+                    url = render(_as_list(variant["url_template"])[0], file_vars)
+                else:
+                    url = dir_url.rstrip("/") + "/" + filename
+                return url, file_vars, variant.get("checksums_url")
         print(f"  SKIP {image_id}: no file found at {dir_url}", file=sys.stderr)
         return None
     urls = _as_list(variant.get("url_template"))

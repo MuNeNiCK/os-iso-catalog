@@ -60,10 +60,14 @@ tracking:
         edition: Cloud image
         image_type: cloud-image
         format: qcow2
+        # Dated builds: "current" is replaced in place, which breaks the
+        # pinned checksum until the next refresh
+        dir_url: https://cloud-images.ubuntu.com/{codename_slug}/
+        filename_regex: '\d{8}(?:\.\d+)?'
         url_template: 
-          https://cloud-images.ubuntu.com/{codename_slug}/current/{codename_slug}-server-cloudimg-amd64.img
+          https://cloud-images.ubuntu.com/{codename_slug}/{filename}/{codename_slug}-server-cloudimg-amd64.img
         checksums_url: 
-          https://cloud-images.ubuntu.com/{codename_slug}/current/SHA256SUMS
+          https://cloud-images.ubuntu.com/{codename_slug}/{filename}/SHA256SUMS
         filename_pattern: "{codename_slug}-server-cloudimg-amd64.img"
       - id_template: ubuntu-{cycle}-cloud-arm64
         name_template: "Ubuntu {cycle} LTS"
@@ -72,10 +76,14 @@ tracking:
         edition: Cloud image
         image_type: cloud-image
         format: qcow2
+        # Dated builds: "current" is replaced in place, which breaks the
+        # pinned checksum until the next refresh
+        dir_url: https://cloud-images.ubuntu.com/{codename_slug}/
+        filename_regex: '\d{8}(?:\.\d+)?'
         url_template: 
-          https://cloud-images.ubuntu.com/{codename_slug}/current/{codename_slug}-server-cloudimg-arm64.img
+          https://cloud-images.ubuntu.com/{codename_slug}/{filename}/{codename_slug}-server-cloudimg-arm64.img
         checksums_url: 
-          https://cloud-images.ubuntu.com/{codename_slug}/current/SHA256SUMS
+          https://cloud-images.ubuntu.com/{codename_slug}/{filename}/SHA256SUMS
         filename_pattern: "{codename_slug}-server-cloudimg-arm64.img"
   debian:
     product: debian
@@ -661,7 +669,7 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
+    https://cloud-images.ubuntu.com/jammy/20261106/jammy-server-cloudimg-amd64.img
   homepage: https://ubuntu.com/
   checksum:
     algorithm: sha256
@@ -683,7 +691,7 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-arm64.img
+    https://cloud-images.ubuntu.com/jammy/20261106/jammy-server-cloudimg-arm64.img
   homepage: https://ubuntu.com/
   checksum:
     algorithm: sha256
@@ -743,7 +751,7 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img
+    https://cloud-images.ubuntu.com/noble/20261017/noble-server-cloudimg-amd64.img
   homepage: https://ubuntu.com/
   checksum:
     algorithm: sha256
@@ -765,7 +773,7 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-arm64.img
+    https://cloud-images.ubuntu.com/noble/20261017/noble-server-cloudimg-arm64.img
   homepage: https://ubuntu.com/
   checksum:
     algorithm: sha256
@@ -3915,7 +3923,7 @@ images:
   arch: amd64
   release_type: stable
   url: 
-    https://cloud-images.ubuntu.com/resolute/current/resolute-server-cloudimg-amd64.img
+    https://cloud-images.ubuntu.com/resolute/20261016/resolute-server-cloudimg-amd64.img
   homepage: https://ubuntu.com/
   image_type: cloud-image
   format: qcow2
@@ -3937,7 +3945,7 @@ images:
   arch: arm64
   release_type: stable
   url: 
-    https://cloud-images.ubuntu.com/resolute/current/resolute-server-cloudimg-arm64.img
+    https://cloud-images.ubuntu.com/resolute/20261016/resolute-server-cloudimg-arm64.img
   homepage: https://ubuntu.com/
   image_type: cloud-image
   format: qcow2
@@ -3959,7 +3967,7 @@ images:
   arch: amd64
   release_type: stable
   url: 
-    https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
+    https://cloud-images.ubuntu.com/focal/20250624/focal-server-cloudimg-amd64.img
   homepage: https://ubuntu.com/
   image_type: cloud-image
   format: qcow2
@@ -3981,7 +3989,7 @@ images:
   arch: arm64
   release_type: stable
   url: 
-    https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-arm64.img
+    https://cloud-images.ubuntu.com/focal/20250624/focal-server-cloudimg-arm64.img
   homepage: https://ubuntu.com/
   image_type: cloud-image
   format: qcow2
@@ -4041,7 +4049,7 @@ images:
   arch: amd64
   release_type: stable
   url: 
-    https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img
+    https://cloud-images.ubuntu.com/bionic/20230607/bionic-server-cloudimg-amd64.img
   homepage: https://ubuntu.com/
   image_type: cloud-image
   format: qcow2
@@ -4063,7 +4071,7 @@ images:
   arch: arm64
   release_type: stable
   url: 
-    https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-arm64.img
+    https://cloud-images.ubuntu.com/bionic/20230607/bionic-server-cloudimg-arm64.img
   homepage: https://ubuntu.com/
   image_type: cloud-image
   format: qcow2
