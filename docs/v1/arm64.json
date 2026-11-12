@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-10T14:04:20Z",
+    "generated_at": "2026-11-12T14:25:40Z",
     "count": 98
   },
   "images": [
@@ -97,7 +97,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "878f563f6c95af7fe1e8e51cd39470a1cdb570dddbee22377c85a347bce9d521d95f2cf0f825a38bc0a757889034fac6d83e932f04a3a122ab08cea68cc9ff8a"
+        "value": "45a3ed38b6946500187e037259c6ae4d62ab0314b42ddbc5a340168fc5a2165ff79d780876e1748fa302697ba9ad3d3db133006413097c5127b2ee61bb787a27"
       },
       "eol": {
         "standard": "2030-06-30",
