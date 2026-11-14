@@ -906,7 +906,7 @@ images:
   checksum:
     algorithm: sha512
     value: 
-      ba6073af9f789c0f7d6b73ec1b23bb207f07f06f2d31bfd3ce5e550fe43eb9415ef983dc0e039014cd59797e0cbea5c32592e6900fa8f974f2e4466b88ff0d80
+      ef4e6f3302cf7951f869e8e01263ee9ab69661b67dc28d45d76eb317b81cf7f87a75f85f26a3b30cbb772025f2edc27dee4f640f91d4cb3f4afe7662b6362e2a
   eol:
     standard: '2028-06-30'
     extended: '2033-06-30'
@@ -930,7 +930,7 @@ images:
   checksum:
     algorithm: sha512
     value: 
-      45d5918f1d6272931f87a0a3af8a9fcd4373947369c4d1d2cbad463882d0c3a24acbd6a27cf8b6cd422c23af05d5deaf3cc2d968313649da4d896b707974ad42
+      34eceab96d2b472e48c2d54616e3d9ef4786bb57f1a84ff74f09f9a69acf99b650dcc3e5969db98664a57898f05244d366ab31667457c40b36fd7f7ec69e15b4
   eol:
     standard: '2028-06-30'
     extended: '2033-06-30'
@@ -2123,11 +2123,11 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20261109.0-kernel-6.1-x86_64.xfs.gpt.qcow2
+    https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20261112.0-kernel-6.1-x86_64.xfs.gpt.qcow2
   homepage: https://aws.amazon.com/linux/amazon-linux-2023/
   checksum:
     algorithm: sha256
-    value: c8c28a409f83f4ea0a613b02e6b0aef984234d42402b69db18c2f9b63e0dec2d
+    value: ef0fe2cdda2f6a8931dad1e1c66cb21d9f6b49c85e6025b185371e90028ea7e9
   eol:
     standard: '2027-06-30'
     extended: '2029-06-30'
@@ -2144,11 +2144,11 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20261109.0-kernel-6.1-arm64.xfs.gpt.qcow2
+    https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20261112.0-kernel-6.1-arm64.xfs.gpt.qcow2
   homepage: https://aws.amazon.com/linux/amazon-linux-2023/
   checksum:
     algorithm: sha256
-    value: 740f76ac93ec5612f50969ba9b20779a3cbe718b6a3774c627ef6c1274fedbd7
+    value: f04cd72ee41f1b2bca043e67c8d66e7e9df4cac6323b94f632a1b156bb4f331b
   eol:
     standard: '2027-06-30'
     extended: '2029-06-30'
