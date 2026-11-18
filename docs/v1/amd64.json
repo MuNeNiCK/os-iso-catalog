@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-17T15:19:40Z",
+    "generated_at": "2026-11-18T14:54:35Z",
     "count": 136
   },
   "images": [
@@ -353,7 +353,7 @@
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha512",
-        "value": "ef4e6f3302cf7951f869e8e01263ee9ab69661b67dc28d45d76eb317b81cf7f87a75f85f26a3b30cbb772025f2edc27dee4f640f91d4cb3f4afe7662b6362e2a"
+        "value": "d597a8b422a0fa7f7cf1a0477d23be7f7514f32e57ccb8d0c69156e1be4a7e1712fb64aee6298520d70aa573b801d0cfe3392ab5de39829728760c0cf99ef4ec"
       },
       "eol": {
         "standard": "2028-06-30",
@@ -1491,11 +1491,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20261112.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20261117.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "ef0fe2cdda2f6a8931dad1e1c66cb21d9f6b49c85e6025b185371e90028ea7e9"
+        "value": "3a13f92561dbff4797003f6a6876f32a4e627ba3b7e76a6ec4e32ff7c2268c39"
       },
       "eol": {
         "standard": "2027-06-30",
