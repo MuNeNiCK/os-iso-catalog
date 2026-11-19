@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-18T14:54:35Z",
+    "generated_at": "2026-11-19T15:00:55Z",
     "count": 59
   },
   "images": [
@@ -246,7 +246,7 @@
       "release_type": "rolling",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cloud.centos.org/centos/10-stream/x86_64/images/CentOS-Stream-GenericCloud-10-20261106.0.x86_64.qcow2",
+      "url": "https://cloud.centos.org/centos/10-stream/x86_64/images/CentOS-Stream-GenericCloud-10-20261118.0.x86_64.qcow2",
       "homepage": "https://www.centos.org/centos-stream/",
       "eol": {
         "standard": "2030-05-31",
@@ -257,7 +257,7 @@
       "status": "supported",
       "checksum": {
         "algorithm": "sha256",
-        "value": "c708f66fdb4124740be637cfd0b5533990cc9a7b6f9579eb00f014fa8225032e"
+        "value": "0bf94380398334112f4375683877876b6e3c71134e06a6c84ea3644d1ab11e0e"
       }
     },
     {
@@ -271,7 +271,7 @@
       "release_type": "rolling",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cloud.centos.org/centos/10-stream/aarch64/images/CentOS-Stream-GenericCloud-10-20261106.0.aarch64.qcow2",
+      "url": "https://cloud.centos.org/centos/10-stream/aarch64/images/CentOS-Stream-GenericCloud-10-20261118.0.aarch64.qcow2",
       "homepage": "https://www.centos.org/centos-stream/",
       "eol": {
         "standard": "2030-05-31",
@@ -282,7 +282,7 @@
       "status": "supported",
       "checksum": {
         "algorithm": "sha256",
-        "value": "66daa4b6c79d16332073e88446ab7e1abca9ba2f85d824a1f467ed5a35486548"
+        "value": "74ca2afba2de279487888e11dc9275be70ba29def5928f255a91b1c03e4494d6"
       }
     },
     {
@@ -296,7 +296,7 @@
       "release_type": "rolling",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cloud.centos.org/centos/9-stream/x86_64/images/CentOS-Stream-GenericCloud-9-20261109.0.x86_64.qcow2",
+      "url": "https://cloud.centos.org/centos/9-stream/x86_64/images/CentOS-Stream-GenericCloud-9-20261118.0.x86_64.qcow2",
       "homepage": "https://www.centos.org/centos-stream/",
       "eol": {
         "standard": "2027-05-31",
@@ -307,7 +307,7 @@
       "status": "supported",
       "checksum": {
         "algorithm": "sha256",
-        "value": "d6a7f9f43ecb24dafd4ecd61bc014efbdca92387a41f83fa14275dcb26b870ec"
+        "value": "bc5f617303c0cf02f19c135bd29910d27f73e86339613b174998a5aee7f3f0cd"
       }
     },
     {
@@ -321,7 +321,7 @@
       "release_type": "rolling",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cloud.centos.org/centos/9-stream/aarch64/images/CentOS-Stream-GenericCloud-9-20261109.0.aarch64.qcow2",
+      "url": "https://cloud.centos.org/centos/9-stream/aarch64/images/CentOS-Stream-GenericCloud-9-20261118.0.aarch64.qcow2",
       "homepage": "https://www.centos.org/centos-stream/",
       "eol": {
         "standard": "2027-05-31",
@@ -332,7 +332,7 @@
       "status": "supported",
       "checksum": {
         "algorithm": "sha256",
-        "value": "8cf0d50db5482541f259db926b1c277f6093522208e8cce5a80108a6fb67f994"
+        "value": "166b30bfc8b4c1ac4e690fe0b7ebe004c40a3c94ddb983913d09801bb858e6ce"
       }
     },
     {
@@ -747,11 +747,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20261117.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20261119.0-kernel-6.1-x86_64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "3a13f92561dbff4797003f6a6876f32a4e627ba3b7e76a6ec4e32ff7c2268c39"
+        "value": "d990fd0b089dda49e4cc1c65e6a33c13460f1f63e43fcde5d0f012ae096de7a6"
       },
       "eol": {
         "standard": "2027-06-30",
@@ -771,11 +771,11 @@
       "release_type": "stable",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20261117.0-kernel-6.1-arm64.xfs.gpt.qcow2",
+      "url": "https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20261119.0-kernel-6.1-arm64.xfs.gpt.qcow2",
       "homepage": "https://aws.amazon.com/linux/amazon-linux-2023/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "bfe15fcb0b7d77398b62b1ca9668c50f38566bc537382332ec869b28ecf38636"
+        "value": "b7ac7b044e058d81a7144680cbb9c7b7035a7f70ef25396633f5cc8cbd97eeca"
       },
       "eol": {
         "standard": "2027-06-30",
