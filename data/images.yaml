@@ -2123,11 +2123,11 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20261119.0-kernel-6.1-x86_64.xfs.gpt.qcow2
+    https://cdn.amazonlinux.com/al2023/os-images/latest/kvm/al2023-kvm-2023.12.20261120.0-kernel-6.1-x86_64.xfs.gpt.qcow2
   homepage: https://aws.amazon.com/linux/amazon-linux-2023/
   checksum:
     algorithm: sha256
-    value: d990fd0b089dda49e4cc1c65e6a33c13460f1f63e43fcde5d0f012ae096de7a6
+    value: be3240954918ce36bb293481eecdcb9a8943b5af2b4a74fd2b3dddf0cdb8a9af
   eol:
     standard: '2027-06-30'
     extended: '2029-06-30'
@@ -2144,11 +2144,11 @@ images:
   image_type: cloud-image
   format: qcow2
   url: 
-    https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20261119.0-kernel-6.1-arm64.xfs.gpt.qcow2
+    https://cdn.amazonlinux.com/al2023/os-images/latest/kvm-arm64/al2023-kvm-2023.12.20261120.0-kernel-6.1-arm64.xfs.gpt.qcow2
   homepage: https://aws.amazon.com/linux/amazon-linux-2023/
   checksum:
     algorithm: sha256
-    value: b7ac7b044e058d81a7144680cbb9c7b7035a7f70ef25396633f5cc8cbd97eeca
+    value: 6d7fb166db05e40dacb5fcf90b5e5184de1ce2bb5956bec694c6dbba70e7d11d
   eol:
     standard: '2027-06-30'
     extended: '2029-06-30'
