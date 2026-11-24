@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-23T17:00:46Z",
+    "generated_at": "2026-11-24T16:48:50Z",
     "count": 136
   },
   "images": [
@@ -417,19 +417,19 @@
     },
     {
       "id": "debian-13-netinst",
-      "name": "Debian 13.7",
+      "name": "Debian 13.8",
       "category": "linux",
       "distro": "debian",
       "codename": "Trixie",
-      "version": "13.7",
+      "version": "13.8",
       "edition": "netinst",
       "arch": "amd64",
       "release_type": "stable",
-      "url": "https://cdimage.debian.org/cdimage/archive/13.7.0/amd64/iso-cd/debian-13.7.0-amd64-netinst.iso",
+      "url": "https://cdimage.debian.org/cdimage/release/13.8.0/amd64/iso-cd/debian-13.8.0-amd64-netinst.iso",
       "homepage": "https://www.debian.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "a7ef94ac2fb9a7fec454552abd629b7cc9d5155c886165a45649f5ce6167e355"
+        "value": "3770c7a54890f7574a68a8b402e553806a81d6bccfb379554caad3a9a857931e"
       },
       "eol": {
         "standard": "2030-06-30",
@@ -741,11 +741,11 @@
       "edition": "DVD",
       "arch": "x86_64",
       "release_type": "rolling",
-      "url": "https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/iso/CentOS-Stream-10-20261118.0-x86_64-dvd1.iso",
+      "url": "https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/iso/CentOS-Stream-10-20261124.0-x86_64-dvd1.iso",
       "homepage": "https://www.centos.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "04ab4b8872f8d136e35c8a7624ce00a5cc81484a6424cd2da560c575b7068402"
+        "value": "17cec1c482bafca469dba52ab1d5df5bc48be30c3798de83606deab70c06237e"
       },
       "eol": {
         "standard": "2030-05-31",
