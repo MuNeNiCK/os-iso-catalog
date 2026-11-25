@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-24T16:48:50Z",
+    "generated_at": "2026-11-25T16:36:55Z",
     "count": 173
   },
   "images": [
@@ -587,11 +587,11 @@
       "edition": "DVD",
       "arch": "x86_64",
       "release_type": "rolling",
-      "url": "https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-20261118.0-x86_64-dvd1.iso",
+      "url": "https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-20261124.0-x86_64-dvd1.iso",
       "homepage": "https://www.centos.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "04fa4267172abf844e0d66ac5764d02535668e62de4ec4e589e157c3c82070a5"
+        "value": "ca10afabe302b84ba5f4616d451df6694394afe4689cc81c1f014f0f5b89773a"
       },
       "eol": {
         "standard": "2027-05-31",
@@ -2251,11 +2251,11 @@
       "edition": "DVD",
       "arch": "aarch64",
       "release_type": "rolling",
-      "url": "https://mirror.stream.centos.org/9-stream/BaseOS/aarch64/iso/CentOS-Stream-9-20261118.0-aarch64-dvd1.iso",
+      "url": "https://mirror.stream.centos.org/9-stream/BaseOS/aarch64/iso/CentOS-Stream-9-20261124.0-aarch64-dvd1.iso",
       "homepage": "https://www.centos.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "32b168c150b88e5958a8308fffde282a8bb3a7a16b21bbf8a8ca94c4cc1926a0"
+        "value": "9a2c7cd878d0767fe275905da150c098c67c8cb1898d2af83af24570fa2dc2ea"
       },
       "eol": {
         "standard": "2027-05-31",

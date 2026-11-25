@@ -1,7 +1,7 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-24T16:48:50Z",
+    "generated_at": "2026-11-25T16:36:55Z",
     "count": 136
   },
   "images": [
@@ -715,11 +715,11 @@
       "edition": "DVD",
       "arch": "x86_64",
       "release_type": "rolling",
-      "url": "https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-20261118.0-x86_64-dvd1.iso",
+      "url": "https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/iso/CentOS-Stream-9-20261124.0-x86_64-dvd1.iso",
       "homepage": "https://www.centos.org/",
       "checksum": {
         "algorithm": "sha256",
-        "value": "04fa4267172abf844e0d66ac5764d02535668e62de4ec4e589e157c3c82070a5"
+        "value": "ca10afabe302b84ba5f4616d451df6694394afe4689cc81c1f014f0f5b89773a"
       },
       "eol": {
         "standard": "2027-05-31",
@@ -1190,7 +1190,7 @@
       "release_type": "rolling",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cloud.centos.org/centos/10-stream/x86_64/images/CentOS-Stream-GenericCloud-10-20261118.0.x86_64.qcow2",
+      "url": "https://cloud.centos.org/centos/10-stream/x86_64/images/CentOS-Stream-GenericCloud-10-20261124.0.x86_64.qcow2",
       "homepage": "https://www.centos.org/centos-stream/",
       "eol": {
         "standard": "2030-05-31",
@@ -1201,7 +1201,7 @@
       "status": "supported",
       "checksum": {
         "algorithm": "sha256",
-        "value": "0bf94380398334112f4375683877876b6e3c71134e06a6c84ea3644d1ab11e0e"
+        "value": "66de9ff6dbfee457c672c005778d8b6e37c6e01260af31135b6830e02613889c"
       }
     },
     {
@@ -1215,7 +1215,7 @@
       "release_type": "rolling",
       "image_type": "cloud-image",
       "format": "qcow2",
-      "url": "https://cloud.centos.org/centos/9-stream/x86_64/images/CentOS-Stream-GenericCloud-9-20261118.0.x86_64.qcow2",
+      "url": "https://cloud.centos.org/centos/9-stream/x86_64/images/CentOS-Stream-GenericCloud-9-20261124.0.x86_64.qcow2",
       "homepage": "https://www.centos.org/centos-stream/",
       "eol": {
         "standard": "2027-05-31",
@@ -1226,7 +1226,7 @@
       "status": "supported",
       "checksum": {
         "algorithm": "sha256",
-        "value": "bc5f617303c0cf02f19c135bd29910d27f73e86339613b174998a5aee7f3f0cd"
+        "value": "ff634dc597a8e19ac04eeca177701edf6e4b6d7caa95d56a741d67ca8be1d014"
       }
     },
     {
