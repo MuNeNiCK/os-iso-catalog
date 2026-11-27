@@ -1,8 +1,8 @@
 {
   "meta": {
     "api_version": "v1",
-    "generated_at": "2026-11-25T16:36:55Z",
-    "count": 173
+    "generated_at": "2026-11-27T15:57:48Z",
+    "count": 189
   },
   "images": [
     {
@@ -3732,6 +3732,198 @@
       "image_type": "iso"
     },
     {
+      "id": "rocky-10.3-dvd",
+      "name": "Rocky Linux 10.3",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.3",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.3-x86_64-dvd1.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "de2e4426cd5177ff9f4760bfa2b5b4dea44f771dfef5daeffde1680d6223e1d0"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.3-minimal",
+      "name": "Rocky Linux 10.3",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.3",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.3-x86_64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "878a3f92281d3eb91ca9d1a195794d47b5bce4e02a85f351c606709e98481cc4"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.3-dvd-arm64",
+      "name": "Rocky Linux 10.3",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.3",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/aarch64/Rocky-10.3-aarch64-dvd1.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "a12a68503346e9bf0a513704231821fd539e13d4b1a7afc46f984a2badd81375"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-10.3-minimal-arm64",
+      "name": "Rocky Linux 10.3",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "10.3",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/10/isos/aarch64/Rocky-10.3-aarch64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "8d6c133ce49897e2ca5d29bfa223abd392a19e252887bc92c5f18791e73b2668"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.9-dvd",
+      "name": "Rocky Linux 9.9",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.9",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.9-x86_64-dvd.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "ace30c575470160d8f6bad42e751bde492d117034da63d4ec55c9b9f04da9263"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.9-minimal",
+      "name": "Rocky Linux 9.9",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.9",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.9-x86_64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "56772c6c07464ea8e55b64cb5ec2448d16e1b4673b8041678dacfd540131401c"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.9-dvd-arm64",
+      "name": "Rocky Linux 9.9",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.9",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/aarch64/Rocky-9.9-aarch64-dvd.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f22b7c8e0d02d9d8bfcdcb98d84c7ba0811d7eee2ffa315755f01883821a5213"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "rocky-9.9-minimal-arm64",
+      "name": "Rocky Linux 9.9",
+      "category": "linux",
+      "distro": "rocky",
+      "version": "9.9",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://download.rockylinux.org/pub/rocky/9/isos/aarch64/Rocky-9.9-aarch64-minimal.iso",
+      "homepage": "https://rockylinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "8e0376c4cf4e17b5f16024adbcae18d0bc56c58b5e6062be8053af302b7ea7e2"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
       "id": "alma-9.7-dvd-arm64",
       "name": "AlmaLinux 9.7",
       "category": "linux",
@@ -4057,6 +4249,198 @@
       "checksum": {
         "algorithm": "sha256",
         "value": "08913740ab695c5f1003165c1d0e41c0615d0ffe4114ab92a8e13ae49fb691ac"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-10.3-dvd",
+      "name": "AlmaLinux 10.3",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "10.3",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10.3-x86_64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "f74ae9c4a8e7e3e70147534856ea276f71649d16c70b7d3ec80d0905a7b93982"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-10.3-minimal",
+      "name": "AlmaLinux 10.3",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "10.3",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10.3-x86_64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "3fa350594c8b3d8200b5bb4c7bda23a8e05607ea482a06f9cc862f6f477c4965"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-10.3-dvd-arm64",
+      "name": "AlmaLinux 10.3",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "10.3",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/10/isos/aarch64/AlmaLinux-10.3-aarch64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "15205de0cadbde2a564284a1f5c688dc3f27a12f691b0bb8403684afcafe51ab"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-10.3-minimal-arm64",
+      "name": "AlmaLinux 10.3",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "10.3",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/10/isos/aarch64/AlmaLinux-10.3-aarch64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "fa25507cac880a89906aceb1fd7c6449663f725437431d074a4716a97c0dd403"
+      },
+      "eol": {
+        "standard": "2030-05-31",
+        "extended": "2035-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-9.9-dvd",
+      "name": "AlmaLinux 9.9",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "9.9",
+      "edition": "DVD",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/9/isos/x86_64/AlmaLinux-9.9-x86_64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "e591228288e323e1ca8939f07354d547419c384e3ec83ea5206c9cbe93a88478"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-9.9-minimal",
+      "name": "AlmaLinux 9.9",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "9.9",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/9/isos/x86_64/AlmaLinux-9.9-x86_64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "0a0929bd4bbad481fe30066278aa66534a1d7a219a39c0495f0d51f82511bfd5"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-9.9-dvd-arm64",
+      "name": "AlmaLinux 9.9",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "9.9",
+      "edition": "DVD",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/9/isos/aarch64/AlmaLinux-9.9-aarch64-dvd.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "d945ec1b84676b2efc24cd695d24afee02db97235e08d9cb1bbb0eb592f3e761"
+      },
+      "eol": {
+        "standard": "2027-05-31",
+        "extended": "2032-05-31",
+        "is_rolling": false
+      },
+      "status": "supported",
+      "format": "iso",
+      "image_type": "iso"
+    },
+    {
+      "id": "alma-9.9-minimal-arm64",
+      "name": "AlmaLinux 9.9",
+      "category": "linux",
+      "distro": "almalinux",
+      "version": "9.9",
+      "edition": "Minimal",
+      "arch": "aarch64",
+      "release_type": "stable",
+      "url": "https://repo.almalinux.org/almalinux/9/isos/aarch64/AlmaLinux-9.9-aarch64-minimal.iso",
+      "homepage": "https://almalinux.org/",
+      "checksum": {
+        "algorithm": "sha256",
+        "value": "8e7b3399932922312a6378d95bf473aefa9ec2102e46f5b7f36d18efbf9d217e"
       },
       "eol": {
         "standard": "2027-05-31",
